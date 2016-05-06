@@ -34,14 +34,44 @@ for file in collectionFile:
         text_file = open("./" + collection + "/" + file, "r")
         lines = text_file.readlines()
         #add title to dictionary
-        titles[fileName[1]] = lines[0]
+        titles[fileName[1]] = lines[0].rstrip('\n')
         #add file data to dictionary
         fileData = ''
         for i in range (1, len(lines)):
             fileData += " " + lines[i]
         data[fileName[1]] = fileData
 
+# document length/title file
+g = open(collection + "_index_len", "w")
 
+# create inverted files in memory and save titles/N to file
+index = {}
+N = len (data.keys())
+p = porter.PorterStemmer ()
+for key in data:
+    content = re.sub(r'[^ a-zA-Z0-9]', ' ', data[key])
+    content = re.sub (r'\s+', ' ', content)
+    words = content.split (' ')
+    doc_length = 0
+    for word in words:
+        if word != '':
+            if parameters.stemming:
+                word = p.stem (word, 0, len(word)-1)
+            doc_length += 1
+            if not word in index:
+                index[word] = {key:1}
+            else:
+                if not key in index[word]:
+                    index[word][key] = 1
+                else:
+                    index[word][key] += 1
+    print (key, doc_length, titles[key], sep=':', file=g)
+g.close()
+
+
+# ========================
+#          DONE!
+#=========================
 # # read and parse input data - extract words, identifiers and titles
 # f = open (collection, "r")
 # identifier = ''
@@ -80,6 +110,8 @@ for file in collectionFile:
 #                    else:
 #                        document += line
 # f.close ()
+#==============================================================================================
+#==============================================================================================
 #
 # # document length/title file
 # g = open (collection + "_index_len", "w")
