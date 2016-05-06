@@ -1,0 +1,24 @@
+Ultrasonic consolidation
+
+
+Ultrasonic Consolidation (UC), sometimes referred to as Ultrasonic Additive Manufacturing (UAM), is an additive manufacturing technique based on the ultrasonic welding of metal foils and CNC contour milling. High-frequency (typically 20,000 hertz) ultrasonic vibrations are locally applied to metal foil materials, held together under pressure, to create a solid-state weld. CNC contour milling is then used to create the required shape for the given layer. This process is then repeated until a solid component has been created or a feature repaired/added to a component. UC has the ability to join dissimilar metal materials of different thicknesses and allows the embedment of fibre materials at relatively low temperature, (typically less than 50% of the metal matrix melting temperature), and pressure into solid metal matrices.
+
+
+== History ==
+The Ultrasonic Consolidation process was invented and patented by Dawn White. In 1999, White founded Solidica Inc. which is the commercial owner and provider of the UC technology. The commercial equipment for UC is called the Form-ation machine.
+
+
+== Process ==
+As with most other additive manufacturing processes UC creates objects directly from a CAD model of the required object. The file is then "sliced" into layers which results in the production of a .STL file that can be used by the UC machine to build the required object, layer by layer.
+
+The general manufacturing process is:
+A base plate is placed onto the machine anvil and fixed into place.
+Metal foil is then drawn under the sonotrode, which applies pressure through a normal force and the ultrasonic oscillations, and bonded to the plate.
+This process is then repeated until the required area has been covered in ultrasonically consolidated material.
+A CNC mill is then used to trim the excess foil from the component and achieve the required geometry.
+The deposit and trim cycle is repeated until a specified height is reached, (typically 3–6 mm).
+At this height a smaller finishing mill is used to create the required tolerance and surface finish of the part.
+The deposit, trim and finish cycle continues until the finished object has been manufactured; at which point it is taken off the anvil and the finished article is removed from the base plate.
+
+
+== References ==

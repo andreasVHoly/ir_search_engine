@@ -1,0 +1,38 @@
+Parallel Virtual Machine
+
+
+Parallel Virtual Machine (PVM) is a software tool for parallel networking of computers. It is designed to allow a network of heterogeneous Unix and/or Windows machines to be used as a single distributed parallel processor. Thus large computational problems can be solved more cost effectively by using the aggregate power and memory of many computers. The software is very portable; the source code, available free through netlib, has been compiled on everything from laptops to Crays.
+PVM enables users to exploit their existing computer hardware to solve much larger problems at less additional cost. PVM has been used as an educational tool to teach parallel programming but has also been used to solve important practical problems. It was developed by the University of Tennessee, Oak Ridge National Laboratory and Emory University. The first version was written at ORNL in 1989, and after being rewritten by University of Tennessee, version 2 was released in March 1991. Version 3 was released in March 1993, and supported fault tolerance and better portability.
+PVM was a step towards modern trends in distributed processing and grid computing but has, since the mid-1990s, largely been supplanted by the much more successful MPI standard for message passing on parallel machines. PVM is free software, released under both the BSD License and the GNU General Public License.
+
+
+== Design ==
+PVM is a software system that enables a collection of heterogeneous computers to be used as a coherent and flexible concurrent computational resource, or a "parallel virtual machine".
+The individual computers may be shared- or local-memory multiprocessors, vector supercomputers, specialized graphics engines, or scalar workstations and PCs, that may be interconnected by a variety of networks, such as Ethernet or FDDI.
+PVM consists of a run-time environment and library for message-passing, task and resource management, and fault notification. While PVM will not automatically make a commercial software package run faster, it does provide a powerful set of functions for manually parallelizing an existing source program, or for writing new parallel/distributed programs.
+The PVM software must be specifically installed on every machine that is to be used in a given "virtual machine". There is no "automatic" installation of executables onto remote machines in PVM, although simply copying the pvm3/lib and pvm3/bin directories to another similar machine (and setting $PVM_ROOT and $PVM_ARCH) is sufficient for running PVM programs. Compiling or building PVM programs requires the full PVM installation.
+User programs written in C, C++, or Fortran can access PVM through provided library routines.
+PVM also supports broadcasting (PVM_bcast) which sends to all processes in a group and multicasting (PVM_mcast) which sends to a specific list of processes.
+
+
+== See also ==
+
+CORBA
+Globus Alliance
+Occam programming language
+Ease programming language
+Linda (coordination language)
+Calculus of communicating systems
+Calculus of Broadcasting Systems
+Message Passing Interface (MPI)
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Official website
+Parawiki: Parallel Virtual Machine at the Wayback Machine (archived 21 March 2007)

@@ -1,0 +1,20 @@
+Range searching
+
+
+In its most general form, the range searching problem consists of preprocessing a set S of objects, in order to determine which objects from S intersect with a query object, called a range. For example, S may be a set of points corresponding to the coordinates of several cities, and we want to find the cities within a certain latitude and longitude range.
+The range searching problems and data structures are a fundamental topic of computational geometry. The range searching problem finds applications not only in areas that deal with processing geometrical data (like geographical information systems (GIS), and CAD), but also in databases.
+
+
+== Variations ==
+There are several variations of the problem, and different data structures may be necessary for different variations. In order to obtain an efficient solution, several aspects of the problem need to be specified:
+Object types: Algorithms depend on whether S consists of points, lines, line segments, boxes, polygons... The simplest and most studied objects to search are points.
+Range types: The query ranges also need to be drawn from a predetermined set. Some well-studied sets of ranges, and the names of the respective problems are axis-aligned rectangles (orthogonal range searching), simplices (simplex range searching), halfspaces (halfspace range searching), and spheres/circles (spherical range searching / circular range searching).
+Query types: If the list of all objects that intersect the query range must be reported, the problem is called range reporting, and the query is called a reporting query. Sometimes, only the number of objects that intersect the range is required. In this case, the problem is called range counting, and the query is called a counting query. The emptiness query reports whether there is at least one object that intersects the range. In the semigroup version, a commutative semigroup (S,+) is specified, each point is assigned a weight from S, and it is required to report the semigroup sum of the weights of the points that intersect the range.
+Dynamic range searching vs. static range searching: In the static setting the set S is known in advance. In dynamic setting objects may be inserted or deleted between queries.
+Offline range searching: Both the set of objects and the whole set of queries are known in advance.
+
+
+== References ==
+Agarwal, P. K.; Erickson, J. (1999), "Geometric Range Searching and Its Relatives", in Chazelle, Bernard; Goodman, Jacob; Pollack, Richard, Advances in Discrete and Computational Geometry: proceedings of the 1996 AMS-IMS-SIAM joint summer research conference, Discrete and Computational Geometry--Ten Years Later, July 14-18, 1996, Mount Holyoke College (PDF), Contemporary Mathematics 223, American Mathematical Society Press, pp. 1–56 .
+de Berg, Mark; van Kreveld, Marc; Overmars, Mark; Schwarzkopf, Otfried (2000), Computational Geometry (2nd ed.), Berlin: Springer-Verlag, ISBN 3-540-65620-0 . See especially Chapters 5 and 16.
+Matoušek, Jiří (1994), "Geometric range searching", ACM Computing Surveys 26 (4): 421–461 .

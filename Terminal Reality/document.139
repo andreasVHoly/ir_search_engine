@@ -1,0 +1,24 @@
+Memory-level parallelism
+
+
+Memory-level parallelism (MLP) is a term in computer architecture referring to the ability to have pending multiple memory operations, in particular cache misses or translation lookaside buffer (TLB) misses, at the same time.
+In a single processor, MLP may be considered a form of instruction-level parallelism (ILP). However, ILP is often conflated with superscalar, the ability to execute more than one instruction at the same time. E.g., a processor such as the Intel Pentium Pro is five-way superscalar, with the ability to start executing five different microinstructions in a given cycle, but it can handle four different cache misses for up to 20 different load microinstructions at any time.
+It is possible to have a machine that is not superscalar but which nevertheless has high MLP.
+Arguably a machine that has no ILP, which is not superscalar, which executes one instruction at a time in a non-pipelined manner, but which performs hardware prefetching (not software instruction level prefetching) exhibits MLP (due to multiple prefetches outstanding) but not ILP. This is because there are multiple memory operations outstanding, but not instructions. Instructions are often conflated with operations.
+Furthermore, multiprocessor and multithreaded computer systems may be said to exhibit MLP and ILP due to parallelism—but not intra-thread, single process, ILP and MLP. Often, however, we restrict the terms MLP and ILP to refer to extracting such parallelism from what appears to be non-parallel single threaded code.
+
+
+== See also ==
+Memory disambiguation
+Memory dependence prediction
+Hardware scout
+Runahead
+
+
+== References ==
+Glew, A. (1998). "MLP yes! ILP no!" (abstract / slides), In Wild and Crazy Ideas Session, 8th International Conference on Architectural Support for Programming Languages and Operating Systems, October 1998.
+Ronen, R.; Mendelson, A.; Lai, K.; Shih-Lien Lu; Pollack, F.; Shen, J. P. (2001). "Coming challenges in microarchitecture and architecture". Proc. IEEE 89 (3): 325–340. doi:10.1109/5.915377. CiteSeerX: 10.1.1.136.5349. 
+Zhou, H.; Conte, T. M. (2003). "Enhancing memory level parallelism via recovery-free value prediction". Proceedings of the 17th annual international conference on Supercomputing. pp. 326–335. doi:10.1145/782814.782859. ISBN 1-58113-733-8. CiteSeerX: 10.1.1.14.4405. 
+Yuan Chou; Fahs, B.; Abraham, S. (2004). Microarchitecture optimizations for exploiting memory-level parallelism. ISCA'04. Proceedings. 31st Annual International Symposium on Computer Architecture, 2004. pp. 76–87. doi:10.1109/ISCA.2004.1310765. ISBN 0-7695-2143-6. 
+Qureshi, M. K.; Lynch, D. N.; Mutlu, O.; Patt, Y. N. (2006). "A Case for MLP-Aware Cache Replacement". 33rd International Symposium on Computer Architecture. pp. 167–178. doi:10.1109/ISCA.2006.5. ISBN 0-7695-2608-X. CiteSeerX: 10.1.1.94.4663. 
+Van Craeynest, K.; Eyerman, S.; Eeckhout, L. (2009). "MLP-Aware Runahead Threads in a Simultaneous Multithreading Processor". High Performance Embedded Architectures and Compilers (PDF). LNCS 5409. pp. 110–124. doi:10.1007/978-3-540-92990-1_10. ISBN 978-3-540-92989-5. CiteSeerX: 10.1.1.214.3261.

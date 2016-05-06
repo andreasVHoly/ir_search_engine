@@ -1,0 +1,25 @@
+Gerard Salton
+
+
+Gerard A. "Gerry" Salton (8 March 1927 in Nuremberg – 28 August 1995), was a Professor of Computer Science at Cornell University. Salton was perhaps the leading computer scientist working in the field of information retrieval during his time, and "the father of information retrieval". His group at Cornell developed the SMART Information Retrieval System, which he initiated when he was at Harvard.
+Salton was born Gerhard Anton Sahlmann on March 8, 1927 in Nuremberg, Germany. He received a Bachelor's (1950) and Master's (1952) degree in mathematics from Brooklyn College, and a Ph.D. from Harvard in Applied Mathematics in 1958, the last of Howard Aiken's doctoral students, and taught there until 1965, when he joined Cornell University and co-founded its department of Computer Science.
+Salton was perhaps most well known for developing the now widely used vector space model for Information Retrieval. In this model, both documents and queries are represented as vectors of term counts, and the similarity between a document and a query is given by the cosine between the term vector and the document vector. In this paper, he also introduced TF-IDF, or term-frequency-inverse-document frequency, a model in which the score of a term in a document is the ratio of the number of terms in that document divided by the frequency of the number of documents in which that term occurs. (The concept of inverse document frequency, a measure of specificity, had been introduced in 1972 by Karen Sparck-Jones.) Later in life, he became interested in automatic text summarization and analysis, as well as automatic hypertext generation. He published over 150 research articles and 5 books during his life.
+Salton was editor-in-chief of the Communications of the ACM and the Journal of the ACM, and chaired Special Interest Group on Information Retrieval (SIGIR). He was an associate editor of the ACM Transactions on Information Systems. He was an ACM Fellow (elected 1995), received an Award of Merit from the American Society for Information Science (1989), and was the first recipient of the SIGIR Award for outstanding contributions to study of information retrieval (1983) -- now called the Gerard Salton Award.
+
+
+== Bibliography ==
+Salton, Automatic Information Organization and Retrieval, 1968.
+Gerard Salton (1975). A Theory of Indexing. Society for Industrial and Applied Mathematics. p. 56. 
+--- and Michael J. McGill, Introduction to modern information retrieval, 1983. ISBN 0-07-054484-0
+Gerard Salton (1989). Automatic Text Processing. Addison-Wesley Publishing Company. p. 530. ISBN 0-201-12227-8. 
+DBLP Bibliography
+G. Salton, A. Wong, and C. S. Yang (1975), "A Vector Space Model for Automatic Indexing," Communications of the ACM, vol. 18, nr. 11, pages 613–620. (Article in which a vector space model was presented)
+
+
+== References ==
+
+
+== External links ==
+In Memoriam
+Fractals of Change: Search Down Memory Lane
+The Most Influential Paper Gerard Salton Never Wrote - This 2004 Library Trends paper by David Dubin serves as a historical review of the metamorphosis of the term discrimination value model (TDV) into the vector space model as an information retrieval model (VSM as an IR model). This paper calls into question what the Information Retrieval research community believed Salton's vector space model was originally intended to model. What much later became an information retrieval model was originally a data-centric mathematical–computational model used as an explanatory device. In addition, Dubin's paper points out that a 1975 Salton paper oft cited does not exist but is probably a combination of two other papers, neither of which actually refers to the VSM as an IR model.

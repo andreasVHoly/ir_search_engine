@@ -1,0 +1,35 @@
+Left-leaning red–black tree
+
+
+A left-leaning red–black (LLRB) tree is a type of self-balancing binary search tree. It is a variant of the red–black tree and guarantees the same asymptotic complexity for operations, but is designed to be easier to implement.
+
+
+== Properties of Left Leaning RB ==
+All of the red-black tree algorithms that have been proposed are characterized by a worst-case search time bounded by a small constant multiple of log N in a tree of N keys, and the behavior observed in practice is typically that same multiple faster than the worst-case bound, close to the optimal log N nodes examined that would be observed in a perfectly balanced tree.
+Specifically, in a left-leaning red-black 2-3 tree built from N random keys:
+A random successful search examines log N − 0.5 nodes.
+The average tree height is about 2 log N
+The average size of left subtree exhibits log-oscillating behavior.
+
+
+== External links ==
+
+
+=== Papers ===
+Robert Sedgewick. Left-leaning Red–Black Trees. Direct link to PDF.
+Robert Sedgewick. Left-Leaning Red–Black Trees (slides). Two versions:
+Robert Sedgewick. Left-Leaning Red–Black Trees (slides), from seminar at Dagstuhl in February 2008. Outdated.
+Robert Sedgewick. Left-Leaning Red–Black Trees (slides), from April 2008; updated
+
+Linus Ek, Ola Holmström and Stevan Andjelkovic. May 19, 2009. Formalizing Arne Andersson trees and Left-leaning Red–Black trees in Agda
+Julien Oster. March 22, 2011. An Agda implementation of deletion in Left-leaning Red–Black trees
+Kazu Yamamoto. 2011.10.19. Purely Functional Left-Leaning Red–Black Trees
+
+
+=== Implementations ===
+
+
+=== Other ===
+Robert Sedgewick. 20 Apr 2008. Animations of LLRB operations
+Open Data Structures - Section 9.2.2 - Left-Leaning Red–Black Trees
+Left-Leaning Red-Black Trees Considered Harmful

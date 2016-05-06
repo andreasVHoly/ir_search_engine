@@ -1,0 +1,61 @@
+POSIX Threads
+
+
+POSIX Threads, usually referred to as Pthreads, is an execution model that exists independently from a language, as well as a parallel execution model. It allows a program to control multiple different flows of work that overlap in time. Each flow of work is referred to as a thread, and creation and control over these flows is achieved by making calls to the POSIX Threads API. API are used for thread creation and synchronization. POSIX Threads is an API defined by the standard POSIX.1c, Threads extensions (IEEE Std 1003.1c-1995).
+Implementations of the API are available on many Unix-like POSIX-conformant operating systems such as FreeBSD, NetBSD, OpenBSD, Linux, Mac OS X and Solaris. DR-DOS and Microsoft Windows implementations also exist: within the SFU/SUA subsystem which provides a native implementation of a number of POSIX APIs, and also within third-party packages such as pthreads-w32, which implements pthreads on top of existing Windows API.
+
+
+== Contents ==
+Pthreads defines a set of C programming language types, functions and constants. It is implemented with a pthread.h header and a thread library.
+There are around 100 Pthreads procedures, all prefixed "pthread_" and they can be categorized into four groups:
+Thread management - creating, joining threads etc.
+Mutexes
+Condition variables
+Synchronization between threads using read/write locks and barriers
+The POSIX semaphore API works with POSIX threads but is not part of threads standard, having been defined in the POSIX.1b, Real-time extensions (IEEE Std 1003.1b-1993) standard. Consequently the semaphore procedures are prefixed by "sem_" instead of "pthread_".
+
+
+== Example ==
+An example illustrating the use of Pthreads in C:
+
+This program creates five threads, each executing the function perform_work that prints the unique number of this thread to standard output. If a programmer wanted the threads to communicate with each other, this would require defining a variable outside of the scope of any of the functions, making it a global variable. This program can be compiled using the gcc compiler with the following command:
+
+gcc pthreads_demo.c -lpthread -o pthreads_demo
+
+
+== POSIX Threads for Windows ==
+Windows does not support the pthreads standard natively, therefore the Pthreads-w32 project seeks to provide a portable and open-source wrapper implementation. It can also be used to port Unix software (which use pthreads) with little or no modification to the Windows platform. With some additional patches the last version 2.8.0 is compatible with 64-bit Windows systems. 2.9.0 is said to also be 64-bit compatible.
+The mingw-w64 project also contains a wrapper implementation of pthreads, winpthreads, which tries to use more native system calls than the Pthreads-w32 project.
+Interix environment subsystem available in the Windows Services for UNIX/Subsystem for UNIX-based Applications package provides a native port of the pthreads API, i.e. not mapped on Win32/Win64 API but built directly on the operating system syscall interface.
+
+
+== See also ==
+Execution model
+runtime system
+OpenMP
+Cilk/Cilk Plus
+Threading Building Blocks (TBB)
+Native POSIX Thread Library (NPTL)
+DCEThreads
+clone (Linux system call)
+Spurious wakeup
+Thread-local storage
+GNU Portable Threads
+FSU Pthreads
+Grand Central Dispatch (Apple's thread library)
+Beginthread (a subroutine within Windows for creating a new thread and unix thread)
+State Threads, an event driven approach to threading
+
+
+== References ==
+
+
+== Further reading ==
+David R. Butenhof. Programming with POSIX Threads. Addison-Wesley. ISBN 0-201-63392-2. 
+Bradford Nichols, Dick Buttlar, Jacqueline Proulx Farell. Pthreads Programming. O'Reilly & Associates. ISBN 1-56592-115-1.  CS1 maint: Multiple names: authors list (link)
+Charles J. Northrup. Programming with UNIX Threads. John Wiley & Sons. ISBN 0-471-13751-0. 
+Kay A. Robbins and Steven Robbins. UNIX Systems Programming. Prentice-Hall. ISBN 0-13-042411-0. 
+
+
+== External links ==
+The Open Group Base Specifications Issue 7, IEEE Std 1003.1

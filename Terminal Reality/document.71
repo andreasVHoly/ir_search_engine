@@ -1,0 +1,219 @@
+Quadtree
+
+
+A quadtree is a tree data structure in which each internal node has exactly four children. Quadtrees are most often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions. The regions may be square or rectangular, or may have arbitrary shapes. This data structure was named a quadtree by Raphael Finkel and J.L. Bentley in 1974. A similar partitioning is also known as a Q-tree. All forms of quadtrees share some common features:
+They decompose space into adaptable cells
+Each cell (or bucket) has a maximum capacity. When maximum capacity is reached, the bucket splits
+The tree directory follows the spatial decomposition of the quadtree.
+
+
+== Types ==
+Quadtrees may be classified according to the type of data they represent, including areas, points, lines and curves. Quadtrees may also be classified by whether the shape of the tree is independent of the order data is processed. Some common types of quadtrees are:
+
+
+=== The region quadtree ===
+The region quadtree represents a partition of space in two dimensions by decomposing the region into four equal quadrants, subquadrants, and so on with each leaf node containing data corresponding to a specific subregion. Each node in the tree either has exactly four children, or has no children (a leaf node). The region quadtree is a type of trie.
+A region quadtree with a depth of n may be used to represent an image consisting of 2n × 2n pixels, where each pixel value is 0 or 1. The root node represents the entire image region. If the pixels in any region are not entirely 0s or 1s, it is subdivided. In this application, each leaf node represents a block of pixels that are all 0s or all 1s.
+A region quadtree may also be used as a variable resolution representation of a data field. For example, the temperatures in an area may be stored as a quadtree, with each leaf node storing the average temperature over the subregion it represents.
+If a region quadtree is used to represent a set of point data (such as the latitude and longitude of a set of cities), regions are subdivided until each leaf contains at most a single point.
+
+
+=== Point quadtree ===
+The point quadtree is an adaptation of a binary tree used to represent two-dimensional point data. It shares the features of all quadtrees but is a true tree as the center of a subdivision is always on a point. The tree shape depends on the order in which data is processed. It is often very efficient in comparing two-dimensional, ordered data points, usually operating in O(log n) time.
+
+
+==== Node structure for a point quadtree ====
+A node of a point quadtree is similar to a node of a binary tree, with the major difference being that it has four pointers (one for each quadrant) instead of two ("left" and "right") as in an ordinary binary tree. Also a key is usually decomposed into two parts, referring to x and y coordinates. Therefore a node contains the following information:
+four pointers: quad[‘NW’], quad[‘NE’], quad[‘SW’], and quad[‘SE’]
+point; which in turn contains:
+key; usually expressed as x, y coordinates
+value; for example a name
+
+
+=== Edge quadtree ===
+Edge quadtrees are specifically used to store lines rather than points. Curves are approximated by subdividing cells to a very fine resolution. This can result in extremely unbalanced trees which may defeat the purpose of indexing.
+
+
+=== Polygonal map quadtree ===
+The polygonal map quadtree (or PM Quadtree) is a variation of quadtree which is used to store collections of polygons that may be degenerate (meaning that they have isolated vertices or edges). There are three main classes of PMQuadtrees, which vary depending on what information they store within each black node. PM3 quadtrees can store any amount of non-intersecting edges and at most one point. PM2 quadtrees are the same as PM3 quadtrees except that all edges must share the same end point. Finally PM1 quadtrees are similar to PM2, but black nodes can contain a point and its edges or just a set of edges that share a point, but you cannot have a point and a set of edges that do not contain the point.
+
+
+== Some common uses of quadtrees ==
+Image representation
+Spatial indexing
+Efficient collision detection in two dimensions
+View frustum culling of terrain data
+Storing sparse data, such as a formatting information for a spreadsheet or for some matrix calculations
+Solution of multidimensional fields (computational fluid dynamics, electromagnetism)
+Conway's Game of Life simulation program.
+State estimation
+Quadtrees are also used in the area of fractal image analysis
+Maximum disjoint sets
+Quadtrees are the two-dimensional analog of octrees.
+
+
+== Pseudo code ==
+The following pseudo code shows one means of implementing a quadtree which handles only points. There are other approaches available.
+
+
+=== Prerequisites ===
+It is assumed these structures are used.
+
+// Simple coordinate object to represent points and vectors
+struct XY
+{
+  float x;
+  float y;
+
+  function __construct(float _x, float _y) {...}
+}
+
+// Axis-aligned bounding box with half dimension and center
+struct AABB
+{
+  XY center;
+  float halfDimension;
+
+  function __construct(XY center, float halfDimension) {...}
+  function containsPoint(XY point) {...}
+  function intersectsAABB(AABB other) {...}
+}
+
+
+=== QuadTree class ===
+This class represents both one quad tree and the node where it is rooted.
+
+class QuadTree
+{
+  // Arbitrary constant to indicate how many elements can be stored in this quad tree node
+  constant int QT_NODE_CAPACITY = 4;
+
+  // Axis-aligned bounding box stored as a center with half-dimensions
+  // to represent the boundaries of this quad tree
+  AABB boundary;
+
+  // Points in this quad tree node
+  Array of XY [size = QT_NODE_CAPACITY] points;
+
+  // Children
+  QuadTree* northWest;
+  QuadTree* northEast;
+  QuadTree* southWest;
+  QuadTree* southEast;
+
+  // Methods
+  function __construct(AABB _boundary) {...}
+  function insert(XY p) {...}
+  function subdivide() {...} // create four children that fully divide this quad into four quads of equal area
+  function queryRange(AABB range) {...}
+}
+
+
+=== Insertion ===
+The following method inserts a point into the appropriate quad of a quadtree, splitting if necessary.
+
+class QuadTree
+{
+  ...
+
+  // Insert a point into the QuadTree
+  function insert(XY p)
+  {
+    // Ignore objects that do not belong in this quad tree
+    if (!boundary.containsPoint(p))
+      return false; // object cannot be added
+
+    // If there is space in this quad tree, add the object here
+    if (points.size < QT_NODE_CAPACITY)
+    {
+      points.append(p);
+      return true;
+    }
+
+    // Otherwise, subdivide and then add the point to whichever node will accept it
+    if (northWest == null)
+      subdivide();
+
+    if (northWest->insert(p)) return true;
+    if (northEast->insert(p)) return true;
+    if (southWest->insert(p)) return true;
+    if (southEast->insert(p)) return true;
+
+    // Otherwise, the point cannot be inserted for some unknown reason (this should never happen)
+    return false;
+  }
+}
+
+
+=== Query range ===
+The following method finds all points contained within a range.
+
+class QuadTree
+{
+  ...
+
+  // Find all points that appear within a range
+  function queryRange(AABB range)
+  {
+    // Prepare an array of results
+    Array of XY pointsInRange;
+
+    // Automatically abort if the range does not intersect this quad
+    if (!boundary.intersectsAABB(range))
+      return pointsInRange; // empty list
+
+    // Check objects at this quad level
+    for (int p := 0; p < points.size; p++)
+    {
+      if (range.containsPoint(points[p]))
+        pointsInRange.append(points[p]);
+    }
+
+    // Terminate here, if there are no children
+    if (northWest == null)
+      return pointsInRange;
+
+    // Otherwise, add the points from the children
+    pointsInRange.appendArray(northWest->queryRange(range));
+    pointsInRange.appendArray(northEast->queryRange(range));
+    pointsInRange.appendArray(southWest->queryRange(range));
+    pointsInRange.appendArray(southEast->queryRange(range));
+
+    return pointsInRange;
+  }
+}
+
+
+== See also ==
+Binary space partitioning
+Kd-tree
+Octree
+R-tree
+UB-tree
+Spatial database
+Subpaving
+Z-order curve
+
+
+== References ==
+
+
+=== Notes ===
+
+
+=== General references ===
+Raphael Finkel and J.L. Bentley (1974). "Quad Trees: A Data Structure for Retrieval on Composite Keys". Acta Informatica 4 (1): 1–9. doi:10.1007/BF00288933. 
+Mark de Berg, Marc van Kreveld, Mark Overmars, and Otfried Schwarzkopf (2000). Computational Geometry (2nd revised ed.). Springer-Verlag. ISBN 3-540-65620-0.  CS1 maint: Multiple names: authors list (link) Chapter 14: Quadtrees: pp. 291–306.
+Samet, Hanan; Webber, Robert (July 1985). "Storing a Collection of Polygons Using Quadtrees" (PDF). Retrieved 23 March 2012. 
+
+
+== External links ==
+A discussion of the Quadtree and an application
+Considerable discussion and demonstrations of Spatial Indexing
+Java Implementation
+Java tutorial
+C++ Implementation of a Quadtree used for spatial indexing of triangles
+Objective-C implementation of QuadTree used for GPS clustering
+SquareLanguage
+Working demonstration of Quadtree algorithm in Javascript
+MIT licensed Quadtree library in Javascript

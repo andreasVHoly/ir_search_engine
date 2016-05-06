@@ -1,0 +1,25 @@
+Solid Ground Curing
+
+
+Solid ground curing (SGC) is a photo-polymer-based additive manufacturing (or 3D printing) technology used for producing models, prototypes, patterns, and production parts, in which the production of the layer geometry is carried out by means of a high-powered UV lamp through a mask. As the basis of solid ground curing is the exposure of each layer of the model by means of a lamp through a mask, the processing time for the generation of a layer is independent of the complexity of the layer. SGC was developed and commercialized by Cubital Ltd. of Israel in 1986 in the alternative name of Solider System. While the method offered good accuracy and a very high fabrication rate, it suffered from high acquisition and operating costs due to system complexity. This led to poor market acceptance. While the company still exists, systems are no longer being sold. Nevertheless, it's still an interesting example of the many technologies other than stereolithography, its predeceasing rapid prototyping process that also utilizes photo-polymer materials. Though Objet Geometries Ltd. of Israel retains intellectual property of the process after the closure of Cubital Ltd. in 2002, the technology is no longer being produced.
+
+
+== Technology ==
+
+Solid ground curing utilizes the general process of hardening of photopolymers by a complete lighting and hardening of the entire surface, using specially prepared masks. In SGC process, each layer of the prototype is cured by exposing to an ultra violet (UV) lamp instead of by laser scanning. So that, every portion in a layer are simultaneously cured and do not require any post-curing processes. The process contains the following steps.
+The cross section of each slice layer is calculated based on the geometric model of the part and the desired layer thickness.
+The optical mask is generated conforming to each cross section.
+After leveling, the platform is covered with a thin layer of liquid photopolymer.
+The mask corresponding to the current layer is positioned over the surface of the liquid resin, and the resin is exposed to a high-power UV lamp.
+The residual liquid is removed from the workpiece by an aerodynamic wiper.
+A layer of melted wax is spread over the workpiece to fill voids. The wax is then solidified by applying a cold plate to it.
+The layer surface is trimmed to the desired thickness by a milling disk.
+The current workpiece is covered with a thin layer of liquid polymer and step 4 to 7 are repeated for each succeeding upper layer until the topmost layer has been processed.
+The wax is melted away upon completion of the part.
+
+
+== Advantages and disadvantages ==
+The primary advantage of the solid ground curing system is that it does not require a support structure since wax is used to fill the voids. The model produced by SGC process is comparatively accurate in the Z-direction because the layer is milled after each light-exposure process. Although it offers good accuracy coupled with high throughput, it produces too much waste and its operating costs are comparatively high due to system complexity.
+
+
+== References ==

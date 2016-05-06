@@ -1,0 +1,30 @@
+GridMathematica
+
+
+gridMathematica is a software product sold by Wolfram Research which extends the parallel processing capabilities of its main product Mathematica.
+
+
+== Features ==
+gridMathematica increases the number of parallel processes that Mathematica can run at once. Each parallel process applies an additional CPU to a task. A standard Mathematica license allows up to four parallel tasks to run at once. By increasing the number of tasks available, some types of problems can be solved in less time.
+Standard Mathematica consists of a front end which provides a user interface and a controlling process (the control kernel) which has computational tasks performed by up to four processes. Mathematica calls the processes performing computations "compute kernels". gridMathematica allows additional processes (compute kernels) to be used.
+gridMathematica is available in two options. The "gridMathematica Local" licenses the use of up to 8 compute kernels on a single computer. The "gridMathematica Server" option provides the ability to use up to 16 compute kernels distributed across more than one computer.
+Mathematica manages the interprocess communication such as queueing, virtual shared memory, and failure recovery.
+gridMathematica scales to larger grid systems when licenses are purchased. Compute processes can be located on a single multiprocessor computer or distributed over a remote heterogeneous network. 64 bit platforms can be used. The communication between the kernels and the front end uses the Mathlink interface, which is an interface designed to allow external programs to communicate with Mathematica. The communication is over TCP/IP  and use SSH or RSH for authentication.
+
+
+== History ==
+Before the release of Mathematica 7, gridMathematica and the now discontinued Mathematica Personal Grid Edition were the only versions of Mathematica to provide parallel computation. They worked as stand-alone products including Front End and Control Kernels and the Parallel Computing Toolkit developed by Roman Maeder, one of the original authors of Mathematica. With the release of Mathematica 7, the parallel programming tools were redesigned and included in Mathematica, and gridMathematica was redesigned to work directly with Mathematica.
+
+
+== See also ==
+Mathematica
+Supercomputer
+
+
+== References ==
+
+
+== External links ==
+Exploration of the capabilities of gridMathematica on the Altix ia64 HPC machines, University of Queensland VisLab.
+King's College London Centre for Financial Grid Computing
+Template:Wolfram Resarch

@@ -1,0 +1,46 @@
+EPCC
+
+
+EPCC, formerly the Edinburgh Parallel Computing Centre, is a supercomputing centre based at the University of Edinburgh. Since its foundation in 1990, its stated mission has been to accelerate the effective exploitation of novel computing throughout industry, academia and commerce.
+The University has supported high-performance computing (HPC) services since 1982. As of 2013, through EPCC, it supports the UK’s national high-end computing system, ARCHER (Advanced Research Computing High End Resource), and the UK Research Data Facility (UK-RDF).
+
+
+== Overview ==
+EPCC's activities include: consultation and software development for industry and academia; research into high-performance computing; hosting advanced computing facilities and supporting their users; training and education .
+The Centre offers two Masters programmes: MSc in High-Performance Computing and MSc in High-Performance Computing with Data Science .
+It is a member of the Globus Alliance and, through its involvement with the OGSA-DAI project, it works with the Open Grid Forum DAIS-WG.
+Around half of EPCC’s annual turnover comes from collaborative projects with industry and commerce. In addition to privately funded projects with businesses, EPCC receives funding from Scottish Enterprise, the Engineering and Physical Sciences Research Council and the European Commission.
+
+
+== History ==
+EPCC was established in 1990, following on from the earlier Edinburgh Concurrent Supercomputer Project. Since 2002, EPCC has been part of the university's School of Physics & Astronomy.
+It was extensively involved in all aspects of Grid computing including: developing Grid middleware and architecture tools to facilitate the uptake of e-Science; developing business applications and collaborating in scientific applications and demonstration projects.
+The Centre was a founder member of the UK’s National e-Science Centre (NeSC), the hub of Grid and e-Science activity in the UK. EPCC and NeSC were both partners in OMII-UK, which offers consultancy and products to the UK e-Science community. EPCC was also a founder partner of the Numerical Algorithms and Intelligent Software Centre (NAIS).
+EPCC has hosted a variety of supercomputers over the years, including several Meiko Computing Surfaces, a Thinking Machines CM-200 Connection Machine, and a number of Cray systems including a Cray T3D and T3E.
+
+
+== High-performance computing facilities ==
+EPCC manages a collection of HPC systems including ARCHER (the UK’s national high-end computing system) and a variety of smaller HPC systems. These systems are all available for industry use on a pay-per-use basis.
+Current systems hosted by EPCC include:
+ARCHER: As of 2014, the ARCHER facility is based around a Cray XC30 supercomputer that provides the central computational resource. It is supported by a number of additional components including: high-performance parallel filesystems, pre- and post-processing facilities, external login nodes, and UK-RDF, a large, resilient, long-term data facility.
+Blue Gene/Q: As of 2013, this system consists of 6144 compute nodes housed in 6 frames. Each node comprises a 16 core Powerpc64 A2 processor, with 16GB memory per node, giving a total of 98,304 cores and a peak performance of 1.26 PetaFlops.
+Recent systems hosted by EPCC include:
+HECToR: The 2010 system (Phase 2b, XT6) was the first production Cray XT6 24-core system in the world. It was contained in 20 cabinets and comprised a total of 464 compute blades. Each blade contained four compute nodes, each with two 12-core AMD Opteron 2.1 GHz Magny Cours processors. This amounted to a total of 44,544 cores. Each 12-core socket was coupled with a Cray SeaStar2 routing and communications chip. This was upgraded in late 2010 to the Cray Gemini interconnect. Each 12-core processor shared 16Gb of memory, giving a system total of 59.4 Tb. The theoretical peak performance of the phase 2b system was over 360 Tflops. HECToR was decommissioned in 2014.
+HPCx: Launched in 2002, when it was ranked ninth-fastest system in the world. HPCx was an IBM eServer p5 575 cluster, located at Daresbury Laboratory. It latterly operated under the complementarity capability computing scheme, preferably hosting workload which can not easily be accommodated on the HECToR system. EPCC supported the HPCx and HECToR systems on behalf of the UK research councils, making them available to UK academics and industry.
+Blue Gene : Launched in 2005, EPCC's Blue Gene/L was the first Blue Gene system available outside the USA. EPCC operated this 2048-compute core service for the University of Edinburgh.
+QCDOC: One of the world’s most powerful systems dedicated to the numerical investigation of quantum chromodynamics, which describes the interactions between quarks and gluons. It was developed in collaboration with a consortium of UK lattice physicists (UKQCD), Columbia University (NY), Riken Brookhaven National Laboratory and IBM.
+Maxwell: Maxwell was an innovative, award-winning FPGA-based supercomputer built by the FPGA High Performance Computing Alliance (FHPCA). Maxwell comprised 32 blades housed in an IBM BladeCenter. Each blade comprised one Xeon processor and two FPGAs. The FPGAs were connected by a fast communication subsystem which enabled the total of 64 FPGAs to be connected together in an 8×8 toroidal mesh. The processors were connected together via a PCI bus.
+
+
+== Sample Projects ==
+Projects that EPCC has been involved with that also have entries on Wikipedia.
+DEISA: Distributed European Infrastructure for Supercomputing Applications.
+PlanetHPC: Setting an R&D Roadmap for High Performance Computing in Europe
+
+
+== References ==
+
+
+== External links ==
+EPCC
+Projects at EPCC

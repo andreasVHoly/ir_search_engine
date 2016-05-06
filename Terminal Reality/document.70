@@ -1,0 +1,68 @@
+M-tree
+
+
+M-trees are tree data structures that are similar to R-trees and B-trees. It is constructed using a metric and relies on the triangle inequality for efficient range and k-nearest neighbor (k-NN) queries. While M-trees can perform well in many conditions, the tree can also have large overlap and there is no clear strategy on how to best avoid overlap. In addition, it can only be used for distance functions that satisfy the triangle inequality, while many advanced dissimilarity functions used in information retrieval do not satisfy this.
+
+
+== Overview ==
+
+As in any Tree-based data structure, the M-Tree is composed of Nodes and Leaves. In each node there is a data object that identifies it uniquely and a pointer to a sub-tree where its children reside. Every leaf has several data objects. For each node there is a radius  that defines a Ball in the desired metric space. Thus, every node  and leaf  residing in a particular node  is at most distance  from , and every node  and leaf  with node parent  keep the distance from it.
+
+
+== M-Tree construction ==
+
+
+=== Components ===
+An M-Tree has these components and sub-components:
+Non-leaf nodes
+A set of routing objects NRO.
+Pointer to Node's parent object Op.
+
+Leaf nodes
+A set of objects NO.
+Pointer to Node's parent object Op.
+
+Routing Object
+(Feature value of) routing object Or.
+Covering radius r(Or).
+Pointer to covering tree T(Or).
+Distance of Or from its parent object d(Or,P(Or))
+
+Object
+(Feature value of the) object Oj.
+Object identifier oid(Oj).
+Distance of Oj from its parent object d(Oj,P(Oj))
+
+
+=== Insert ===
+The main idea is first to find a leaf node N where the new object O belongs. If N is not full then just attach it to N. If N is full then invoke a method to split N. The algorithm is as follows:
+
+
+=== Split ===
+If the split method arrives to the root of the tree, then it choose two routing objects from N, and creates two new nodes containing all the objects in original N, and store them into the new root. If split methods arrives to a node N that is not the root of the tree, the method choose two new routing objects from N, re-arrange every routing object in N in two new nodes  and , and store these new nodes in the parent node  of original N. The split must be repeated if  has not enough capacity to store . The algorithm is as follow:
+
+
+== M-Tree Queries ==
+
+
+=== Range Query ===
+A range query is where a minimum similarity/maximum distance value is speciﬁed. For a given query object  and a maximum search distance , the range query range(Q, r(Q)) selects all the indexed objects  such that .
+Algorithm RangeSearch starts from the root node and recursively traverses all the paths which cannot be excluded from leading to qualifying objects.
+
+ is the identiﬁer of the object which resides on a separate data ﬁle.
+ is a sub-tree – the covering tree of 
+
+
+=== k-NN queries ===
+K Nearest Neighbor (k-NN) query takes the cardinality of the input set as an input parameter. For a given query object Q ∈ D and an integer k ≥ 1, the k-NN query NN(Q, k) selects the k indexed objects which have the shortest distance from Q, according to the distance function d. 
+
+
+== See also ==
+Segment tree
+Interval tree - A degenerate R-Tree for 1 dimension (usually time).
+Bounding volume hierarchy
+Spatial index
+GiST
+
+
+== References ==

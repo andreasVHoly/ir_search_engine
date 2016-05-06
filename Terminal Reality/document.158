@@ -1,0 +1,43 @@
+Apache Hama
+
+
+Apache Hama is a distributed computing framework based on Bulk Synchronous Parallel computing techniques for massive scientific computations e.g., matrix, graph and network algorithms. It is a Top Level Project under the Apache Software Foundation. It was created by Edward J. Yoon, who named it (short for "Hadoop Matrix") and was inspired by Google's Pregel large-scale graph computing framework described in 2010.
+
+
+== Architecture ==
+Hama consists of three major components: BSPMaster, GroomServers and Zookeeper.
+
+
+=== BSPMaster ===
+BSPMaster is responsible for:
+Maintaining groom server status.
+Controlling super steps in a cluster.
+Maintaining job progress information.
+Scheduling Jobs and Assigning tasks to groom servers
+Disseminating execution class across groom servers.
+Controlling fault.
+Providing users with the cluster control interface.
+A BSP Master and multiple grooms are started by the script. Then, the bsp master starts up with a RPC server for groom servers. Groom servers starts up with a BSPPeer instance and a RPC proxy to contact the bsp master. After started, each groom periodically sends a heartbeat message that encloses its groom server status, including maximum task capacity, unused memory, and so on.
+Each time the bsp master receives a heartbeat message, it brings up-to-date groom server status - the bsp master makes use of groom servers' status in order to effectively assign tasks to idle groom servers - and returns a heartbeat response that contains assigned tasks and others actions that a groom server has to do. For now, we have a FIFO job scheduler and very simple task assignment algorithms.
+
+
+=== GroomServer ===
+A Groom Server (shortly referred to as groom) is a process that performs bsp tasks assigned by BSPMaster. Each groom contacts the BSPMaster, and it takes assigned tasks and reports its status by means of periodical piggybacks with BSPMaster. Each groom is designed to run with HDFS or other distributed storages. Basically, a groom server and a data node should be run on one physical node.
+
+
+=== Zookeeper ===
+A Zookeeper is used to manage the efficient barrier synchronisation of the BSPPeers.
+
+
+== See also ==
+
+Bulk Synchronous Parallel
+Message Passing Interface
+
+
+== References ==
+
+
+== External links ==
+Apache Hama Website
+Apache Hama blog

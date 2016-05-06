@@ -1,0 +1,38 @@
+UPCRC Illinois
+
+
+UPCRC Illinois is one of two Universal Parallel Computing Research Centers launched in 2008 by Microsoft Corporation and Intel Corporation to accelerate the development of mainstream parallel computing for consumer and business applications such as desktop and mobile computing. UPCRC Illinois is a joint research effort of the Department of Computer Science and the Coordinated Science Laboratory at the University of Illinois at Urbana–Champaign. Research is conducted by faculty members and graduate students from the departments of Computer Science and Electrical and Computer Engineering. UPCRC Illinois research faculty are led by Co-Directors Marc Snir and Wen-mei Hwu.
+
+
+== Research ==
+The UPCRC Illinois whitepaper, Parallel Computing Research at Illinois: The UPCRC Agenda, expands in great detail about three primary research themes:
+Focus on Disciplined Parallel Programming—Sequential languages have evolved to support well-structured programming, and provide safety and modularity. Mechanisms for parallel control, synchronization, and communication have not yet undergone a similar evolution. The UPCRC Illinois takes the optimistic view that parallelism can be tamed for all to use by providing disciplined parallel programming models, supported by sophisticated development and execution environments.
+Multi-Front Attack on Multicore Programming—UPCRC Illinois is taking an integrated broad-based attack on parallelism at all levels of the system stack from applications down to hardware, using every weapon in the arsenal to enable performance, scalability, and programmability. This includes investigating disciplined parallel languages, metaprogramming and autotuners, and domain-specific environments; developing a powerful translation environment to exploit information from multiple sources at different times in the life of a program; developing an adaptive runtime to handle heterogeneity and automate resource management; developing new hardware mechanisms to enhance performance, scalability and programmability; and rethinking the customary division of labor among the layers of the system stack. Refactoring tools will help move existing code to new environments and formal methods-based techniques and tools will help ensure correctness.
+Human-Centric Vision of Future Consumer Applications—Driving the agenda is a human-centric vision of future consumer applications, backed up by research on application technologies to enable quantum-leaps in immersive visual realism, reliable natural-language processing, and robust telepresence. Investigating these applications reveals new parallel patterns and serves as a testbed for evaluating, refining, and ultimately proving UPCRC Illinois ideas on multicore programming.
+
+
+== Parallel Computing History at Illinois ==
+Illinois history in parallel computing stretches more than 40 years. From the first academic parallel supercomputer, the ILLIAC IV started in 1964, to today’s work to install the first petascale computer, Blue Waters, Illinois has defined the landscape of parallel computing. Contributions from past and current Illinois faculty include:
+ILLIAC
+CEDAR
+Illinois Cache Coherence (MESI) Protocol
+OpenMP
+MPI
+Path Pascal
+Actors
+Java and C++ memory models
+Compilers and auto-parallelization techniques – Analyzer, Polaris, Parafrase, IMPACT, LLVM
+Race detection techniques
+Parallel runtime systems – Chare Kernel, Charm++
+IBM/DARPA PERCS – a precursor to IBM’s Power 7
+AVIO to detect atomicity violations
+Parallel programming patterns
+
+
+== References ==
+
+
+== External links ==
+UPCRC Illinois website
+Parallel@Illinois website
+Coordinated Science Laboratory website

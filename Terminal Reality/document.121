@@ -1,0 +1,24 @@
+Massively parallel (computing)
+
+
+In computing, massively parallel refers to the use of a large number of processors (or separate computers) to perform a set of coordinated computations in parallel (simultaneously).
+In one approach, e.g., in grid computing the processing power of a large number of computers in distributed, diverse administrative domains, is opportunistically used whenever a computer is available. An example is BOINC, a volunteer-based, opportunistic grid system, whereby the grid provides power only on a best effort basis.
+In another approach, a large number of processors are used in close proximity to each other, e.g., in a computer cluster. In such a centralized system the speed and flexibility of the interconnect becomes very important, and modern supercomputers have used various approaches ranging from enhanced Infiniband systems to three-dimensional torus interconnects.
+The term also applies to massively parallel processor arrays (MPPAs), a type of integrated circuit with an array of hundreds or thousands of central processing units (CPUs) and Random Access Memory (RAM) banks. These processors pass work to one another through a reconfigurable interconnect of channels. By harnessing a large number of processors working in parallel, an MPPA chip can accomplish more demanding tasks than conventional chips. MPPAs are based on a software parallel programming model for developing high-performance embedded system applications.
+Goodyear MPP was an early implementation of a massively parallel computer architecture. MPP architectures are the second most common supercomputer implementations after clusters, as of November 2013.
+
+
+== See also ==
+Multiprocessing
+Parallel computing
+Process oriented programming
+Shared nothing architecture (SN)
+Symmetric multiprocessing (SMP)
+Connection Machine
+Cellular automaton
+CUDA framework
+manycore
+vector processor
+
+
+== References ==

@@ -1,0 +1,64 @@
+PLY (file format)
+
+
+PLY is a computer file format known as the Polygon File Format or the Stanford Triangle Format. It was principally designed to store three-dimensional data from 3D scanners. The data storage format supports a relatively simple description of a single object as a list of nominally flat polygons. A variety of properties can be stored, including: color and transparency, surface normals, texture coordinates and data confidence values. The format permits one to have different properties for the front and back of a polygon. There are two versions of the file format, one in ASCII, the other in binary.
+
+
+== The file format ==
+Files are organised as a header, that specifies the elements of a mesh and their types, followed by the list of elements itself. The elements are usually vertices and faces, but may include other entities such as edges, samples of range maps, and triangle strips.
+The header of both ASCII and binary files is ASCII text. Only the numerical data that follows the header is different between the two versions. The header always starts with a "magic number", a line containing
+
+ply
+
+which identifies the file as a PLY file. The second line indicates which variation of the PLY format this is. It should be one of:
+
+format ascii 1.0
+format binary_little_endian 1.0
+format binary_big_endian 1.0
+
+Future versions of the standard will change the revision number at the end - but 1.0 is the only version currently in use.
+Comments may be placed in the header by using the word comment at the start of the line. Everything from there until the end of the line should then be ignored. e.g.:
+
+comment This is a comment!
+
+The 'element' keyword introduces a description of how some particular data element is stored and how many of them there are. Hence, in a file where there are 12 vertices, each represented as a floating point (X,Y,Z) triple, one would expect to see:
+
+element vertex 12
+property float x
+property float y
+property float z
+
+Other 'property' lines might indicate that colours or other data items are stored at each vertex and indicate the data type of that information. Regarding the data type there are two variants, depending on the source of the ply file. The type can be specified with one of char uchar short ushort int uint float double, or one of int8 uint8 int16 uint16 int32 uint32 float32 float64. For an object with ten polygonal faces, one might see:
+
+element face 10
+property list uchar int vertex_indices
+
+The word 'list' indicates that the data is a list of values, the first of which is the number of entries in the list (represented as a 'uchar' in this case). In this example each list entry is represented as an 'int'. At the end of the header, there must always be the line:
+
+end_header
+
+
+== ASCII or binary format ==
+In the ASCII version of the format, the vertices and faces are each described one to a line with the numbers separated by white space. In the binary version, the data is simply packed closely together at the 'endianness' specified in the header and with the data types given in the 'property' records. For the common "property list..." representation for polygons, the first number for that element is the number of vertices that the polygon has and the remaining numbers are the indices of those vertices in the preceding vertex list.
+
+
+== History ==
+The PLY format was developed in the mid-90s by Greg Turk and others in the Stanford graphics lab under the direction of Marc Levoy. Its design was inspired by the Wavefront .obj format, but the Obj format lacked extensibility for arbitrary properties and groupings, so the "property" and "element" keywords were devised to generalize the notions of vertices, faces, associated data, and other groupings.
+
+
+== See also ==
+STL (file format)
+Additive Manufacturing File Format
+Wavefront .obj file, a 3D geometry definition file format with .obj file extension
+MeshLab: an open source Windows, Mac OS X and Linux application for visualizing, processing and converting three-dimensional meshes to or from the PLY file format.
+CloudCompare, another open source application for handling PLY files.
+Mathematica A technical computing system that can work with PLY files.
+
+
+== External links ==
+PLY - Polygon File Format
+Some tools for working with PLY files (C source code)
+rply - An Ansi C software library for reading and writing PLY files (MIT license)
+libply - A C++ software library for reading and writing PLY files (GNU license)
+Another C++ software library for reading and writing PLY files (GPL 3.0 license)
+A repository of 3D models stored in the PLY format

@@ -1,0 +1,30 @@
+Dendrogram
+
+
+A dendrogram (from Greek dendro "tree" and gramma "drawing") is a tree diagram frequently used to illustrate the arrangement of the clusters produced by hierarchical clustering. Dendrograms are often used in computational biology to illustrate the clustering of genes or samples, sometimes on top of heatmaps.
+
+
+== Clustering example ==
+For a clustering example, suppose this data is to be clustered using Euclidean distance as the distance metric.
+
+The hierarchical clustering dendrogram would be as such:
+
+The top row of nodes represents data (individual observations), and the remaining nodes represent the clusters to which the data belong, with the arrows representing the distance (dissimilarity).
+The distance between merged clusters is monotone increasing with the level of the merger: the height of each node in the plot is proportional to the value of the intergroup dissimilarity between its two daughters (the top nodes representing individual observations are all plotted at zero height).
+
+
+== References ==
+
+Galili, T., 2015. dendextend: an R package for visualizing, adjusting and comparing trees of hierarchical clustering. Bioinformatics, p.btv428. Available at: http://dx.doi.org/10.1093/bioinformatics/btv428.
+
+
+== See also ==
+Cladogram
+Hierarchical clustering
+MEGA, a free software for drawing dendrograms
+yEd, a free software for drawing and automatically arranging dendrograms
+Distance matrices in phylogeny
+
+
+== External links ==
+Iris dendrogram - Example of using a dendrogram to visualize the 3 clusters from hierarchical clustering using the “complete” method vs the real species category (using R).

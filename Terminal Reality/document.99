@@ -1,0 +1,31 @@
+Recyclebot
+
+
+A recyclebot (or RecycleBot) is an open-source hardware device for converting waste plastic into filament for open-source 3D printers like the RepRap. Making DIY 3D printer filament at home is both less costly and better for the environment than purchasing conventional 3D printer filament.
+
+
+== Recyclebot technology ==
+RepRap 3D printers have been shown to reduce costs for consumers by offsetting purchases that can be printed. The RepRap's plastic feedstock is one area where cost can still be reduced. In 2014 professor Joshua Pearce pointed out that "Filament is retailing for between $36 and $50 a kilogram and you can produce your own filament for 10 cents a kilogram if you use recycled plastic" The device can thus further enhance RepRap affordability by reducing operating costs. In addition, to assisting prosumers to reduce their reliance on purchased products, following an open source model, the RepRap and the recyclebot, have made it feasible for 3D printing to be used for small-scale manufacturing to aid sustainable development.
+The RecycleBot is an open-source hardware project – thus its plans are freely available on the Internet.
+RecycleBot curated by academics in Canada and the U.S. on Appropedia (here) and at the RepRap Wiki (here). For example, the full parts list (or bill of materials for the metal and electronic components and the controls are available on Thingiverse.
+Lyman Filament Extruder – a DIY recyclebot
+It has been postulated that recycled filament production could also offer an alternative income source by the Ethical Filament Foundation or as a form of "fair trade filament".
+
+
+== History ==
+The history of the RecycleBot was largely derived from the work on the RepRap Wiki under GNU Free Documentation License1.2.
+The first recyclebot was developed by university students in Australia. This design was a proof of concept and was a hand-powered design, which thus had a good environmental or ecological footprint did not create filament of high enough quality to be useful for 3D printers. The design for the waste plastic extruder (Recyclebot v2.0 and v2.1) developed at Queen's University Canada and Michigan Tech was heavily influenced by the Web4Deb extruder, which extrudes HDPE for use as a growth medium in aquaponics. This design for the recyclebot was developed, tested and published in the peer-reviewed rapid prototyping literature. This device proved viable for producing 3D printing filament. The Recyclebot v2.2 is now being carried out by the Michigan Tech in Open Sustainability Technology Research Group. Many makers or DIY enthusiasts have made various versions of RecycleBots, with the most notable being the Lyman Filament Extruder as Lyman, a retired engineer won a design contest to make a low-cost 3D filament fabrication system. There are now many types of recyclebots, many of which are at the early stages of commercialization (in 2014).
+
+
+== Commercialization ==
+Several versions of open-source RecycleBots have been commercialized via crowd funding such as a with Kickstarter that include:
+Filastruder 
+Filafab
+Filabot
+
+
+== Futurist speculation ==
+It has been hypothesized that such recycling with recyclebots and distributed production with 3D printing will lead to a zero marginal cost society by Jeremy Rifkin. The science-fiction author, Bruce Sterling also wondered in Wired if recyclebots and 3D printers might be used to turn waste into guns. Recyclebots can provide a new method of recycling.
+
+
+== References ==

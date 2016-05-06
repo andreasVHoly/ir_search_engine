@@ -1,0 +1,71 @@
+Organ printing
+
+
+A printable organ is an artificially constructed device designed for organ replacement, produced using 3D printing techniques. The primary purpose of printable organs is in transplantation. Research is currently being conducted on artificial heart, kidney, and liver structures, as well as other major organs. For more complicated organs, such as the heart, smaller constructs such as heart valves have also been the subject of research. Some printed organs have already reached clinical implementation, and primarily include hollow structures such as the bladder, as well as vascular structures such as urine tubes.
+3D printing allows for the layer-by-layer construction of a particular organ structure to form a cell scaffold. This can be followed by the process of cell seeding, in which cells of interest are pipetted directly onto the scaffold structure. Additionally, the process of integrating cells into the printable material itself, instead of performing seeding afterwards, has been explored.
+Modified inkjet printers have been used to produce three-dimensional biological tissue. Printer cartridges are filled with a suspension of living cells and a smart gel, the latter used for providing structure. Alternating patterns of the smart gel and living cells are printed using a standard print nozzle, with cells eventually fusing together to form tissue. When completed, the gel is cooled and washed away, leaving behind only live cells.
+
+
+== History ==
+3D printing for producing a cellular construct was first introduced in 2003, when Thomas Boland of Clemson University patented the use of inkjet printing for cells. This process utilized a modified spotting system for the deposition of cells into organized 3D matrices placed on a substrate.
+Since Boland's initial findings, the 3D printing of biological structures, also known as bioprinting, has been further developed to encompass the production of tissue and organ structures, as opposed to cell matrices. Additionally, more techniques for printing, such as extrusion bioprinting, have been researched and subsequently introduced as a means of production.
+Organ printing has been approached as a potential solution for the global shortage of donor organs. Organs that have been successfully printed and implemented in a clinical setting are either flat, such as skin, vascular, such as blood vessels, or hollow, such as the bladder. When artificial organs are prepared for transplantation, they are often produced with the recipient's own cells.
+More complex organs, namely those that consist of solid cellular structures, are undergoing research; these organs include the heart, pancreas, and kidneys. Estimates for when such organs can be introduced as a viable medical treatment vary.
+In 2013, the company Organovo produced a human liver using 3D bioprinting, though it is not suitable for transplantation, and has primarily been used as a medium for drug testing.
+
+
+== 3D printing techniques ==
+3D printing for the manufacturing of artificial organs has been a major topic of study in biological engineering. As the rapid manufacturing techniques entailed by 3D printing become increasingly efficient, their applicability in artificial organ synthesis has grown more evident. Some of the primary benefits of 3D printing lie in its capability of mass-producing scaffold structures, as well as the high degree of anatomical precision in scaffold products. This allows for the creation of constructs that more effectively resemble the microstructure of a natural organ or tissue structure.
+Organ printing using 3D printing can be conducted using a variety of techniques, each of which confers specific advantages that can be suited to particular types of organ production. Two of the most prominent types of organ printing are drop-based bioprinting and extrusion bioprinting. Numerous other ones do exist, though are not as commonly used, or are still in development.
+
+
+=== Drop-based bioprinting (Inkjet) ===
+Drop-based bioprinting creates cellular constructs using individual droplets of a designated material, which has oftentimes been combined with a cell line. Upon contact with the substrate surface, each droplet begins to polymerize, forming a larger structure as individual droplets begin to coalesce. Polymerization is instigated by the presence of calcium ions on the substrate, which diffuse into the liquified bioink and allow for the formation of a solid gel. Drop-based bioprinting is commonly used due to its efficient speed, though this aspect makes it less suitable for more complicated organ structures.
+
+
+=== Extrusion bioprinting ===
+Extrusion bioprinting involves the constant deposition of a particular printing material and cell line from an extruder, a type of mobile print head. This tends to be a more controlled and gentler process for material or cell deposition, and allows for greater cell densities to be used in the construction of 3D tissue or organ structures. However, such benefits are set back by the slower printing speeds entailed by this technique. Extrusion bioprinting is often coupled with UV light, which photopolymerizes the printed material to form a more stable, integrated construct.
+
+
+== Printing materials ==
+Materials for 3D printing usually consist of alginate or fibrin polymers that have been integrated with cellular adhesion molecules, which support the physical attachment of cells. Such polymers are specifically designed to maintain structural stability and be receptive to cellular integration. The term "bioink" has been used as a broad classification of materials that are compatible with 3D bioprinting.
+Printing materials must fit a broad spectrum of criteria, one of the foremost being biocompatibility. The resulting scaffolds formed by 3D printed materials should be physically and chemically appropriate for cell proliferation. Biodegradability is another important factor, and insures that the artificially formed structure can be broken down upon successful transplantation, to be replaced by a completely natural cellular structure. Due to the nature of 3D printing, materials used must be customizable and adaptable, being suited to wide array of cell types and structural conformations.
+Hydrogel alginates have emerged as one of the most commonly used materials in organ printing research, as they are highly customizable, and can be fine-tuned to simulate certain mechanical and biological properties characteristic of natural tissue. The ability of hydrogels to be tailored to specific needs allows them to be used as an adaptable scaffold material, that are suited for a variety of tissue or organ structures and physiological conditions.
+
+
+== Challenges ==
+While breakthroughs have been made with regards to producing printable organs, its clinical implementation, namely in regards to complex organs, requires further research. Cell proliferation provided by bioprinting is conducted in an artificial environment, which is devoid of natural biological signaling and processes; the lack of these qualities inhibits the development of appropriate cellular morphology and differentiation. When present, these conditions allow the printed organ to more accurately mimic in vivo conditions and adopt the corresponding structure and function, as opposed to growing as a shaped scaffold of cells.
+Another challenge is the need to vascularize artificial structures for cellular sustainability. Vascular structures, such as blood vessels, along with artificial vascular constructs, allow for the diffusion of key nutrients and oxygen. However, they have not been fully integrated into the technique of bioprinting.
+
+
+== Ethical debate ==
+As all the technology advances, organ printing brings along all the expectations and ethical debate that divides society. In a statement by Pete Basiliere, research director at Gartner, it “raise(s) a number of questions that remain unanswered. What happens when complex 'enhanced' organs involving non-human cells are made? Who will control the ability to produce them? Who will ensure the quality of the resulting organs?" The rapid emergence of 3D printing will also create major challenges in relation to intellectual property (IP) theft. Gartner predicts that by 2018, 3D printing will result in the loss of at least $100 billion per year in IP globally. In addition, some religious and conservative groups see organ printing as an immoral manipulation of nature. There are other viewpoints suggesting that organ printing will lead to another issue in social differentiation, with the means to personal organ regeneration limited by financial standing.
+
+
+== See also ==
+Tissue engineering
+Artificial organ
+3D printing
+Rapid prototyping
+Organ transplantation
+
+
+== External links ==
+http://feed.proteinos.com/item/3820
+http://www.newscientist.com/article.ns?id=dn3292
+Boland T, Mironov V, Gutowska A, Roth EA, Markwald RR (2003). "Cell and organ printing 2: Fusion of cell aggregates in three-dimensional gels". The Anatomical Record Part A: Discoveries in Molecular, Cellular, and Evolutionary Biology 272A (2): 497–502. doi:10.1002/ar.a.10059. PMID 12740943.  CS1 maint: Multiple names: authors list (link)
+Jakab K, Neagu A, Mironov V, Markwald RR, Forgacs G (March 2004). "Engineering biological structures of prescribed shape using self-assembling multicellular systems". Proc Natl Acad Sci USA. 101 (9): 2864–9. doi:10.1073/pnas.0400164101. PMC 365711. PMID 14981244.  CS1 maint: Multiple names: authors list (link)
+Saunders (PDF)
+Organ printing: Fiction or science?
+Regenovo: the biomaterial 3D printer used to create living tissue
+Laitman J, Markwald R (2003). "What's hot in anatomy: Of talking heads and drawing organs". The Anatomical Record Part B: The New Anatomist 273B (1): 120–1. doi:10.1002/ar.b.10025. 
+Luo Y, Shoichet MS (2004). "A photolabile hydrogel for guided three-dimensional cell growth and migration". Nature Materials 3 (4): 249–53. doi:10.1038/nmat1092. PMID 15034559. 
+pictures
+Researchers:
+Vladmir Mironov http://cba.musc.edu/faculty/MironovV.htm
+Thomas Boland http://people.clemson.edu/~tboland/OP/
+Anthony Atala http://www1.wfubmc.edu/oprd/physdetail.htm?PhysicianID=843
+Anna Gutowska (developed the thermo sensitive smartgel)
+
+
+== References ==

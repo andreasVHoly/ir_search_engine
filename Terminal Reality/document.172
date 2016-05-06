@@ -1,0 +1,55 @@
+AppScale
+
+
+AppScale is an open-source cloud computing platform that automatically deploys and scales unmodified Google App Engine applications over public and private cloud systems, as well as on-premises clusters. AppScale is modeled on the App Engine APIs and has support for Go, Java, PHP, and Python applications.
+The goal of AppScale is to provide developers with a rapid, API-driven development platform that can run applications on any cloud infrastructure. AppScale decouples app logic from its service ecosystem to give developers and cloud administrators control over app deployment, data storage, resource use, backup and migration.
+AppScale is developed and maintained by AppScale Systems, Inc., based in Santa Barbara, California, and Google.
+
+
+== History ==
+AppScale began as a research project at the University of California, Santa Barbara Computer Science Department under the supervision of Professor Chandra Krintz. The project was originally funded by the NSF, with additional funding from Google, IBM and NIH. In 2012, co-founders Dr. Chandra Krintz, Chief Scientist, Dr. Navraj Chohan, Development Lead, and Woody Rollins, CEO founded AppScale Systems to commercialize the private PaaS AppScale technology. Rollins, a pioneer in private cloud infrastructure, was a co-founder and former CEO of Eucalyptus Systems. In 2014, Graziano Obertelli joined AppScale as VP of Operations from Eucalyptus Systems, where he was a co-founder.
+In April 2014, AppScale Systems was named a 2014 Cool Vendor in PaaS by Gartner, Inc. In September 2014, AppScale Systems won a Bossie Award from InfoWorld for best open source data center and cloud software
+
+
+== Open source components ==
+Datastore API: Apache Cassandra and Apache ZooKeeper
+Memcache API: memcached
+Task Queue API: RabbitMQ and Celery Task Queue
+XMPP API: ejabberd
+Channel API: strophe.js and ejabberd
+Blobstore API: Apache Cassandra and Apache ZooKeeper
+Images API: Python Imaging Library (PIL)
+Cron API: Vixie Cron
+
+
+== Supported platforms ==
+Amazon EC2
+CloudStack
+DigitalOcean
+Eucalyptus
+Google Compute Engine
+Kernel-based Virtual Machine (KVM)
+Microsoft Azure
+OpenStack
+RackSpace
+SoftLayer (IBM)
+Xen
+
+
+== Supported languages ==
+Go
+Java
+PHP
+Python
+
+
+== See also ==
+Cloud computing
+Platform as a service
+
+
+== External links ==
+Official website
+
+
+== References ==

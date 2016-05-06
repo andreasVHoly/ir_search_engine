@@ -1,0 +1,48 @@
+Combinatorial map
+
+
+A combinatorial map is a combinatorial object modelling topological structures with subdivided objects. Historically, the concept was introduced informally by J. Edmonds for polyhedral surfaces  which are planar graphs. It was given its first definite formal expression under the name "Constellations" by A. Jacques  but the concept was already extensively used under the name "rotation" by Gerhard Ringel and J.W.T. Youngs in their famous solution of the Heawood map-coloring problem. The term "constellation" was not retained and instead "combinatorial map" was favored. The concept was later extended to represent higher-dimensional orientable subdivided objects. Combinatorial maps are used as efficient data structures in image representation and processing, in geometrical modeling. This model is related to simplicial complexes and to combinatorial topology. Note that combinatorial maps were extended to generalized maps that allow also to represent non-orientable objects like the Möbius strip and the Klein bottle. A combinatorial map is a boundary representation model; it represents object by its boundaries.
+
+
+== Motivation ==
+Several applications require a data structure to represent the subdivision of an object. For example, a 2D object can be decomposed into vertices (0-cells), edges (1-cells), and faces (2-cells). More generally, an n-dimensional object is composed with cells of dimension 0 to n. Moreover, it is also often necessary to represent neighboring relations between these cells.
+Thus, we want to describe all the cells of the subdivision, plus all the incidence and adjacency relations between these cells. When all the represented cells are simplexes, a simplicial complex can be used, but when we want to represent any type of cells, we need to use cellular topological model, like combinatorial maps or generalized maps.
+
+
+== Planar graph representation ==
+The first works about combinatorial maps   develop combinatorial representations of graphs on surfaces which includes planar graphs: A 2-dimensional combinatorial map (or 2-map) is a triplet M = (D, σ, α) such that:
+D is a finite set of darts;
+σ is a permutation on D;
+α is an involution on D with no fixed point.
+Intuitively, a 2-map corresponds to a planar graph where each edge is subdivided into two darts (sometimes also called half-edges). The permutation σ gives, for each dart, the next dart by turning around the vertex in the positive orientation; the other permutation α gives, for each dart, the other dart of the same edge.
+α allows one to retrieve edges (alpha for arête in French), and σ allows one to retrieve vertices (sigma for sommet in French). We define φ = σ o α which gives, for each dart, the next dart of the same face (phi for face also in French).
+So, there are two ways to represent a combinatorial map depending if the permutation is σ or φ (see example below). These two representations are dual to each other: vertices and faces are exchanged.
+
+
+== General definition ==
+The definition of combinatorial map in any dimension is given in  and:
+An n-dimensional combinatorial map (or n-map) is a (n + 1)-tuple M = (D, β1, ..., βn) such that:
+D is a finite set of darts;
+β1 is a permutation on D;
+β2, ..., βn are involutions on D;
+βi o βj is an involution if i + 2 ≤ j (i, j ∈ { 1, ,..., n }).
+An n-dimensional combinatorial map represents the subdivision of a closed orientable n-dimensional space. A dart is an abstract element which is only required to define one-to-one mappings. The last line of this definition fixes constraints which guarantee the topological validity of the represented object: a combinatorial map represents a quasi-manifold subdivision. The initial definition of 2-dimensional combinatorial maps can be retrieved by fixing n = 2 and renaming σ by β1 and α by β2.
+
+
+== See also ==
+Boundary representation
+Generalized maps
+Quad-edge data structure
+Rotation system
+Simplicial complex
+Winged edge
+
+
+== References ==
+
+
+== External links ==
+Combinatorial maps in CGAL, the Computational Geometry Algorithms Library:
+Damiand, Guillaume. "Combinatorial maps". Retrieved October 2011. 
+
+Combinatorial maps in CGoGN, Combinatorial and Geometric modeling with Generic N-dimensional Maps

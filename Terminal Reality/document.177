@@ -1,0 +1,73 @@
+Cloud computing architecture
+
+
+Cloud computing architecture refers to the components and subcomponents required for cloud computing. These components typically consist of a front end platform (fat client, thin client, mobile device), back end platforms (servers, storage), a cloud based delivery, and a network (Internet, Intranet, Intercloud). Combined, these components make up cloud computing architecture.
+
+
+== Cloud client platforms ==
+
+Cloud computing architectures consist of front-end platforms called clients or cloud clients. These clients comprise servers, fat (or thick) clients, thin clients, zero clients, tablets and mobile devices. These client platforms interact with the cloud data storage via an application (middleware), via a web browser, or through a virtual session.
+
+
+=== The zero client ===
+The zero or ultra-thin client initializes the network to gather required configuration files that then tell it where its OS binaries are stored. The entire zero client device runs via the network. This creates a single point of failure, in that, if the network goes down, the device is rendered useless.
+
+
+== Cloud storage ==
+
+An online network storage where data is stored and accessible to multiple clients. Cloud storage is generally deployed in the following configurations: public cloud, private cloud, community cloud, or some combination of the three also known as hybrid cloud.
+In order to be effective, the cloud storage needs to be agile, flexible, scalable, multi-tenancy, and secure.
+
+
+== Cloud based delivery ==
+
+
+=== Software as a service (SaaS) ===
+
+The software-as-a-service (SaaS) service-model involves the cloud provider installing and maintaining software in the cloud and users running the software from their cloud clients over the Internet (or Intranet). The users' client machines require no installation of any application-specific software - cloud applications run on the server (in the cloud). SaaS is scalable, and system administration may load the applications on several servers. In the past, each customer would purchase and load their own copy of the application to each of their own servers, but with the SaaS the customer can access the application without installing the software locally. SaaS typically involves a monthly or annual fee.
+Software as a service provides the equivalent of installed applications in the traditional (non-cloud computing) delivery of applications.
+Software as a service has four common approaches:
+single instance
+multi instance
+multi-tenant
+flex tenancy
+
+
+=== Development as a service (DaaS) ===
+Development as a service is web based, community shared development tools. This is the equivalent to locally installed development tools in the traditional (non-cloud computing) delivery of development tools.
+
+
+=== Platform as a service (PaaS) ===
+
+Platform as a service is cloud computing service which provides the users with application platforms and databases as a service. This is equivalent to middleware in the traditional (non-cloud computing) delivery of application platforms and databases. We can take on example for this as Microsoft Azure provides platform as services for multilple language,if we use .net platform then we can build products uisng .net framework which will be provided by Microsoft Azure.
+
+
+=== Infrastructure as a service (IaaS) ===
+Infrastructure as a service is taking the physical hardware and going completely virtual (e.g. all servers, networks, storage, and system management all existing in the cloud). This is the equivalent to infrastructure and hardware in the traditional (non-cloud computing) method running in the cloud. In other words, businesses pay a fee (monthly or annually) to run virtual servers, networks, storage from the cloud. This will mitigate the need for a data center, heating, cooling, and maintaining hardware at the local level.
+
+
+== Cloud networking ==
+Generally, the cloud network layer should offer:
+High bandwidth (low latency)
+Allowing users to have uninterrupted access to their data and applications.
+Agile network
+On-demand access to resources requires the ability to move quickly and efficiently between servers and possibly even clouds.
+Network security
+Security is always important, but when you are dealing with multi-tenancy, it becomes much more important because you're dealing with segregating multiple customers.
+
+
+== See also ==
+Cloud collaboration
+Cloud computing
+Cloud computing comparison
+Cloud database
+Cloud storage
+
+
+== Further reading ==
+Reese, G. (2009). Cloud Application Architectures: Building Applications and Infrastructure in the Cloud. Sebastopol, CA: O'Reilly Media, Inc. (2009).
+Rhoton, J. and Haukioja, R. (2011). Cloud Computing Architected: Solution Design Handbook. Recursive Limited, 2011. ISBN 0-9563556-1-7.
+Shroff, Dr. Gautam. Enterprise Cloud Computing: Technology, Architecture, Applications.
+
+
+== References ==

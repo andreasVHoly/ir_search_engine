@@ -1,0 +1,287 @@
+Apache CloudStack
+
+
+CloudStack is an open source cloud computing software for creating, managing, and deploying infrastructure cloud services. It uses existing hypervisors such as KVM, VMware vSphere, and XenServer/XCP for virtualization. In addition to its own API, CloudStack also supports the Amazon Web Services (AWS) API and the Open Cloud Computing Interface from the Open Grid Forum.
+
+
+== History ==
+CloudStack was originally developed by Cloud.com, formerly known as VMOps. In May 2010, Cloud.com released most of CloudStack as free software under the GNU General Public License, version 3 (GPLv3). They kept about 5% proprietary. Cloud.com and Citrix both supported OpenStack, another Apache-licensed cloud computing program, at its announcement in July 2010.
+Citrix purchased Cloud.com on July 12, 2011, for approximately $200 million. In August 2011, Citrix released the remaining code under GPLv3 and continued moving towards more open processes. In February 2012, Citrix released CloudStack 3.0. Among other features, this added support for Swift, OpenStack's S3-like object storage solution. In April 2012, Citrix donated CloudStack to the Apache Software Foundation (ASF), where it was accepted into the Apache Incubator; Citrix changed the license to the Apache License version 2. As part of this change, Citrix also ceased their involvement in OpenStack. On November 6, 2012, CloudStack 4.0.0-incubating was announced, the first stable release after joining ASF. On March 20, 2013, CloudStack graduated from Apache Incubator and became a Top-Level Project (TLP) of ASF. The first stable (maintenance) release after graduation is CloudStack 4.0.2.
+
+
+== Key features ==
+Built-in high-availability for hosts and VMs
+AJAX web GUI for management
+AWS API compatibility
+Hypervisor agnostic
+Snapshot management
+Usage metering
+Network management (VLAN's, security groups)
+Virtual routers, firewalls, load balancers
+Multi-role support
+
+
+== Supported Hypervisors ==
+LXC Host Containers on RHEL 7
+Windows Server 2012 R2 (with Hyper-V Role enabled)
+Hyper-V 2012 R2
+CentOS 6.2+ and 7.1 with KVM
+Red Hat Enterprise Linux 6.2 and 7.1 with KVM
+Ubuntu 14.04 with KVM
+XenServer versions 6.1, 6.2 SP1 and 6.5 with latest hot fixes
+VMware versions 5.0 Update 3a, 5.1 Update 2a, and 5.5 Update 2
+
+
+== BareMetal Hosts ==
+RHEL or CentOS, v6.2 or 6.3 and 7.1
+Fedora 17
+Ubuntu 12.04
+
+
+== Deployment Architecture ==
+The minimum production installation consists of one machine running the CloudStack Management Server and another machine to act as the cloud infrastructure (in this case, a very simple infrastructure consisting of one host running hypervisor software). In its smallest deployment, a single machine can act as both the Management Server and the hypervisor host (using the KVM hypervisor).
+Multiple management servers can be configured for redundancy and load balancing, all pointing to a common MySQL database.
+
+
+== Users ==
+Apache CloudStack has a number of users. In July 2012 it was reported that Datapipe launched the largest international public cloud to be built on CloudStack, which included 6 data centers in the USA, Britain, and Asia.
+Among the notable users:
+1 degreenorth
+5th Planet
+ASG
+AST Modular
+AXEKA
+Accudata Systems
+Acentrix
+ActOnMagic
+ActiveEon
+Add Value
+Alcatel-Lucent
+Amdocs
+Amysta
+Angani
+Anolim
+Apalia
+AppFirst
+AppSphere
+Appcara Inc.
+Appcore
+Appdel
+Apple
+Ascenty
+Autodesk
+Axelaris
+AxiomIO
+Ayaline
+BIT.Group GmbH
+BT
+BT Cloud
+BT Engage IT
+Backbone Technology
+Bechtle AG
+Bell Canada
+BigREDGroup
+British Telecom (BT)
+Business Connexion
+CA Technologies
+CANCOM
+COMBIS
+COMLINE Computer + Softwarelösungen
+COMPAREX
+Caringo
+Centracon
+CentralWay
+China Telecom
+Citrix Systems
+Clavis IT
+Cloud3
+CloudCentral
+CloudOps
+Cloudera
+Cloudian, Inc.
+Cloudsoft Corporation
+Codero Hosting
+Colt
+Comping
+Computer Services Group
+Contegix
+Control Circle
+Convergence Group
+CumuLogic, Inc
+DATACENTER Services
+DATAWAYS SA
+DBR360
+DataCentrix
+Datacentrix
+Datapipe
+Dell
+Digital China Advanced Systems
+Disney
+EVRY
+EXA Serve
+Edmunds.com
+En La Nube
+Encloud
+Ennit
+EnterpriseDB
+Entisys Solutions
+Exaserve
+Exoscale
+Experteq IT Services
+FPG Technologies & Solutions
+FiberCloud
+FortaCloud
+Fritz & Macziol
+Fujitsu FIP Corporation
+GigaSpaces Technologies
+Globo.com
+GreenQloud
+Gridstore
+Haaga Helia
+Heinlein Support GmbH
+Hillstone Networks, Inc
+Hokkaido University
+Homeaway
+Host.net
+Hostbill
+Huawei
+Hitachi
+IDC Frontier
+INRIA
+ISWest
+Ikoula
+Imperial College
+InMobi
+IndiQus Technologies
+InhouseIT
+Interoute
+Janz IT
+Joe’s Cloud Computing
+Juniper Networks
+KDDI
+KIVBF
+KT/Korea Telecom
+KocSistem
+Kommunale Informatoinsverarbeitung Baden-Franken
+Kyuden Infocom
+Kyushu University
+LeaseWeb
+Logicworks
+M5 Hosting Inc
+MCPc
+MK Netzdienste
+Makro Factory oHG
+Melbourne University
+Microland Ltd
+Miriadis
+MittelstandsCLOUD
+NAMU Tech
+NEOS
+NTT
+NVision Group
+Neobitti
+NetStandard
+Networkers AG
+Nokia
+OpenERP
+Openminds
+Opscode (now Chef)
+Orange
+OverBright
+Overweb srl
+Ozona Consulting
+PCextreme
+PPTV
+Polcom
+PosAm
+PromonLogicalis
+Proteus
+Quality Software (Hostbill)
+RealCloud (PKN)
+RedBridge
+Redapt
+RedBridge
+Reliable Networks
+RightScale, Inc.
+Royal Melbourne Institute of Technology (RMIT)
+SAP
+SCSK
+SJC Inc
+SSI
+Safe Swiss Cloud
+SafeSwiss Cloud
+Scalr
+Schuberg Philis
+ScienceLogic, Inc.
+ShapeBlue
+ShapeHost
+Shopzilla
+Slovak Telekom
+SoftLayer
+SoftwareONE
+SolidFire
+StackIQ
+Stratosec
+SunGard AS
+SwiftStack
+TNTG Limited
+Taiwan Mobile
+Targus Technologies
+Tata
+Telia Latvia
+Tendril
+TomTom
+Trader Media Group
+Tranquil Hosting
+Treestle BV
+TrendMicro/TCloud Computing
+Tucha
+UPCnet
+UShareSoft
+UniSystems
+University of Cologne
+University of Melbourne
+University of Sao Paolo
+VDI Space, Inc
+VMTurbo
+Verio
+Verizon
+Vision Solutions, Inc.
+WebMD
+X-IO Technologies
+Xtendsys
+Youngsoft Inc
+Zajil Telecom
+Zenoss
+Zeromachine
+Zynga
+e-Contact
+sepago GmbH
+wirenc.com
+
+
+== User Groups ==
+CloudStack NYC User Group on MeetUp
+CloudStack European User Group on LinkedIn
+CloudStack India Bangalore Chapter User Group on MeetUp
+CloudStack India Hyderabad Group on MeetUp
+CloudStack China Group
+CloudStack Brazil User Group on LinkedIn
+Japan CloudStack User Group
+
+
+== See also ==
+
+
+== References ==
+
+
+== External links ==
+Apache CloudStack: Open Source Cloud Computing
+The Apache CloudStack Blog (Weekly News)
+Apache CloudStack Documentation
+Apache CloudStack Wiki
+CloudStack University: CloudStack 101
+
+SlideShare presentations of Apache CloudStack
+YouTube channel of Apache CloudStack

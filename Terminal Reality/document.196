@@ -1,0 +1,46 @@
+Kaavo
+
+
+Kaavo is a cloud computing management company. Kaavo was founded in November 2007 in the U.S. Kaavo pioneered top-down application-centric management of cloud infrastructure across public, private, and hybrid clouds.
+
+
+== Technology ==
+Traditional infrastructure and its associated management intrinsically ties applications to servers and servers to IP addresses and IP addresses to switches and routers. This is a tightly coupled model and according to experts leaves very little room to address the dynamic nature of a virtual infrastructure such as those most often seen in cloud computing models. Subject matter experts supporting Kaavo's approach claims that in the cloud when applications are decoupled from the servers on which they are deployed and the network infrastructure that supports and delivers them, they cannot be effectively managed unless they are recognized as individual components themselves. Infrastructure-as-a-Service (IaaS) delivers on-demand infrastructure resources, however, users still need to deploy and configure their applications and workloads on the IaaS layer. Kaavo provides a framework to automate the deployment and run-time management (production support) of applications and workloads on multiple clouds (Infrastructure-as-a-Service Layer). Kaavo claims that the bottom-up approach of traditional data center management tools makes it harder to manage the infrastructure, especially when dealing with the scale and distributed nature of the cloud. Kaavo takes a top-down application-centric approach for deploying and managing applications in the cloud.
+In an application-centric cloud management approach, systems for specific applications are managed rather than managing servers and routers. All required resources for a given application are managed as a unified system; all the information for deploying and managing runtime services levels for the resources required by a given application are captured top-down in a single system definition. In contrast, in an infrastructure-centric or bottom-up approach, resources (servers, storage, and network resources) are managed individually. One of the key innovations by Kaavo is the ability to capture the deployment and run-time management behavior of any complex application or workload in a single XML document(Kaavo System Definition). Kaavo has published the XSD for the System Definition file.
+Kaavo's IMOD product uses patented technology  and is based on Kaavo's top-down application-centric management philosophy. 
+
+
+== Products ==
+Kaavo uses its technology to deliver two Cloud Management products.
+
+
+=== IMOD SaaS ===
+Delivered as a web based product and is hosted on Amazon EC2. It is integrated with the following public cloud providers: Amazon EC2, IBM SmartCloud, Logicworks infiniCloud, Rackspace Cloud, Terremark Cloud. It is integrated with the following private cloud platforms: Cloud.com CloudStack, Eucalyptus, IBM SmartCloud, OpenStack, VMware vCloud Director. IMOD supports multiple cloud providers and platforms both across application / workload / service deployments as well as within a single deployment. IMOD can also include on-premises physical resources within deployments.
+
+
+=== IMOD Onsite ===
+Onsite deployment is available to enterprise customers within private clouds. It supports all IMOD SaaS capabilities.
+
+
+=== Kaavo Web Services ===
+API for configuring and managing applications on the supported cloud providers and platforms. Kaavo Web Services use document/literal wrapped style SOAP. Compared to the server-level API provided by the IaaS cloud providers and platforms, it provides a higher level of abstraction for managing systems and configuring software. The web services API allows users to deploy applications/workloads across public, private, and hybrid clouds with a single web services call, and also provides an interface to trigger complex workflows in response to deployment-specific events.
+
+
+== Trademarks ==
+Following are registered trademarks of Kaavo:
+Cloud Computing Made Easy
+IMOD
+Kaavo
+
+
+== See also ==
+enStratus
+RightScale
+Scalr
+
+
+== References ==
+
+
+== External links ==
+Official site

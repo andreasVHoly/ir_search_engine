@@ -1,0 +1,29 @@
+Stanford Physics Information Retrieval System
+
+
+The Stanford Physics Information Retrieval System (SPIRES) is a database management system developed by Stanford University. It is used by universities, colleges and research institutions. The first website in North America was created to allow remote users access to its database.
+
+
+== History ==
+SPIRES was originally developed at the Stanford Linear Accelerator Center (SLAC) in 1969, from a design based on a 1967 information study of physicists at SLAC. The system was designed as a physics database management system (DBMS) to deal with high-energy-physics preprints. Written in PL/I, SPIRES ran on an IBM mainframe.
+In the early 1970s, an evaluation of this system resulted in the decision to implement a new system for use by faculty, staff and students at Stanford University. SPIRES was renamed the Stanford Public Information Retrieval System. The new development took place under a National Science Foundation grant headed by Edwin B. Parker, principal investigator. SPIRES joined forces with the BALLOTS project to create a bibliographic citation retrieval system and quickly evolved into a generalized information retrieval and data base management system that could meet the needs of a large and diverse computing community.
+SPIRES was rewritten in PL360, a block structured programming language designed explicitly for IBM/360-compatible hardware. The primary authors were: Thomas H. Martin, Dick Guertin and Bill Kiefer. John Schroeder was the manager of the SPIRES project during this early phase of development.
+Eventually, BALLOTS split off from SPIRES and the Research Libraries Group adopted SPIRES as its data base engine while providing a graphical interface to its clients. Socrates was a library circulation management system rooted in SPIRES.
+SPIRES became the primary database management system for Stanford University business and student services in the 1980s and 1990s. It was also adopted by about two dozen other universities, including installations using the Michigan Terminal System (MTS), and VM/CMS. These universities collaborated through annual meetings of the SPIRES Consortium.
+In 2004, SPIRES was migrated off the mainframe onto Unix platforms by means of an IBM-mainframe Emulator developed by Dick Guertin. The DBMS now runs on Unix, Linux or Darwin (operating system) and is available under Mozilla Public License. 
+
+
+== SPIRES High Energy Physics database (SPIRES-HEP) ==
+The SPIRES High Energy Physics database (SPIRES-HEP), installed at Stanford Linear Accelerator Center (SLAC) in the 1970s, became the first website in North America and the first database accessible through the World Wide Web in 1991. It has since expanded into a joint project of SLAC, Fermilab, and DESY, with mirrors hosted at those institutions as well as at the Institute for High Energy Physics (Russia), the University of Durham (UK), the Yukawa Institute for Theoretical Physics at Kyoto University (Japan), and the Indonesian Institute of Sciences LIPI (Indonesia). This project stores bibliographic information about the literature of the field of High Energy Physics and is an example of academic databases and search engines.
+SPIRES is, as of 2012, being replaced by INSPIRE-HEP, a modern system based on Invenio software. INSPIRE is run by a collaboration of the physics labs at CERN, DESY, Fermilab and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA's Astrophysics Data System, Particle Data Group, and other information resources.
+
+
+== Operating platforms ==
+SPIRES currently runs on Unix, Linux and Darwin platforms. Its primary use today is for the world physics communities, and "legacy" data at Stanford University. SPIRES runs under emulation of the original ORVYL operating system. The emulators are written primarily in "C" compiled by 32-bit "gcc" or "g++" depending upon architectures (ppc or i386). The SPIRES engine is less than one-megabyte in size, but performs all the searching, maintenance, and formatting of databases.
+
+
+== References ==
+
+
+== External links ==
+SPIRES software at Stanford ITS
