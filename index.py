@@ -62,8 +62,8 @@ for key in data:
     doc_length = 0
     for word in words:
         if word != '':
-            if parameters.stemming:
-                word = p.stem (word, 0, len(word)-1)
+            if parameters.stemming: #if the stemming parameter is set true
+                word = p.stem (word, 0, len(word)-1) #stem the word being indexed
             doc_length += 1
             if not word in index:
                 index[word] = {key:1}

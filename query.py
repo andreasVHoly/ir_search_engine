@@ -26,8 +26,8 @@ while arg_index < len(sys.argv):
 
 # clean query
 if parameters.case_folding:
-   query = query.lower ()
-query = re.sub (r'[^ a-zA-Z0-9]', ' ', query)
+   query = query.lower () # make query lower case
+query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
 
@@ -44,34 +44,37 @@ f.close ()
 # get document lengths/titles
 titles = {}
 f = open (collection+"_index_len", "r")
-lengths = f.readlines ()
+lengths = f.readlines () #an array of all the file titles and their lengths
 f.close ()
 
 # get index for each term and calculate similarities using accumulators
 for term in query_words:
     if term != '':
-        if parameters.stemming:
-            term = p.stem (term, 0, len(term)-1)
-        if not os.path.isfile (collection+"_index/"+term):
+        if parameters.stemming: #if the stemming parameter is set true
+            term = p.stem (term, 0, len(term)-1) #stem the search term
+        if not os.path.isfile (collection+"_index/"+term): #if term matches one of the index files
            continue
-        f = open (collection+"_index/"+term, "r")
-        lines = f.readlines ()
+        f = open (collection+"_index/"+term, "r") #open the index file related to the term being searched
+        lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
         idf = 1
         if parameters.use_idf:
-           df = len(lines)
-           idf = 1/df
-           if parameters.log_idf:
+           df = len(lines) #df = document frequency - i.e. how many documents the term appears in
+           idf = 1/df #idf = inverse document frequency
+           if parameters.log_idf: #if log_idf parameter is set true
               idf = math.log (1 + N/df)
         for line in lines:
             mo = re.match (r'([0-9]+)\:([0-9\.]+)', line)
             if mo:
                 file_id = mo.group(1)
-                tf = float (mo.group(2))
+                tf = float (mo.group(2)) #tf = term frequency
                 if not file_id in accum:
                     accum[file_id] = 0
-                if parameters.log_tf:
+                if parameters.log_tf: #if log_tf paramter is set true
                     tf = (1 + math.log (tf))
                 accum[file_id] += (tf * idf)
+                # In general, terms with high tf and low df are good at describing a document
+                # and discriminating it from other documents.
+                # hence tf*idf (term frequency * inverse document frequency)
         f.close()
 
 # parse lengths data and divide by |N| and get titles
@@ -82,9 +85,9 @@ for l in lengths:
       length = eval (mo.group (2))
       title = mo.group (3)
       if document_id in accum:
-         if parameters.normalization:
-            accum[document_id] = accum[document_id] / length
-         titles[document_id] = title
+         if parameters.normalization: #if the normalize parameter is set true
+            accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
+         titles[document_id] = title #populate dictionary of titles related to doc IDs
 
 # print top ten results
 result = sorted (accum, key=accum.__getitem__, reverse=True)
