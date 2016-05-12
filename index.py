@@ -26,8 +26,13 @@ collectionFile = [f for f in listdir(collection) if isfile(join(collection, f))]
 data = {}
 titles = {}
 
+#for indexing display
+count = 1
+
 #create title and data dictionaries from the files in the given directory
 for file in collectionFile:
+    progress = "Indexing File: " + str(count)
+    sys.stdout.write('\r'+progress)
     fileName = file.split(".")
     if fileName[0] == 'document':
         #read in file
@@ -40,11 +45,13 @@ for file in collectionFile:
         for i in range (1, len(lines)):
             fileData += " " + lines[i]
         data[fileName[1]] = fileData
-
+        count+=1
+sys.stdout.write('\rIndexed All Files' + (" "*len(progress)))
 # document length/title file
 g = open(collection + "_index_len", "w")
 
 # create inverted files in memory and save titles/N to file
+print("\n\nCreating inverted index...")
 index = {}
 N = len (data.keys())
 p = porter.PorterStemmer ()
@@ -67,8 +74,10 @@ for key in data:
                     index[word][key] += 1
     print (key, doc_length, titles[key], sep=':', file=g)
 g.close()
+print("Done\n")
 
 # write inverted index to files
+print("Writing inverted index to files...")
 try:
    os.mkdir (collection+"_index")
 except:
@@ -78,10 +87,14 @@ for key in index:
     for entry in index[key]:
         print (entry, index[key][entry], sep=':', file=f)
     f.close ()
+print("Done\n")
 
 # write N
+print("Writing index N...")
 f = open (collection+"_index_N", "w")
 print (N, file=f)
 f.close ()
+print("Done\n")
 
+print("Indexing Complete!")
     
