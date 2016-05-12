@@ -6,6 +6,8 @@ import re
 import math
 import sys
 import os
+import time
+import decimal
 
 import porter
 
@@ -17,6 +19,7 @@ if len(sys.argv)<3:
    exit(0)
  
 # construct collection and query
+startTime = time.time()
 collection = sys.argv[1]
 query = ''
 arg_index = 2
@@ -88,8 +91,12 @@ for l in lengths:
          if parameters.normalization: #if the normalize parameter is set true
             accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
          titles[document_id] = title #populate dictionary of titles related to doc IDs
-
+endTime = time.time()
 # print top ten results
 result = sorted (accum, key=accum.__getitem__, reverse=True)
-for i in range (min (len (result), 10)):
+
+numRetrieved = len(result)
+print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+
+for i in range (min (numRetrieved, 10)):
    print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
