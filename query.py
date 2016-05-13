@@ -14,6 +14,9 @@ import StopWord
 
 import parameters
 
+#andi added
+import blindfeeback as blind
+
 # check parameter for collection name
 if len(sys.argv)<3:
    print ("Syntax: index.py <collection> <query>")
@@ -38,6 +41,7 @@ query_words = query.split (' ')
 # create accumulators and other data structures
 accum = {}
 filenames = []
+tfidfterms = {}
 p = porter.PorterStemmer ()
 sw = StopWord.StopWord()
 
@@ -76,7 +80,9 @@ for term in query_words:
            if parameters.log_idf: #if log_idf parameter is set true
               idf = math.log (1 + N/df)
         for line in lines:
+            #print("*"+line)
             mo = re.match (r'([0-9]+)\:([0-9\.]+)', line)
+            #print(mo)
             if mo:
                 file_id = mo.group(1)
                 tf = float (mo.group(2)) #tf = term frequency
@@ -85,6 +91,7 @@ for term in query_words:
                 if parameters.log_tf: #if log_tf paramter is set true
                     tf = (1 + math.log (tf))
                 accum[file_id] += (tf * idf)
+
 
                 #here is the tf-idf !!!here!!!
                 # In general, terms with high tf and low df are good at describing a document
@@ -118,11 +125,17 @@ for l in lengths:
          titles[document_id] = title #populate dictionary of titles related to doc IDs
 
 # print top ten results
+
 result = sorted (accum, key=accum.__getitem__, reverse=True)
+# result is a list of doc id's ordered according to highest similarity
+blind.runBlindFeedback(result)
 
 endTime = time.time()
 numRetrieved = len(result)
-print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+#print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-for i in range (min (numRetrieved, 20)):
-   print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
+#for i in range (min (numRetrieved, 20)):
+  # print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
+
+
+
