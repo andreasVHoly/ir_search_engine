@@ -18,7 +18,7 @@ import parameters
 if len(sys.argv)<3:
    print ("Syntax: index.py <collection> <query>")
    exit(0)
- 
+
 # construct collection and query
 startTime = time.time()
 collection = sys.argv[1]
@@ -63,9 +63,13 @@ for term in query_words:
            continue
         if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
+
+        #todo run this over the file dirTerm_real_index
+        #ok need to do top part as well errythign is stemmed
+        #term above would the file name
         f = open (collection+"_index/"+term, "r") #open the index file related to the term being searched
         lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
-        idf = 1 
+        idf = 1
         if parameters.use_idf:
            df = len(lines) #df = document frequency - i.e. how many documents the term appears in
            idf = 1/df #idf = inverse document frequency
@@ -81,6 +85,8 @@ for term in query_words:
                 if parameters.log_tf: #if log_tf paramter is set true
                     tf = (1 + math.log (tf))
                 accum[file_id] += (tf * idf)
+
+                #here is the tf-idf !!!here!!!
                 # In general, terms with high tf and low df are good at describing a document
                 # and discriminating it from other documents.
                 # hence tf*idf (term frequency * inverse document frequency)
