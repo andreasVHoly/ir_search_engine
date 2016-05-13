@@ -50,6 +50,8 @@ f = open (collection+"_index_len", "r")
 lengths = f.readlines () #an array of all the file titles and their lengths
 f.close ()
 
+titleScore = 0
+
 # get index for each term and calculate similarities using accumulators
 for term in query_words:
     if term != '':
@@ -80,6 +82,21 @@ for term in query_words:
                 # hence tf*idf (term frequency * inverse document frequency)
         f.close()
 
+        #Caalculate a score for the term being in the title
+        for l in lengths:
+            mo = re.match (r'([0-9]+)\:([0-9\.]+)\:(.+)', l)
+            if mo:
+                document_id = mo.group (1)
+                length = eval (mo.group (2))
+                title = mo.group (3)
+                if (term in title.lower()):
+                    print("Term: " + term + " --> Title: " + title)
+                    titleScore += (1/len(title))
+                    print("Title Score: " + str(titleScore))
+                    if not document_id in accum:
+                        accum[document_id] =0
+                    accum[document_id] += titleScore
+
 # parse lengths data and divide by |N| and get titles
 for l in lengths:
    mo = re.match (r'([0-9]+)\:([0-9\.]+)\:(.+)', l)
@@ -98,5 +115,5 @@ result = sorted (accum, key=accum.__getitem__, reverse=True)
 numRetrieved = len(result)
 print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-for i in range (min (numRetrieved, 10)):
+for i in range (min (numRetrieved, 20)):
    print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
