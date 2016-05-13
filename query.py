@@ -65,7 +65,7 @@ for term in query_words:
            continue
         if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
-        print(t.getSynonym(term))
+        print(str(t.getSynonym(term)[0])[8:])
         #todo run this over the file dirTerm_real_index
         #ok need to do top part as well errythign is stemmed
         #term above would the file name
