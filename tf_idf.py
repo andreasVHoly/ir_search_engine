@@ -46,6 +46,4 @@ class tfidf:
         return self.accum
 
     def addTFIDFSysnonyms(self, synTerm):
-        print("Start: " + str(len(self.accum)))
         self.accum = self.getTFIDF(self.collection, synTerm, self.N)
-        print("End: " + str(len(self.accum)))

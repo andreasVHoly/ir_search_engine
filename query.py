@@ -71,8 +71,9 @@ for term in query_words:
         accum = tfidf.getTFIDF(collection, term, N)
 
         #todo SYNONYMS
-        for s in syns:
-            tfidf.addTFIDFSysnonyms(s)
+        if parameters.use_thesaurus:
+            for s in syns:
+                tfidf.addTFIDFSysnonyms(s)
 
         #Caalculate a score for the term being in the title
         for l in lengths:
