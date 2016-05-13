@@ -1,4 +1,8 @@
+import nltk
+
+from nltk.corpus import wordnet as wn
+
 class Thesaurus:
 
-    def printSameWord(self, word):
-        print(word)
+    def getSynonym(self, word):
+        wn.synsets(word)
