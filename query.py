@@ -11,6 +11,7 @@ import decimal
 
 import porter
 import StopWord
+import thesaurus
 
 import parameters
 
@@ -40,6 +41,7 @@ accum = {}
 filenames = []
 p = porter.PorterStemmer ()
 sw = StopWord.StopWord()
+t = thesaurus.Thesaurus()
 
 # get N
 f = open (collection+"_index_N", "r")
