@@ -68,10 +68,11 @@ for term in query_words:
         if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
         syns = t.getSynonym(term) # get synonyms for the search term
-        accum = tfidf.getIDF(collection, term, N)
+        accum = tfidf.getTFIDF(collection, term, N)
 
         #todo SYNONYMS
-        print(syns)
+        for s in syns:
+            tfidf.addTFIDFSysnonyms(s)
 
         #Caalculate a score for the term being in the title
         for l in lengths:

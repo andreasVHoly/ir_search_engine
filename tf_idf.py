@@ -15,12 +15,15 @@ class tfidf:
         self.tf = 0
         self.accum = {}
 
-    def getIDF(self, collection, term, N):
+    def getTFIDF(self, collection, term, N):
         self.collection = collection
         self.term = term
         self.N = N
-
-        f = open (self.collection+"_index/"+self.term, "r") #open the index file related to the term being searched
+        f = ""
+        try:
+            f = open (self.collection+"_index/"+self.term, "r") #open the index file related to the term being searched
+        except FileNotFoundError:
+            return self.accum
         self.lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
         self.idf = 1
         if parameters.use_idf:
@@ -41,3 +44,8 @@ class tfidf:
                 self.accum[file_id] += (self.tf * self.idf)
         f.close()
         return self.accum
+
+    def addTFIDFSysnonyms(self, synTerm):
+        print("Start: " + str(len(self.accum)))
+        self.accum = self.getTFIDF(self.collection, synTerm, self.N)
+        print("End: " + str(len(self.accum)))
