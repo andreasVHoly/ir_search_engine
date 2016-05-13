@@ -68,7 +68,7 @@ for term in query_words:
         if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
         syns = t.getSynonym(term) # get synonyms for the search term
-        accum = tfidf.getTFIDF(collection, term, N)
+        accum = tfidf.getTFIDF(collection, term, N, 1)
 
         #todo SYNONYMS
         if parameters.use_thesaurus:

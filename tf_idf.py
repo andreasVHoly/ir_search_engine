@@ -2,10 +2,12 @@ import math
 import re
 
 import parameters
+import thesaurus
 
 class tfidf:
 
     def __init__(self):
+        self.t = thesaurus.Thesaurus()
         self.collection = ""
         self.term = ""
         self.N = 0
@@ -15,7 +17,7 @@ class tfidf:
         self.tf = 0
         self.accum = {}
 
-    def getTFIDF(self, collection, term, N):
+    def getTFIDF(self, collection, term, N, ratio):
         self.collection = collection
         self.term = term
         self.N = N
@@ -41,9 +43,11 @@ class tfidf:
                     self.accum[file_id] = 0
                 if parameters.log_tf: #if log_tf paramter is set true
                     self.tf = (1 + math.log (self.tf))
-                self.accum[file_id] += (self.tf * self.idf)
+                self.accum[file_id] += (self.tf * self.idf) * ratio
         f.close()
         return self.accum
 
     def addTFIDFSysnonyms(self, synTerm):
-        self.accum = self.getTFIDF(self.collection, synTerm, self.N)
+        similarityRatio = self.t.getSimilarityRatio(self.term, synTerm)
+        print("Similarity Ratio = " + str(similarityRatio))
+        self.accum = self.getTFIDF(self.collection, synTerm, self.N, similarityRatio)

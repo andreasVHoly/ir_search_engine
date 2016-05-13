@@ -18,3 +18,7 @@ class Thesaurus:
                 if syn not in synonyms:
                     synonyms.append(syn)
         return synonyms
+
+    def getSimilarityRatio(self, term, syn):
+        print(term + " --> " + syn)
+        return 1
