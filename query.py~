@@ -10,7 +10,6 @@ import time
 import decimal
 
 import porter
-import StopWord
 
 import parameters
 
@@ -39,7 +38,6 @@ query_words = query.split (' ')
 accum = {}
 filenames = []
 p = porter.PorterStemmer ()
-sw = StopWord.StopWord()
 
 # get N
 f = open (collection+"_index_N", "r")
@@ -59,13 +57,12 @@ for term in query_words:
     if term != '':
         if parameters.stemming: #if the stemming parameter is set true
             term = p.stem (term, 0, len(term)-1) #stem the search term
+	    print("Stemmed term: " + term)
         if not os.path.isfile (collection+"_index/"+term): #if term matches one of the index files
            continue
-        if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
-            continue
         f = open (collection+"_index/"+term, "r") #open the index file related to the term being searched
         lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
-        idf = 1 
+        idf = 1
         if parameters.use_idf:
            df = len(lines) #df = document frequency - i.e. how many documents the term appears in
            idf = 1/df #idf = inverse document frequency
@@ -94,7 +91,9 @@ for term in query_words:
                 length = eval (mo.group (2))
                 title = mo.group (3)
                 if (term in title.lower()):
+                    print("Term: " + term + " --> Title: " + title)
                     titleScore += (1/len(title))
+                    print("Title Score: " + str(titleScore))
                     if not document_id in accum:
                         accum[document_id] =0
                     accum[document_id] += titleScore
