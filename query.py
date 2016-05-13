@@ -12,6 +12,7 @@ import decimal
 import porter
 import StopWord
 import thesaurus
+import tf_idf
 
 import parameters
 
@@ -42,6 +43,7 @@ filenames = []
 p = porter.PorterStemmer ()
 sw = StopWord.StopWord()
 t = thesaurus.Thesaurus()
+tfidf = tf_idf.tfidf()
 
 # get N
 f = open (collection+"_index_N", "r")
@@ -65,34 +67,11 @@ for term in query_words:
            continue
         if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
-        print(t.getSynonym(term))
-        #todo run this over the file dirTerm_real_index
-        #ok need to do top part as well errythign is stemmed
-        #term above would the file name
-        f = open (collection+"_index/"+term, "r") #open the index file related to the term being searched
-        lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
-        idf = 1
-        if parameters.use_idf:
-           df = len(lines) #df = document frequency - i.e. how many documents the term appears in
-           idf = 1/df #idf = inverse document frequency
-           if parameters.log_idf: #if log_idf parameter is set true
-              idf = math.log (1 + N/df)
-        for line in lines:
-            mo = re.match (r'([0-9]+)\:([0-9\.]+)', line)
-            if mo:
-                file_id = mo.group(1)
-                tf = float (mo.group(2)) #tf = term frequency
-                if not file_id in accum:
-                    accum[file_id] = 0
-                if parameters.log_tf: #if log_tf paramter is set true
-                    tf = (1 + math.log (tf))
-                accum[file_id] += (tf * idf)
+        syns = t.getSynonym(term) # get synonyms for the search term
+        accum = tfidf.getIDF(collection, term, N)
 
-                #here is the tf-idf !!!here!!!
-                # In general, terms with high tf and low df are good at describing a document
-                # and discriminating it from other documents.
-                # hence tf*idf (term frequency * inverse document frequency)
-        f.close()
+        #todo SYNONYMS
+        print(syns)
 
         #Caalculate a score for the term being in the title
         for l in lengths:
