@@ -1,0 +1,23 @@
+3D-printed spacecraft
+
+
+3D printing began to be used in production versions of spaceflight hardware in early 2014. In January, SpaceX first flew a "Falcon 9 rocket with a 3D-printed Main Oxidizer Valve (MOV) body in one of the nine Merlin 1D engines". The valve is used to control flow of cryogenic liquid oxygen to the engine in a high-pressure, low-temperature, high-vibration physical environment.
+Other 3D-printed spacecraft assemblies have been ground-tested, but have not yet flown to space, including high-temperature, high-pressure rocket engine combustion chambers and the entire mechanical spaceframe and propellant tanks for a small satellite of a few hundred kilograms.
+The new United Launch Alliance Vulcan launch vehicle—with first launch no earlier than 2019—is evaluating 3d-printing for over 150 parts: 100 polymer and 50+ metal parts.
+
+
+== Applications ==
+
+
+=== Rocket engines ===
+The SuperDraco engine that provides launch escape system and propulsive-landing thrust for the Dragon V2 passenger-carrying space capsule is fully printed, and was the first fully printed rocket engine. In particular, the engine combustion chamber is printed of Inconel, an alloy of nickel and iron, using a process of direct metal laser sintering, and operates at a chamber pressure 6,900 kilopascals (1,000 psi) at a very high temperature. The engines are contained in a printed protective nacelle to prevent fault propagation in the event of an engine failure. The SuperDracon engine produces 73 kilonewtons (16,400 lbf) of thrust. The engine completed a full qualification test in May 2014, and is slated to make its first orbital spaceflight in 2015 or 2016.
+The ability to 3D print the complex parts was key to achieving the low-mass objective of the engine. It’s a very complex engine, and it was very difficult to form all the cooling channels, the injector head, and the throttling mechanism. ... [The ability] "to print very high strength advanced alloys ... was crucial to being able to create the SuperDraco engine."
+In June 2014, Aerojet Rocketdyne (AJR) announced that they had "manufactured and successfully tested an engine which had been entirely 3D printed." The Baby Banton engine is a 22 kN (5,000 lbf) thrust engine that runs on LOX/kerosene propellant. By March 2015, AJR had completed a series of hot-fire tests for additively manufactured components for its full-size AR-1 booster engine.
+
+
+=== Spacecraft structure ===
+
+By 2014, 3D printing had begun to be used to print the entire mechanical structure and integral propellant tanks of a small spacecraft.
+
+
+== References ==

@@ -1,0 +1,74 @@
+Rackspace Cloud
+
+
+The Rackspace Cloud is a set of cloud computing products and services billed on a utility computing basis from the US-based company Rackspace. Offerings include web application hosting or platform as a service ("Cloud Sites"), Cloud Storage ("Cloud Files"), virtual private server ("Cloud Servers"), load balancers, databases, backup, and monitoring.
+
+
+== History ==
+Rackspace Cloud announced Mosso LLC in March, 2006, as a wholly owned subsidiary billed as a utility computing offering. As it pre-dated mainstream adoption of the term cloud computing, it was "retooled" and relaunched on February 19, 2008, adopting the tagline "Mosso: The Hosting Cloud". The "Mosso" branding (including the mosso.com domain) was then dropped on June 17, 2009 in favour of "The Rackspace Cloud" branding (including the rackspacecloud.com domain name). Since then, customer contracts were executed with Rackspace US, Inc. d/b/a The Rackspace Cloud rather than with the Mosso LLC subsidiary.
+Other companies (such as EMC Corporation with its "Decho" subsidiary) also use alternative branding for their cloud computing offerings.
+In 2011, the "Rackspace Cloud" brand merged with Rackspace.com. In 2012, Rackspace rebranded as "Rackspace, the open cloud company". In 2014, Rackspace rebranded as "Rackspace, the #1 managed cloud company".
+
+
+== Services ==
+
+
+=== Cloud Files ===
+Cloud files is a cloud hosting service that provides "unlimited online storage and CDN" for media (examples given include backups, video files, user content) on a utility computing basis. It was originally launched as Mosso CloudFS on May 5, 2008 and is similar to Amazon Simple Storage Service. Unlimited files of up to 5 GB can be uploaded, managed via the online control panel or RESTful API and optionally served out via Akamai Technologies' Content Delivery Network.
+API
+In addition to the online control panel, the service can be accessed over a RESTful API with open source client code available in C#/.NET, Python, PHP, Java, and Ruby. Rackspace-owned Jungle Disk allows Cloud Files to be mounted as a local drive within supported operating systems (Linux, Mac OS X, and Windows).
+Security
+Redundancy is achieved by replicating three full copies of data across multiple computers in multiple "zones" within the same data center, where "zones" are physically (though not geographically) separate and supplied separate power and Internet services. Uploaded files can be distributed via Akamai Technologies to "hundreds of endpoints across the world" which provides an additional layer of data redundancy.
+The control panel and API are protected by SSL and the requests themselves are signed and can be safely delivered to untrusted clients. Deleted data is zeroed out immediately.
+Use cases
+Use cases considered as "well suited" include backing up or archiving data, serving images and videos (which are streamed directly to the users' browsers), serving content over content delivery networks, storing secondary static web-accessible data, developing data storage applications, storing fluctuating and/or unpredictable amounts of data and reducing costs.
+Caveats
+There is no native operating system support for the Cloud Files API so it is not yet possible to "map" or "mount" it as a virtual drive without third-party software like JungleDisk that translates to a supported standard such as WebDAV. There are no concepts of "appending" or "locking" data within Cloud Files (which may affect some disk mirroring or backup solutions), nor support for permissions or transcoding. Data is organised into "containers" but it is not possible to create nested folders without a translation layer.
+
+
+=== Cloud Servers ===
+Cloud Servers is a cloud infrastructure service that allows users to deploy "one to hundreds of cloud servers instantly" and create "advanced, high availability architectures" similar to the Amazon Elastic Compute Cloud. The "cloud servers" are virtual machines running on the Xen hypervisor for Linux-based instances, and Citrix XenServer for Windows and Linux instances. Each quad core hardware node has between 16 and 32 GB of RAM, allowing for allocations between 256 MB and 30 GB. Disk and CPU allocations scale up with memory, with disk sizes ranging from 10 GB to 620 GB. Various distributions of Linux are supported, including Arch, CentOS, Debian, Fedora, Gentoo, Red Hat Enterprise Linux and Ubuntu.
+The technology behind the service was purchased in Rackspace's October 22, 2008 acquisition of Slicehost and the servers were formerly known as "slices". These are "much cheaper and generally easier to use than a traditional dedicated server", though it is still necessary to maintain the operating system and solution stack which is not required for the Cloud Sites product. This is one of the main differentiators between the two services; where Cloud Servers includes full root access and thus allows for more customisation, the Cloud Sites product is less flexible but requires less maintenance.
+On December 14, 2010, Rackspace began offering a managed service level on the Cloud Servers product, which added additional support for the operating system and common applications as well as patching and other routine services. This additional support level does come at an increased cost, however.
+During 2014, Rackspace ceased to advertise the First Generation Cloud Servers and the Standard Next Generation Cloud Servers on its main Cloud Servers product page, opting to only disclose the Next Generation Performance 1 and Performance 2 products that require a minimum $50/month service charge per account for support service. The First Generation and Standard Next Generation platforms are now referred to as "Legacy Infrastructure" buried in the pricing page for the old products. The minimum charge for the lowest product on the First Generation platform is $10.95/month for the 256MB instance while the minimum charge on the Standard Next Generation platform is $16.06/month for the 512MB instance. On the Performance platform, the minimum charge for one server is $23.36 for the 1GB instance + $50 minimum service charge, for a total of $73.36/month. Rackspace is quietly phasing out its older, less expensive products in transition to a managed platform where mandatory support charges are incorporated into the cost of the services.
+Cloud Tools are applications and infrastructure software built to run on the RackSpace cloud. Applications listed include Zend, a PHP stack, Cloudkick, a cloud performance testing services, CopperEgg, a real-time cloud server and application monitoring service, Xeround, a MySQL cloud database, and MongoLab, the cloud version of the popular NoSQL database MongoDB.
+API
+The Cloud Servers API launched on July 14, 2009 under the Creative Commons Attribution 3.0 license allows clients to create, configure and control virtual servers. In addition to issuing basic management commands this "enables elastic scenarios" whereby servers are instantiated and destroyed in response to fluctuating load (one of the key characteristics of cloud computing). RightScale is among third-party providers to have announced support for this API.
+
+
+=== Cloud Sites ===
+Cloud Sites is a platform as a service offering, similar to traditional web hosting only built on horizontally scalable hardware infrastructure. A fixed monthly credit card payment gives users access to the service with an allocation of compute, storage and bandwidth resources. Should this allocation be exhausted then subsequent usage is billed on a utility computing basis. It allows an "unlimited" number of sites, databases and email accounts and includes reseller options such as client billing and support. Touted as "the fastest way to put sites on the cloud", it runs Windows or Linux applications across "hundreds of servers".
+Cloud Sites supports the PHP 5, Perl, Python, MySQL, .NET 2.0+, ASP and Microsoft SQL Server 2008 application frameworks.
+Compute cycles
+The service includes up to 10,000 "compute cycles" per month which "is roughly equivalent to running a server with a 2.8 GHz modern processor for the same period of time" (with additional cycles priced at USD 0.01). This non-standard unit of measurement primarily reflects CPU processing time but also includes I/O operations so pages with many database queries will consume more "compute cycles". It can however be difficult to compare services between providers without standard units of measurement.
+Caveats
+Cloud Sites does not support Java, Tomcat, ColdFusion, SSH, RDP, API access, Microsoft Exchange or custom server-side components at this time. It is also not possible to set up multiple top level domains to point to the same web root directory. The .NET environment dropped support for "full trust" in favour of "modified medium trust" despite having previously announced on their blog that they had been able to work directly with Microsoft to engineer a system that could accommodate Full Trust without compromising the security, scalability, and performance of other users.
+
+
+== Locations ==
+Cloud servers and most other cloud products are physically located in any of six data centers: Chicago, Northern Virginia, Dallas, London, Sydney, or Hong Kong. A separate "UK" account is required to access the London-based cloud products, however a single "US" Rackspace cloud account can access all US data centers along with the Sydney and Hong Kong regions. Cloud Sites are available in the Dallas and Chicago data centers only.
+
+
+== Control Panel ==
+
+The online control panel was custom built by and for the Rackspace Cloud service (as opposed to using control panel software like cPanel).
+The control panel includes management interfaces for the Cloud Sites, Cloud Servers and Cloud Files services. There was once a web based file manager, but this was removed for undisclosed reasons. It also allows users to manage multiple clients and the plans and products (e.g. databases, 24x7 support) that apply to them, with white label branding options for messaging. The clients themselves have access to a restricted version of the control panel that allows them to conduct administrative tasks such as managing mail accounts.
+The control panel is also home to the billing and reporting functions and provides access to support materials including developer resources, a knowledge base, forums and live chat.
+
+
+== OpenStack ==
+
+In 2010, RackSpace contributed the source code of its Cloud Files product to the OpenStack project under the Apache License to become the OpenStack Object Storage component.
+In April 2012, Rackspace announced it would implement OpenStack Compute as the underlying technology for their Cloud Servers product. The change will come a new control panel as well as add-on cloud services offering databases, server monitoring, block storage, and virtual networking.
+
+
+== See also ==
+
+
+== References ==
+
+
+== External links ==
+Rackspace Cloud Computing - official site
+Rackspace Cloud Reviews - user reviews
+Managing Rackspace Cloud Servers—an unofficial guide to Rackspace Cloud Servers management

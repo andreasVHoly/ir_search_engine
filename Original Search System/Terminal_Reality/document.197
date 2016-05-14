@@ -1,0 +1,65 @@
+Platform as a service
+
+
+Platform as a service (PaaS) is a category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app. PaaS can be delivered in two ways: as a public cloud service from a provider, where the consumer controls software deployment and configuration settings, and the provider provides the networks, servers, storage and other services to host the consumer's application; or as software installed in private data centers or public infrastructure as a service and managed by internal IT departments.
+
+
+== Development and uses ==
+Fotango, a London-based (Old Street) company owned by Canon Europe launched the world's first public platform as a service known as 'Zimki'. It was developed in 2005 with a beta launch in March 2006 and a public launch at EuroOSCON in 2006. Zimki was an end to end JavaScript web application development and utility computing platform that removed all the repetitive tasks encountered when creating web applications and web services. All aspects of infrastructure and operations from setting up servers, scaling, configuration, security and backups were done automatically by Zimki. Zimki introduced the tagline 'Pre-Shaved Yaks'  to describe the removal of all these repetitive tasks.
+Zimki was a pure play 'pay as you go' platform which enabled developers to build and deploy applications without incurring any start-up costs on a true utility based computing platform. Charging was done on storage used, network traffic and JSOPs (Javascript Operations). It provided a multi-tenant platform where developers created entire applications (front and back end through SSJS) using a single language - Javascript, with all development, billing, monitoring and application control exposed through APIs and a range of component services from a NoSQL object store to Message Queue services. Furthermore, all functions within Zimki could be exposed as web services and Zimki provided billing analysis down to individual functions.
+Whilst the Zimki platform was rapidly growing and Fotango was profitable, the parent company decided this area was not core  and the service was closed in Dec 2007. At the time of its closure, Zimki had several thousand developer accounts and had demonstrated the technical viability of Platform as a Service but also provided the first example of the perils of being dependent upon a single provider. This risk had been highlighted in July 2007, when the CEO gave a presentation on Zimki at OSCON 2007 which announced that Zimki would no longer be open sourced and discussed the future of what was then called Framework as a Service (later renamed to Platform as A Service) covering the importance of a market of providers based upon an open source reference model 
+In April 2008, Google launched App Engine, with a free trial version limited to 10,000 developers. This was said to have "turned the Internet cloud computing space into a fully-fledged industry virtually overnight."
+The original intent of PaaS was to simplify the code-writing process for developers, with the infrastructure and operations handled by the PaaS provider. Originally, all PaaSes were in the public cloud. Because many companies did not want to have everything in the public cloud, private and hybrid PaaS options (managed by internal IT departments) were created.
+PaaS provides an environment for developers and companies to create, host and deploy applications, saving developers from the complexities of the infrastructure side (setting up, configuring and managing elements such as servers and databases). PaaS can improve the speed of developing an app, and allow the consumer to focus on the application itself. With PaaS, the consumer manages applications and data, while the provider (in public PaaS) or IT department (in private PaaS) manages runtime, middleware, operating system, virtualization, servers, storage and networking. Development tools provided by the vendor are customized according to the needs of the user. The user can choose to maintain the software, or have the vendor maintain it.
+PaaS offerings may also include facilities for application design, application development, testing and deployment, as well as services such as team collaboration, web service integration, and marshalling, database integration, security, scalability, storage, persistence, state management, application versioning, application instrumentation, and developer community facilitation. Besides the service engineering aspects, PaaS offerings include mechanisms for service management, such as monitoring, workflow management, discovery and reservation.
+
+
+== Advantages and disadvantages ==
+The advantages to PaaS are primarily that it allows for higher-level programming with dramatically reduced complexity; the overall development of the application can be more effective, as it has built-in infrastructure; and maintenance and enhancement of the application is easier. It can also be useful in situations where multiple developers are working on a single project involving parties who are not located nearby.
+One disadvantage of PaaS offerings is that developers may not be able to use a full range of conventional tools (e.g. relational databases, with unrestricted joins). Another possible disadvantage of being locked in to a certain platform. However, most PaaSes are relatively lock-in free.
+
+
+== Types ==
+
+
+=== Public, private and hybrid ===
+There are several types of PaaS, including public, private and hybrid. PaaS was originally intended as an application solution in the public cloud, before expanding to include private and hybrid options.
+Public PaaS is derived from software as a service (SaaS), and is situated in cloud computing between SaaS and infrastructure as a service (IaaS). SaaS is software that is hosted in the cloud, so that it doesn't take up hard drive from the computer of the user or the servers of a company. IaaS provides virtual hardware from a provider with adjustable scalability. With IaaS, the user still has to manage the server, whereas with PaaS the server management is done by the provider. IBM Bluemix and Heroku are some of the commercial public cloud PaaS providers.
+A private PaaS can typically be downloaded and installed either on a company's on-premises infrastructure, or in a public cloud. Once the software is installed on one or more machines, the private PaaS arranges the application and database components into a single hosting platform. Private PaaS vendors include Apprenda, which started out on the Microsoft .NET platform before rolling out a Java PaaS; Red Hat's OpenShift and Pivotal Cloud Foundry. Apprenda and Microsoft are considered to be two of the only PaaSes that provide superior .NET support.
+
+
+=== Mobile PaaS ===
+Initiated in 2012, mobile PaaS (mPaaS) provides development capabilities for mobile app designers and developers. The Yankee Group identified mPaas as one of its themes for 2014, naming a number of providers including Kinvey, CloudMine, AnyPresence, FeedHenry, FatFractal and Point.io.
+
+
+=== Open PaaS ===
+Open PaaS does not include hosting, but rather it provides open source software allowing a PaaS provider to run applications in an open source environment. For example, AppScale allows a user to deploy some applications written for Google App Engine to their own servers, providing datastore access from a standard SQL or NoSQL database. Some open platforms let the developer use any programming language, database, operating system or server to deploy their applications.
+
+
+=== PaaS for Rapid Development ===
+In 2014, Forrester Research defined Enterprise Public Cloud Platforms for Rapid Developers as an emerging trend, naming a number of providers including OutSystems, Mendix, Salesforce.com, and Acquia.
+
+
+=== System types ===
+PaaS is found on the following types of systems:
+Add-on development facilities
+These facilities allow customization of existing SaaS applications, often requiring PaaS developers and their users to purchase subscriptions to the add-on SaaS application.
+Stand alone environments
+Stand-alone PaaS environments do not include technical, licensing or financial dependencies on specific SaaS applications or web services, and are intended to provide a generalized development environment.
+Application delivery-only environments
+Delivery-only PaaS offerings generally focus on hosting services, such as security and on-demand scalability. The service does not include development, debugging and test capabilities, though they may be supplied offline (via an Eclipse plugin, for example).
+
+
+== Providers ==
+There are various types of PaaS providers. All offer application hosting and a deployment environment, along with various integrated services. Services offer varying levels of scalability and maintenance. Developers can write an application and upload it to a PaaS that supports their software language of choice, and the application runs on that PaaS. A comprehensive community-maintained list of PaaS providers is available at PaaSify.it.
+PaaS providers and vendors include:
+
+
+== See also ==
+Network as a service
+Software as a service
+Infrastructure as a service
+Mobile Backend as a service
+
+
+== References ==

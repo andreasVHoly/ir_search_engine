@@ -1,0 +1,47 @@
+Embarrassingly parallel
+
+
+In parallel computing, an embarrassingly parallel workload or problem (also called perfectly parallel or pleasingly parallel) is one where little or no effort is needed to separate the problem into a number of parallel tasks. This is often the case where there is little or no dependency, or need for communication between those parallel tasks, or for results between them.
+Thus, these are different from distributed computing problems that need communication between tasks, especially communication of intermediate results. They are easy to perform on server farms which lack the special infrastructure used in a true supercomputer cluster. They are thus well suited to large, Internet-based distributed platforms such as BOINC, and do not suffer from parallel slowdown. The opposite of embarrassingly parallel problems are inherently serial problems, which cannot be parallelized at all.
+A common example of an embarrassingly parallel problem is 3d rendering handled by a graphics processing unit, where many vertices and pixels may be handled with no interdependency.
+
+
+== Etymology of the term ==
+The genesis of the phrase "embarrassingly parallel" can be understood in the same context as 'embarras de richesses' in French, meaning too rich. it is a comment on the ease of parallelizing such applications, and that it would be embarrassing for the programmer or compiler to not take advantage of such an obvious opportunity to improve performance. "Because so many important problems remain unsolved mainly due to their intrinsic computational complexity, it would be embarrassing not to develop parallel implementations of polynomial homotopy continuation methods." Contrastingly, the term may refer to parallelizing which is, "embarrassingly easy". It is first found in the literature in a 1986 book on multiprocessors by MATLAB's co-founder Cleve Moler. Moler claims to have invented this term.
+An alternative term, pleasingly parallel, has gained some use, perhaps to avoid the negative connotations of embarrassment in favor of a positive reflection on the parallelizability of the problems. "Of course, there is nothing embarrassing about these programs at all."
+
+
+== Examples ==
+Some examples of embarrassingly parallel problems include:
+Distributed relational database queries using distributed set processing
+Serving static files on a webserver to multiple users at once.
+The Mandelbrot set, Perlin noise and similar images, where each point is calculated independently.
+Rendering of computer graphics. In computer animation, each frame may be rendered independently (see parallel rendering).
+Brute-force searches in cryptography. Notable real-world examples include distributed.net and proof-of-work systems used in cryptocurrency.
+BLAST searches in bioinformatics for multiple queries (but not for individual large queries) 
+Large scale facial recognition systems that compare thousands of arbitrary acquired faces (e.g., a security or surveillance video via closed-circuit television) with similarly large number of previously stored faces (e.g., a rogues gallery or similar watch list).
+Computer simulations comparing many independent scenarios, such as climate models.
+Evolutionary computation metaheuristics such as genetic algorithms.
+Ensemble calculations of numerical weather prediction.
+Event simulation and reconstruction in particle physics.
+The Marching squares algorithm
+Sieving step of the quadratic sieve and the number field sieve.
+Tree growth step of the random forest machine learning technique.
+Discrete Fourier Transform where each harmonic is independently calculated.
+
+
+== Implementations ==
+In R (programming language) – The Simple Network of Workstations (SNOW) package implements a simple mechanism for using a set of workstations or a Beowulf cluster for embarrassingly parallel computations.
+
+
+== See also ==
+Amdahl's law defines value P, which would be almost or exactly equal to 1 for embarrassingly parallel problems.
+Map (parallel pattern)
+
+
+== References ==
+
+
+== External links ==
+Embarrassingly Parallel Computations, Engineering a Beowulf-style Compute Cluster
+"Star-P: High Productivity Parallel Computing"

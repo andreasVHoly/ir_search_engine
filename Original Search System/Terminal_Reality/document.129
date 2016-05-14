@@ -1,0 +1,35 @@
+FR-V (microprocessor)
+
+
+The Fujitsu FR-V (Fujitsu RISC-VLIW) is one of the very few processors ever able to process both a very long instruction word (VLIW) and vector processor instructions at the same time, increasing throughput with high parallel computing while increasing performance per watt and hardware efficiency. The family was presented in 1999. Its design was influenced by the VPP500/5000 models of the Fujitsu VP/2000 vector processor supercomputer line.
+Featuring a 1-8 way very long instruction word (VLIW, Multiple Instruction Multiple Data (MIMD), up to 256 bit) instruction set it additionally uses a 4-way single instruction, multiple data (SIMD) vector processor core. A 32-bit RISC instruction set in the superscalar core is combined with most variants integrating a dual 16-bit media processor also in VLIW and vector architecture. Each processor core is superpipelined as well as 4-unit superscalar.
+A typical integrated circuit integrates a system on a chip and further multiplies speed by integrating multiple cores. Due to the very low power requirements it is a solution even for battery-powered applications.
+
+
+== Variants ==
+The family started with the FR-500, includes FR-300, FR-400, FR-450, FR-550 and FR1000 architecture 32-bit processors, can run Linux, RTLinux, VxWorks, eCos, ITRON or cryptlib and is also supported by the Softune Integrated development environment and the GNU Compiler Collection or GNUPro.
+It is often used for image processing or video processing with most variants including a dual 16-bit media-processor.
+
+
+== Technology ==
+The 2005 presented FR1000 uses a core with 8-way 256-bit VLIW (MIMD) filling its superpipeline as well as a 4-unit superscalar architecture (Integer (ALU)-, Floating-point- and two media-processor-units), further increasing its peak performance of each core to up to 28 instructions per clock cycle. Like other VLIW-architectures 1 way is needed to load the next 256-bit instruction: 7-ways usable. Due to the used 4-way single instruction, multiple data (SIMD) vector processor-core, it counts to up to 112 data-operations per cycle and core. The included 4-way vector processor units are a 32-bit integer arithmetic logic unit and floating point unit as well as a 16-bit media-processor, which can process up to twice the operations in parallel.
+The included integer- and floating-point unit enables the FR-V to execute complex tasks fully independent without need for help from a control unit; for example the Nikon EXPEED needs only a slowly clocked, quite simple Fujitsu FR controller as the main control unit for all included FR-V, DSP and GPU processors and data communication and other modules. Some processors have integrated memory management unit (MMU), allowing to run virtual multitasking operating systems (also real-time operating systems) with hardware memory protection.
+
+
+== Applications ==
+They are used to build the Milbeaut signal processors specialized for image processing, with the newest version additionally including an FR-V based HD video H.264 codec engine.
+The Milbeaut image engines are included in the Leica S2 and Leica M, Nikon DSLRs (see Nikon EXPEED), some Pentax K mount cameras and for the Sigma True-II processor.
+
+
+== See also ==
+
+
+== References ==
+
+
+== External links ==
+FR Family instruction manual (PDF). Fujitsu. 2007-12-28. 
+Kevin Buettner, Alexandre Oliva, Richard Henderson (2008-03-01). The FR-V FDPIC ABI. Version 1.0b. Red Hat, Inc.  CS1 maint: Multiple names: authors list (link)
+Alexandre Oliva, Aldy Hernandez (2004-12-10). The FR-V thread-local storage ABI. Version 1.0. Red Hat, Inc. 
+Atsuhiro Suga, Kunihiko Matsunami (July 2000). "Introducing the FR500 embedded microprocessor" (PDF). IEEE Micro 20 (4): 21–27. doi:10.1109/40.865863. 
+FR-V multi-media (translated)

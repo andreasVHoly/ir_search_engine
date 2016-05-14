@@ -1,0 +1,37 @@
+Rapid prototyping
+
+
+Rapid prototyping is a group of techniques used to quickly fabricate a scale model of a physical part or assembly using three-dimensional computer aided design (CAD) data. Construction of the part or assembly is usually done using 3D printing or "additive layer manufacturing" technology.
+The first methods for rapid prototyping became available in the late 1980s and were used to produce models and prototype parts. Today, they are used for a wide range of applications and are used to manufacture production-quality parts in relatively small numbers if desired without the typical unfavorable short-run economics. This economy has encouraged online service bureaus. Historical surveys of RP technology start with discussions of simulacra production techniques used by 19th-century sculptors. Some modern sculptors use the progeny technology to produce exhibitions. The ability to reproduce designs from a dataset has given rise to issues of rights, as it is now possible to interpolate volumetric data from one-dimensional images.
+As with CNC subtractive methods, the computer-aided-design - computer-aided manufacturing CAD-CAM workflow in the traditional Rapid Prototyping process starts with the creation of geometric data, either as a 3D solid using a CAD workstation, or 2D slices using a scanning device. For RP this data must represent a valid geometric model; namely, one whose boundary surfaces enclose a finite volume, contain no holes exposing the interior,and do not fold back on themselves. In other words, the object must have an “inside.” The model is valid if for each point in 3D space the computer can determine uniquely whether that point lies inside, on, or outside the boundary surface of the model. CAD post-processors will approximate the application vendors’ internal CAD geometric forms (e.g., B-splines) with a simplified mathematical form, which in turn is expressed in a specified data format which is a common feature in Additive Manufacturing: STL (stereolithography) a de facto standard for transferring solid geometric models to SFF machines. To obtain the necessary motion control trajectories to drive the actual SFF, Rapid Prototyping, 3D Printing or Additive Manufacturing mechanism, the prepared geometric model is typically sliced into layers, and the slices are scanned into lines [producing a "2D drawing" used to generate trajectory as in CNC`s toolpath], mimicking in reverse the layer-to-layer physical building process.[2]
+
+
+== Rapid prototyping and production automotive spareparts ==
+Electric cars can be built and tested in one year with 3D production systems. 
+
+
+== History ==
+In the 1970s, Joseph Henry Condon and others at Bell Labs developed the Unix Circuit Design System (UCDS), automating the laborious and error-prone task of manually converting drawings to fabricate circuit boards for the purposes of research and development.
+In the 1980s U.S. policy makers and industrial managers were forced to take note that America's dominance in the field of machine tool manufacturing evaporated, in what was named the machine tool crisis. Numerous projects sought to counter these trends in the traditional CNC CAM area, which had begun in the US. Later when Rapid Prototyping Systems moved out of labs to be commercialized it was recognized that developments were already international and U.S. rapid prototyping companies would not have the luxury of letting a lead slip away. The National Science Foundation was an umbrella for the National Aeronautics and Space Administration (NASA), the US Department of Energy, the US Department of Commerce NIST, the US Department of Defense, Defense Advanced Research Projects Agency (DARPA), and the Office of Naval Research coordinated studies to inform strategic planners in their deliberations. One such report was the 1997 Rapid Prototyping in Europe and Japan Panel Report in which Joseph J. Beaman founder of DTM Corporation [DTM RapidTool pictured] provides a historical perspective : The roots of rapid prototyping technology can be traced to practices in topography and photosculpture. Within TOPOGRAPHY Blanther (1892) suggested a layered method for making a mold for raised relief paper topographical maps .The process involved cutting the contour lines on a series of plates which were then stacked. Matsubara (1974) of Mitsubishi proposed a topographical process with a photo-hardening photopolymer resin to form thin layers stacked to make a casting mold. PHOTOSCULPTURE was a 19th-century technique to create exact three-dimensional replicas of objects. Most famously Francois Willeme (1860) placed 24 cameras in a circular array and simultaneously photographed an object.The silhouette of each photograph was then used to carve a replica. Morioka (1935, 1944) developed a hybrid photo sculpture and topographic process using structured light to photographically create contour lines of an object.The lines could then be developed into sheets and cut and stacked, or projected onto stock material for carving. The Munz(1956) Process reproduced a three-dimensional image of an object by selectively exposing, layer by layer, a photo emulsion on a lowering piston. After fixing, a solid transparent cylinder contains an image of the object. 
+The technologies referred to as Solid Freeform Fabrication are what we recognize today as Rapid Prototyping, 3D Printing or Additive Manufacturing: Swainson (1977), Schwerzel (1984) worked on polymerization of a photosensitive polymer at the intersection of two computer controlled laser beams. Ciraud (1972) considered magnetostatic or electrostatic deposition with electron beam, laser or plasma for sintered surface cladding. These were all proposed but it is unknown if working machines were built. Hideo Kodama of Nagoya Municipal Industrial Research Institute was the first to publish an account of a solid model fabricated using a photopolymer rapid prototyping system (1981). Even at that early date the technology was seen as having a place in manufacturing practice. A low resolution, low strength output had value in design verification, mould making, production jigs and other areas. Outputs have steadily advanced toward higher specification uses.
+Innovations are constantly being sought,to improve speed and the ability to cope with mass production applications. A dramatic development which RP shares with related CNC areas is the freeware open-sourcing of high level applications which constitute an entire CAD-CAM toolchain. This has created a community of low res device manufacturers. Hobbyists have even made forays into more demanding laser-effected device designs.
+
+
+== See also ==
+Digital modeling and fabrication
+Fab lab
+Laser engineered net shaping
+Open hardware
+Von Neumann universal constructor
+Minimum viable product
+
+
+== References ==
+
+
+== Bibliography ==
+Wright, Paul K. (2001). 21st Century Manufacturing. New Jersey: Prentice-Hall Inc.
+
+
+== External links ==
+Rapid prototyping websites at DMOZ

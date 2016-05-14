@@ -1,0 +1,37 @@
+Compound term processing
+
+
+Compound term processing refers to a category of techniques used in information retrieval applications to perform matching on the basis of compound terms. Compound terms are built by combining two or more simple terms; for example, "triple" is a single word term, but "triple heart bypass" is a compound term.
+Compound term processing is a new approach to an old problem: how can one improve the relevance of search results while maintaining ease of use? Using this technique, a search for survival rates following a triple heart bypass in elderly people will locate documents about this topic even if this precise phrase is not contained in any document. This can be performed by a concept search, which itself uses compound term processing. This will extract the key concepts automatically (in this case "survival rates", "triple heart bypass" and "elderly people") and use these concepts to select the most relevant documents.
+
+
+== Techniques ==
+In August 2003, Concept Searching Limited introduced the idea of using statistical Compound Term Processing.
+CLAMOUR is a European collaborative project which aims to find a better way to classify when collecting and disseminating industrial information and statistics. CLAMOUR appears to use a linguistic approach, rather than one based on statistical modelling.
+
+
+== History ==
+Techniques for probabilistic weighting of single word terms date back to at least 1976 in the landmark publication by Stephen E. Robertson and Karen Spärck Jones. Robertson stated that the assumption of word independence is not justified and exists as a matter of mathematical convenience. His objection to the term independence is not a new idea, dating back to at least 1964 when H. H. Williams stated that "[t]he assumption of independence of words in a document is usually made as a matter of mathematical convenience".
+In 2004, Anna Lynn Patterson filed patents on "phrase-based searching in an information retrieval system" to which Google subsequently acquired the rights.
+
+
+== Adaptability ==
+Statistical compound term processing is more adaptable than the process described by Patterson. Her process is targeted at searching the World Wide Web where an extensive statistical knowledge of common searches can be used to identify candidate phrases. Statistical compound term processing is more suited to enterprise search applications where such a priori knowledge is not available.
+Statistical compound term processing is also more adaptable than the linguistic approach taken by the CLAMOUR project, which must consider the syntactic properties of the terms (i.e. part of speech, gender, number, etc.) and their combinations. CLAMOUR is highly language-dependent, whereas the statistical approach is language-independent.
+
+
+== Applications ==
+Compound Term Processing allows information retrieval applications, such as search engines, to perform their matching on the basis of multi-word concepts, rather than on single words in isolation which can be highly ambiguous.
+Early search engines looked for documents containing the words entered by the user into the search box . These are known as keyword search engines. Boolean search engines add a degree of sophistication by allowing the user to specify additional requirements. For example, "Tiger NEAR Woods AND (golf OR golfing) NOT Volkswagen" uses the operators "NEAR", "AND", "OR" and "NOT" to specify that these words must follow certain requirements. A phrase search is simpler to use, but requires that the exact phrase specified appear in the results.
+
+
+== See also ==
+Concept Searching Limited
+Enterprise search
+Information retrieval
+
+
+== References ==
+
+
+== External links ==

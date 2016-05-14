@@ -1,0 +1,39 @@
+Nimbula
+
+
+Nimbula was a computer software company that existed from 2008 through 2013. It developed software for the implementation of public and private cloud computing environments.
+
+
+== History ==
+The company was first incorporated as Benguela, based in Menlo Park, California with a development center in Cape Town, South Africa. It was founded in late 2008 by Chris Pinkham and Willem Van Biljon, who had developed the Amazon Elastic Compute Cloud (EC2). The company raised a total of $20.75 million in venture funding from Sequoia Capital, Accel Partners and VMware. Their software was designed to make it easier for service providers and enterprises to build, manage and deploy infrastructure as a service (IaaS) offerings similar to Amazon EC2.
+The company emerged from stealth mode in June 2010 and changed its name to Nimbula. Diane Greene and Roelof Botha became members of the board of directors at that time. Eventually the company had its office in Mountain View, California. A public beta version of its software was announced in December 2010. Nimbula Director 1.0 was released in April 2011. Nimbula was Named a ‘Cool Vendor’ in Cloud Management by Gartner in April 2012.
+In October 2012, Nimbula joined the OpenStack Foundation.
+In March 2013, Nimbula was acquired by Oracle Corporation.
+
+
+== Features ==
+Nimbula Director software allows users to implement IaaS-style private, public and hybrid clouds. The software was aimed at both enterprise customers and service providers. It can manage both on- and off-premises infrastructure through a Web UI, an API or a command line interface.
+Nimbula Director’s features include:
+Control access to local and external cloud resources with a policy based authorization system supporting multi-tenancy.
+Hands-off automated installation on bare metal
+Automated (zero touch) cluster expansion as new hardware is added
+API to manage local and external cloud resources
+Reduce demands on system administrators through low-touch automated cloud management.
+Multiple hypervisor support from a single management pane
+Support for common cloud APIs like Amazon Web Services API
+Support for Linux and Windows virtual machines (VMs)
+Integrate existing user services through support for Active Directory/LDAP
+Elastic IPs and security groups
+Support for virtual ethernets, allowing creation of isolated Layer 2 networks
+Integrated system metrics and reporting that will allow for integration with chargeback systems
+Nimbula's license agreement allowed deployment of the software on up to 40 CPU cores without a license fee.
+
+
+=== Release History ===
+
+
+== References ==
+
+
+== External links ==
+Official website

@@ -1,0 +1,19 @@
+Cluster hypothesis
+
+
+In machine learning and information retrieval, the cluster hypothesis is an assumption about the nature of the data handled in those fields, which takes various forms. In information retrieval, it states that documents that are clustered together "behave similarly with respect to relevance to information needs". In terms of classification, it states that if points are in the same cluster, they are likely to be of the same class. There may be multiple clusters forming a single class.
+
+
+== Information retrieval ==
+Search engines may cluster documents that were retrieved for a query, then retrieve the documents from the clusters as well as the original documents. Alternatively, search engines may be replaced by browsing interfaces that present results from clustering algorithms. Both these approaches to information retrieval are based on a variant of the cluster hypothesis, that documents that are similar by a clustering criterion (typically term overlap) will have similar relevance to users' information needs.
+
+
+== Machine learning ==
+The cluster assumption is assumed in many machine learning algorithms such as the k-nearest neighbor classification algorithm and the k-means clustering algorithm. As the word "likely" appears in the definition, there is no clear border differentiating whether the assumption does hold or does not hold. In contrast the amount of adherence of data to this assumption can be quantitatively measured.
+
+
+== Properties ==
+The cluster assumption is equivalent to the Low density separation assumption which states that the decision boundary should lie on a low-density region. To prove this, suppose the decision boundary crosses one of the clusters. Then this cluster will contain points from two different classes, therefore it is violated on this cluster.
+
+
+== Notes ==

@@ -1,0 +1,60 @@
+Google Cloud Platform
+
+
+Google Cloud Platform is a cloud computing platform by Google that offers hosting on the same supporting infrastructure that Google uses internally for end-user products like Google Search and YouTube. Cloud Platform provides developer products to build a range of programs from simple websites to complex applications.
+Google Cloud Platform is a part of a suite of enterprise solutions from Google for Work and provides a set of modular cloud-based services with a host of development tools. For example, hosting and computing, cloud storage, data storage, translations APIs and prediction APIs.
+
+
+== Products ==
+The Google Cloud Platform is composed of a family of products, each including a web interface, a command-line tool and a REST API.
+Google App Engine is a Platform as a Service for sandboxed web applications. App Engine offers automatic scaling with resources increased automatically to handle server load.
+Google Compute Engine is the Infrastructure as a Service component of the Google Cloud Platform that enables users to launch virtual machines (VMs) on demand.
+Google Container Engine makes it easy to run Docker containers on Google Cloud Platform.
+Google Cloud Storage is an online storage service for files.
+Google Cloud Bigtable is a fast, fully managed, massively scalable NoSQL database service that's ideal for web, mobile, and Internet of Things applications requiring terabytes to petabytes of data.
+Google Cloud Dataproc is a managed Apache Spark and Apache Hadoop service designed for fast, easy, and cost-effective Spark and Hadoop
+Google Cloud Datastore is a fully managed, highly available NoSQL data storage for non-relational data that includes a REST API.
+Google Cloud SQL is a fully managed MySQL database that lives in the Google Cloud infrastructure.
+Google Load Balancing balances traffic between Compute Engine instances, using either HTTP or Network (TCP/UDP)
+Google Interconnect connects your network to Google’s directly or via your carrier or VPN
+Google Cloud DNS is a DNS service hosted in the Google Cloud infrastructure.
+Google BigQuery is a data analysis tool that uses SQL-like queries to process big datasets in seconds.
+Google Dataflow enables reliable execution for large scale data processing scenarios such as Extract, Transform, Load (ETL), analytics, real-time computation, and process orchestration.
+Google Cloud Pub/Sub connects your services with reliable, many-to-many, asynchronous messaging hosted on Google's infrastructure.
+Google Cloud Endpoints is a tool to create services inside App Engine that can be easily connected from iOS, Android and JavaScript clients.
+Google Translate API is a way to create multilingual apps and translate text into other languages programmatically. Thousands of language pairs are available.
+Google Prediction API uses Google’s machine learning algorithms to analyze data and predict future outcomes using a familiar RESTful interface.
+Google Cloud Monitoring gains insight into the performance and availability of your cloud-powered applications.
+Google Cloud Logging manages all your log data for Compute Engine and App Engine to investigate and debug system issues, gain operational and business insights, and meet security and compliance needs.
+Google Cloud Deployment Manager allows developers to easily design, share, deploy and manage complex Cloud Platform solutions using a simple, declarative templates.
+
+
+== Timeline ==
+April 2008 - Google App Engine was released as a preview.
+May 2010 - Google Cloud Storage launched.
+July 2012 - Google creates the Google Cloud Platform Partner Program.
+October 2012 - shortly after the Amazon outage, Google App Engine experienced a major outage that also affected Tumblr and Dropbox.
+April 2012 - BigQuery, first presented in March, went into General Availability (GA).
+December 2013 - After a 18-month preview Google Compute Engine was released GA.
+February 2014 -Google Cloud SQL was released as GA.
+March 2014 - During the Google Cloud Platform Live Google announced their biggest price drop affecting all products between a 30% and 85%.
+March 2014 - Google announced Managed Virtual Machines, a new feature to overcome the traditional limitations in Google App Engine.
+February 22, 2016 - Google Cloud Dataproc enters general availability.
+
+
+== See also ==
+Google Apps for Work
+Infrastructure as a Service
+Platform as a Service
+Heroku
+Amazon Web Services
+Windows Azure
+Jelastic
+
+
+== References ==
+
+
+== External links ==
+Google Cloud Platform
+Google for Work

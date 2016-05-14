@@ -11,6 +11,8 @@ import decimal
 
 import porter
 import StopWord
+import thesaurus
+import tf_idf
 
 import parameters
 
@@ -34,6 +36,9 @@ while arg_index < len(sys.argv):
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
+
+if "##" in query:
+    parameters.use_blindRelevance = False
 query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
@@ -44,6 +49,8 @@ filenames = []
 tfidfterms = {}
 p = porter.PorterStemmer ()
 sw = StopWord.StopWord()
+t = thesaurus.Thesaurus()
+tfidf = tf_idf.tfidf()
 
 # get N
 f = open (collection+"_index_N", "r")
@@ -60,44 +67,24 @@ titleScore = 0
 
 # get index for each term and calculate similarities using accumulators
 for term in query_words:
+
     if term != '':
         if parameters.stemming: #if the stemming parameter is set true
             term = p.stem (term, 0, len(term)-1) #stem the search term
         if not os.path.isfile (collection+"_index/"+term): #if term matches one of the index files
            continue
-        if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
+        if parameters.use_Stopword and sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
-
-        #todo run this over the file dirTerm_real_index
-        #ok need to do top part as well errythign is stemmed
-        #term above would the file name
-        f = open (collection+"_index/"+term, "r") #open the index file related to the term being searched
-        lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
-        idf = 1
-        if parameters.use_idf:
-           df = len(lines) #df = document frequency - i.e. how many documents the term appears in
-           idf = 1/df #idf = inverse document frequency
-           if parameters.log_idf: #if log_idf parameter is set true
-              idf = math.log (1 + N/df)
-        for line in lines:
-            #print("*"+line)
-            mo = re.match (r'([0-9]+)\:([0-9\.]+)', line)
-            #print(mo)
-            if mo:
-                file_id = mo.group(1)
-                tf = float (mo.group(2)) #tf = term frequency
-                if not file_id in accum:
-                    accum[file_id] = 0
-                if parameters.log_tf: #if log_tf paramter is set true
-                    tf = (1 + math.log (tf))
-                accum[file_id] += (tf * idf)
+        syns = t.getSynonym(term) # get synonyms for the search term
+        accum = tfidf.getTFIDF(collection, term, N, 1)
 
 
-                #here is the tf-idf !!!here!!!
-                # In general, terms with high tf and low df are good at describing a document
-                # and discriminating it from other documents.
-                # hence tf*idf (term frequency * inverse document frequency)
-        f.close()
+
+        #todo SYNONYMS
+        if parameters.use_thesaurus:
+            for s in syns:
+                tfidf.addTFIDFSysnonyms(s, len(syns))
+
 
         #Caalculate a score for the term being in the title
         for l in lengths:
@@ -124,18 +111,34 @@ for l in lengths:
             accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
          titles[document_id] = title #populate dictionary of titles related to doc IDs
 
-# print top ten results
+
 
 result = sorted (accum, key=accum.__getitem__, reverse=True)
 # result is a list of doc id's ordered according to highest similarity
-blind.runBlindFeedback(result)
 
-endTime = time.time()
-numRetrieved = len(result)
-#print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-#for i in range (min (numRetrieved, 20)):
-  # print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
+
+if parameters.use_blindRelevance:
+    #print results
+
+    endTime = time.time()
+    numRetrieved = len(result)
+    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+
+    for i in range(min(numRetrieved, 10)):
+        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+    blind.runBlindFeedback(collection,result,N,query_words)
+else:
+    endTime = time.time()
+    numRetrieved = len(result)
+    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+
+    for i in range(min(numRetrieved, 10)):
+        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+
+
+
+
 
 
 

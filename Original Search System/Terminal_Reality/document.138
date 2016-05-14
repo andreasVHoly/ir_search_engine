@@ -1,0 +1,48 @@
+Concurrent Collections
+
+
+Concurrent Collections (known as CnC) is a programming model for software frameworks to expose parallelism in applications. The Concurrent Collections conception originated from tagged stream processing development with HP TStreams.
+
+
+== TStreams ==
+Around 2003, Hewlett-Packard Cambridge Research Lab developed TStreams, a stream processing forerunner of the basic concepts of CnC.
+
+
+== Concurrent Collections for C++ ==
+Concurrent Collections for C++ is an open source C++ template library developed by Intel for implementing parallel CnC applications in C++ with shared and/or distributed memory.
+
+
+== Habanero CnC ==
+Rice University has developed various CnC language implementations based on their Habanero project infrastructure.
+
+
+== See also ==
+Stream processing
+Flow-based programming (FBP)
+Tuple space
+Functional reactive programming (FRP)
+Linda (coordination language)
+Threading Building Blocks (TBB)
+Cilk/Cilk Plus
+Intel Parallel Studio
+
+
+== Notes ==
+
+
+== References ==
+Budimlic, Z.; Chandramowlishwaran, A. M.; Knobe, K.; Lowney, G. N.; Sarkar, V.; Treggiari, L. (2008). Declarative aspects of memory management in the concurrent collections parallel programming model (PDF). DAMP '09. Proceedings of the 4th workshop on Declarative aspects of multicore programming. pp. 47–58. doi:10.1145/1481839.1481846. ISBN 978-1-60558-417-1. 
+Budimlić, Z.; Burke, M.; Cavé1, V.; Knobe, K.; Lowney, G.; Newton, R.; Palsberg, J.; Peixotto1, D.; Sarkar, V.; Schlimbach, F.; Taşırlar, S. (2010). "Concurrent Collections" (PDF). Scientific Programming (IOS Press) 18 (3–4): 203–217. doi:10.3233/SPR-2011-0305. Retrieved 2013-08-25. 
+Chandramowlishwaran, A.; Knobe, K.; Vuduc, R. (2010). Applying the concurrent collections programming model to asynchronous parallel dense linear algebra (PDF). PPoPP '10. Proceedings of the 15th ACM SIGPLAN symposium on Principles and practice of parallel programming. pp. 345–346. doi:10.1145/1693453.1693506. ISBN 978-1-60558-708-0. 
+Chandramowlishwaran, A.; Knobe, K.; Vuduc, R. (2010). "Performance evaluation of concurrent collections on high-performance multicore computing systems". 2010 IEEE International Symposium on Parallel & Distributed Processing (IPDPS) (PDF). pp. 1–12. doi:10.1109/IPDPS.2010.5470404. ISBN 978-1-4244-6442-5. CiteSeerX: 10.1.1.169.5643. 
+Burke, M. G.; Knobe, K.; Newton, R.; Sarkar, V. (2011). "Concurrent Collections Programming Model". Encyclopedia of Parallel Computing (PDF) 4. Springer. pp. 364–371. doi:10.1007/978-0-387-09766-4_238. ISBN 978-0-387-09765-7. Retrieved 2013-08-25. 
+Tang, P. (25 December 2012). "Measuring the overhead of Intel C++ Concurrent Collections over Threading Building Blocks for Gauss–Jordan elimination" (PDF). Concurrency and Computation: Practice and Experience (John Wiley & Sons) 24 (18): 2282–2301. doi:10.1002/cpe.2811. 
+
+
+== External links ==
+Intel Concurrent Collections for C++ for Windows and Linux at Intel DZ, a "What If" project
+Intel Concurrent Collections for C++ on SourceForge.net
+Intel Concurrent Collections for C++ at GitHub
+Intel Concurrent Collections for C++ on GitHub
+
+CNC - Habanero Concurrent Collections as part of the Rice University Habanero project

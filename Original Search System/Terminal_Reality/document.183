@@ -1,0 +1,24 @@
+Heroku
+
+
+Heroku is a cloud Platform-as-a-Service (PaaS) supporting several programming languages. Heroku was acquired by Salesforce.com in 2010. Heroku, one of the first cloud platforms, has been in development since June 2007, when it supported only the Ruby programming language, but has since added support for Java, Node.js, Scala, Clojure, Python, PHP, and Go. 
+
+
+== History ==
+James Lindenbaum, Adam Wiggins, and Orion Henry founded Heroku supporting Rack-compatible projects. In October 2009, Byron Sebastian joined Heroku as CEO. On December 8, 2010, Salesforce.com acquired Heroku as a wholly owned subsidiary of Salesforce.com. On July 12, 2011, Yukihiro "Matz" Matsumoto, the chief designer of the Ruby programming language, joined the company as Chief Architect, Ruby. That same month, Heroku added support for Node.js and Clojure. On September 15, 2011, Heroku and Facebook introduced Heroku for Facebook. Heroku now supports Cloudant, Couchbase Server, MongoDB and Redis databases in addition to its standard PostgreSQL. Applications that are run from the Heroku server use the Heroku DNS Server to direct to the application domain (typically "applicationname.herokuapp.com"). Each of the application containers or dynos are spread across a "dyno grid" which consists of several servers. Heroku's Git server handles application repository pushes from permitted users.
+The June 2012 North American derecho caused many applications hosted by Heroku to go offline. The service outage lasted less than 24 hours.
+
+
+== See also ==
+Cocaine (PaaS)
+Nodejitsu
+Distelli
+OpenShift
+Bluemix
+
+
+== References ==
+
+
+== External links ==
+Heroku (official site)

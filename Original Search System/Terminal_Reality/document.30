@@ -1,0 +1,43 @@
+Thesaurus (information retrieval)
+
+
+In the context of information retrieval, a thesaurus (plural: "thesauri") is a form of controlled vocabulary that seeks to dictate semantic manifestations of metadata in the indexing of content objects. A thesaurus serves to minimise semantic ambiguity by ensuring uniformity and consistency in the storage and retrieval of the manifestations of content objects. ANSI/NISO Z39.19-2005 defines a content object as "any item that is to be described for inclusion in an information retrieval system, website, or other source of information". The thesaurus aids the assignment of preferred terms to convey semantic metadata associated with the content object.
+A thesaurus serves to guide both an indexer and a searcher in selecting the same preferred term or combination of preferred terms to represent a given subject. ISO 25964, the international standard for information retrieval thesauri, defines a thesaurus as a “controlled and structured vocabulary in which concepts are represented by terms, organized so that relationships between concepts are made explicit, and preferred terms are accompanied by lead-in entries for synonyms or quasi-synonyms.”
+A thesaurus is composed by at least three elements: 1-a list of words (or terms), 2-the relationship amongst the words (or terms), indicated by their hierarchical relative position (e.g. parent/broader term; child/narrower term, synonym, etc.), 3-a set of rules on how to use the thesaurus.
+
+
+== History ==
+Wherever there have been large collections of information, whether on paper or in computers, scholars have faced a challenge in pinpointing the items they seek. The use of classification schemes to arrange the documents in order was only a partial solution. Another approach was to index the contents of the documents using words or terms, rather than classification codes. In the 1940s and 1950s some pioneers, such as Calvin Mooers, Charles L. Bernier, Evan J. Crane and Hans Peter Luhn, collected up their index terms in various kinds of list that they called a “thesaurus” (by analogy with the well known thesaurus developed by Peter Roget). The first such list put seriously to use in information retrieval was the thesaurus developed in 1959 at the E I Dupont de Nemours Company.
+The first two of these lists to be published were the Thesaurus of ASTIA Descriptors (1960) and the Chemical Engineering Thesaurus of the American Institute of Chemical Engineers (1961), a descendant of the Dupont thesaurus. More followed, culminating in the influential Thesaurus of Engineering and Scientific Terms (TEST) published jointly by the Engineers Joint Council and the US Department of Defense in 1967. TEST did more than just serve as an example; its Appendix 1 presented Thesaurus rules and conventions that have guided thesaurus construction ever since. Hundreds of thesauri have been produced since then, perhaps thousands. The most notable innovations since TEST have been: (a) Extension from monolingual to multilingual capability; and (b) Addition of a conceptually organized display to the basic alphabetical presentation.
+Here we mention only some of the national and international standards that have built steadily on the basic rules set out in TEST:
+UNESCO Guidelines for the establishment and development of monolingual thesauri. 1970 (followed by later editions in 1971 and 1981)
+DIN 1463 Guidelines for the establishment and development of monolingual thesauri. 1972 (followed by later editions)
+ISO 2788 Guidelines for the establishment and development of monolingual thesauri. 1974 (revised 1986)
+ANSI American National Standard for Thesaurus Structure, Construction, and Use. 1974 (revised 1980 and superseded by ANSI/NISO Z39.19-1993)
+ISO 5964 Guidelines for the establishment and development of multilingual thesauri. 1985
+ANSI/NISO Z39.19 Guidelines for the construction, format, and management of monolingual thesauri. 1993 (revised 2005 and renamed Guidelines for the construction, format, and management of monolingual controlled vocabularies.)
+ISO 25964 Thesauri and interoperability with other vocabularies. Part 1 (Thesauri for information retrieval published 2011; Part 2 (Interoperability with other vocabularies) published 2013.
+The most clearly visible trend across this history of thesaurus development has been from the context of small-scale isolation to a networked world. Access to information was notably enhanced when thesauri crossed the divide between monolingual and multilingual applications. More recently, as can be seen from the titles of the latest ISO and NISO standards, there is a recognition that thesauri need to work in harness with other forms of vocabulary or knowledge organization system, such as subject heading schemes, classification schemes, taxonomies and ontologies. The official website for ISO 25964 gives more information, including a reading list.
+
+
+== Purpose ==
+In information retrieval, a thesaurus can be used as a form of controlled vocabulary to aid in the indexing of appropriate metadata for information bearing entities. A thesaurus helps with expressing the manifestations of a concept in a prescribed way, to aid in improving precision and recall. This means that the semantic conceptual expressions of information bearing entities are easier to locate due to uniformity of language. Additionally, a thesaurus is used for maintaining a hierarchical listing of terms; usually single words or bound phrases that aid the indexer in narrowing the terms and limiting semantic ambiguity.
+The Art & Architecture Thesaurus, for example, is used by countless museums around the world, to catalogue their collections. AGROVOC, the thesaurus of the UN’s Food and Agriculture Organization, is used to index and/or search its AGRIS database of worldwide literature on agricultural research.
+
+
+== Structure ==
+Information retrieval thesauri are formally organized so that existing relationships between concepts are made clear. For example, “citrus fruits” might be linked to the broader concept of “fruits”, and the narrower ones of “oranges”, “lemons”, etc. When the terms are displayed online, the links between them make it very easy to surf around the thesaurus, selecting useful terms for a search. When a single term could have more than one meaning, like tables (furniture) or tables (data), these are listed separately so that the user can choose which concept to search for and avoid retrieving irrelevant results. For any one concept, all the known synonyms are listed, such as “mad cow disease”, “bovine spongiform encephalopathy”, “BSE”, etc. The idea is to guide all the indexers and all the searchers to use the same term for the same concept, so that search results will be as complete as possible. If the thesaurus is multilingual, equivalent terms in other languages are shown too. Following international standards, concepts are generally arranged hierarchically within facets or grouped by themes or topics. Unlike a general thesaurus used for literary purposes, information retrieval thesauri typically focus on one discipline, subject or field of study.
+
+
+== See also ==
+Controlled vocabulary
+ISO 25964
+Thesaurus
+
+
+== References ==
+
+
+== External links ==
+Official site for ISO 25964
+Taxonomy Warehouse

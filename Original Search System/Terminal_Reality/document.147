@@ -1,0 +1,41 @@
+OpenMosix
+
+
+openMosix was a free cluster management system that provided single-system image (SSI) capabilities, e.g. automatic work distribution among nodes. It allowed program processes (not threads) to migrate to machines in the node's network that would be able to run that process faster (process migration). It was particularly useful for running parallel applications having low to moderate input/output (I/O). It was released as a Linux kernel patch, but was also available on specialized Live CDs. openMosix development has been halted by its developers, but the LinuxPMI project is continuing development of the former openMosix code.
+
+
+== History ==
+openMosix was originally forked from MOSIX by Moshe Bar on February 10, 2002 when MOSIX became proprietary software.
+openMosix was considered stable on Linux kernel 2.4.x for the x86 architecture, but porting to Linux 2.6 kernel remained in the alpha stage. Support for the 64-bit AMD64 architecture only started with the 2.6 version.
+On July 15, 2007, Bar announced that the openMOSIX project would reach its end of life on March 1, 2008, due to the decreasing need for SSI clustering as low-cost multi-core processors increase in availability.
+OpenMosix used to be distributed as a Gentoo Linux kernel choice, but it was removed from Gentoo Linux's Portage tree in February 2007.
+As of March 1, 2008, openMosix read-only source code is still hosted at SourceForge. The LinuxPMI project is continuing development of the former openMosix code.
+
+
+== See also ==
+
+Kerrighed
+OpenSSI
+LinuxPMI
+
+
+=== Live CDs ===
+Linux Live CDs with openMosix include:
+CHAOS (a very small boot CD)
+clusterKnoppix (not maintained anymore)
+dyne:bolic
+Quantian, a scientific distribution based on clusterKnoppix
+
+
+== References ==
+
+
+== External links ==
+Official website
+openMosixWiki
+
+
+=== openMosix cluster sites ===
+Cluster at National Taras Shevchenko University of Kyiv
+Hydra
+MBG Cluster
