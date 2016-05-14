@@ -1,0 +1,75 @@
+IPython
+
+
+IPython is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history. IPython provides the following features:
+Interactive shells (terminal and Qt-based).
+A browser-based notebook with support for code, text, mathematical expressions, inline plots and other media.
+Support for interactive data visualization and use of GUI toolkits.
+Flexible, embeddable interpreters to load into one's own projects.
+Tools for parallel computing.
+
+
+== Parallel computing ==
+
+IPython is based on an architecture that provides parallel and distributed computing. IPython enables parallel applications to be developed, executed, debugged and monitored interactively. Hence, the I (Interactive) in IPython. This architecture abstracts out parallelism, which enables IPython to support many different styles of parallelism including:
+Single program, multiple data (SPMD) parallelism
+Multiple program, multiple data (MIMD) parallelism
+Message passing using MPI
+Task parallelism
+Data parallelism
+Combinations of these approaches
+Custom user defined approaches
+
+
+== Notebook ==
+IPython Notebook is a web-based interactive computational environment for creating IPython notebooks. An IPython notebook is a JSON document containing an ordered list of input/output cells which can contain code, text, mathematics, plots and rich media.
+IPython notebooks can be converted to a number of open standard output formats (HTML, HTML presentation slides, LaTeX, PDF, ReStructuredText, Markdown, Python) through 'Download As' in the web interface and 'ipython nbconvert' in a shell.
+
+IPython Notebook provides a browser-based REPL built upon a number of popular Open Source libraries:
+IPython
+ØMQ
+Tornado (web server)
+jQuery
+Bootstrap (front-end framework)
+MathJax
+IPython Notebook connects to an IPython kernel. As of the 2.3 release (October 2014), there are currently 49 IPython-compatible kernels for as many programming languages, including Python, R, Julia and Haskell.
+IPython Notebook was added to IPython in the 0.12 release (December 2011). IPython Notebook has been compared to Maple, Mathematica, and Sage.
+IPython notebooks frequently draw from SciPy stack libraries like NumPy and SciPy, often installed along with IPython from one of many Scientific Python distributions.
+
+
+== Other features ==
+IPython allows non-blocking interaction with Tkinter, PyGTK, PyQt/PySide and wxPython (the standard Python shell only allows interaction with Tkinter). IPython can interactively manage parallel computing clusters using asynchronous status callbacks and/or MPI. IPython can also be used as a system shell replacement. Its default behavior is largely similar to Unix shells, but it allows customization and the flexibility of executing code in a live Python environment.
+
+
+== Project Jupyter ==
+In 2014, Fernando Pérez announced a spin-off project from IPython called Project Jupyter. IPython will continue to exist as a Python shell and a kernel for Jupyter, while the notebook and other language-agnostic parts of IPython will move under the Jupyter name. Jupyter added support for Julia, R, Haskell and Ruby.
+
+
+== In the media ==
+IPython has been mentioned in the popular computing press, and it has a presence at scientific conferences. For scientific and engineering work, it is often presented as a companion tool to matplotlib.
+
+
+== Grants and awards ==
+Beginning 1 January 2013, the Alfred P. Sloan Foundation announced that it would support IPython development for two years.
+On 23 March 2013, Fernando Perez was awarded the Free Software Foundation Advancement of Free Software award for IPython.
+In August 2013, Microsoft made a donation of $100,000 to sponsor IPython’s continued development.
+In January 2014, it won the Jolt Productivity Award from Dr. Dobb's in the category of coding tools. In July 2015, the project won a funding of $6 million from Gordon and Betty Moore Foundation, Alfred P. Sloan Foundation and Leona M. and Harry B. Helmsley Charitable Trust.
+
+
+== See also ==
+
+Python (programming language)
+
+
+== References ==
+
+
+== External links ==
+Official website
+IPython Cookbook
+IPython: A unified environment for interactive data analysis
+Jones, Jeremy (27 January 2005). "Enhanced Interactive Python with IPython". ONLamp.com. 
+Several presentations of IPython at Python and scientific conferences are listed at the official website.
+IPython introduction videos at showmedo
+Python for Scientific and Large Scale Computing — a set of video tutorials from Ohio Supercomputer Center on Python, including IPython and its parallel computing capabilities.
+Project Jupyter at jupyter.org

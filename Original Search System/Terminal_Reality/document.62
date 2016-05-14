@@ -1,0 +1,40 @@
+K-ary tree
+
+
+In graph theory, a k-ary tree is a rooted tree in which each node has no more than k children. It is also sometimes known as a k-way tree, an N-ary tree, or an M-ary tree. A binary tree is the special case where k=2.
+
+
+== Types of k-ary trees ==
+A full k-ary tree is a k-ary tree where within each level every node has either 0 or k children.
+A perfect k-ary tree is a full k-ary tree in which all leaf nodes are at the same depth.
+A complete k-ary tree is a k-ary tree which is maximally space efficient. It must be completely filled on every level except for the last level. However, if the last level is not complete, then all nodes of the tree must be "as far left as possible".
+
+
+== Properties of k-ary trees ==
+For a k-ary tree with height h, the upper bound for the maximum number of leaves is .
+The height h of a k-ary tree does not include the root node, with a tree containing only a root node having a height of 0.
+The total number of nodes in a perfect k-ary tree is , while the height h is
+
+Note: A tree containing only one node is taken to be of height 0 for this formula to be applicable.
+Note: The formula is not applicable for a 2-ary tree with height 0, as the ceiling operator approximates and simplifies the true formula, which can be described as
+
+
+== Methods for storing k-ary trees ==
+
+
+=== Arrays ===
+k-ary trees can also be stored in breadth-first order as an implicit data structure in arrays, and if the tree is a complete k-ary tree, this method wastes no space. In this compact arrangement, if a node has an index i, its c-th child is found at index , while its parent (if any) is found at index  (assuming the root has index zero, meaning a 0-based array). This method benefits from more compact storage and better locality of reference, particularly during a preorder traversal.
+
+
+== See also ==
+Left-child right-sibling binary tree
+Binary tree
+
+
+== References ==
+
+Storer, James A. (2001). An Introduction to Data Structures and Algorithms. Birkhäuser Boston. ISBN 3-7643-4253-6. 
+
+
+== External links ==
+N-ary trees, Bruno R. Preiss, Ph.D, P.Eng.

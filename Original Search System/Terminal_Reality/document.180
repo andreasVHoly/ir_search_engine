@@ -1,0 +1,45 @@
+Apache Drill
+
+
+Apache Drill is an open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets. Drill is the open source version of Google's Dremel system which is available as an infrastructure service called Google BigQuery. One explicitly stated design goal is that Drill is able to scale to 10,000 servers or more and to be able to process petabytes of data and trillions of records in seconds. Drill is an Apache top-level project.
+Drill supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores. For example, you can join a user profile collection in MongoDB with a directory of event logs in Hadoop.
+Drill's datastore-aware optimizer automatically restructures a query plan to leverage the datastore's internal processing capabilities. In addition, Drill supports data locality, so it's a good idea to co-locate Drill and the datastore on the same nodes.
+
+
+== Features ==
+Schema-free JSON document model similar to MongoDB and Elasticsearch, without requiring a formal schema to be declared
+Industry-standard APIs: ANSI SQL, ODBC/JDBC, RESTful APIs
+Extremely user and developer friendly
+Pluggable architecture enables connectivity to multiple datastores
+
+
+== Support ==
+Drill is primarily focused on non-relational datastores, including Hadoop, NoSQL and cloud storage. The following datastores are currently supported:
+Hadoop: All Hadoop distributions (HDFS API 2.3+), including Apache Hadoop, MapR, CDH and Amazon EMR
+NoSQL: MongoDB, HBase
+Cloud storage: Amazon S3, Google Cloud Storage, Azure Blob Storage, Swift
+Deal with multiple data formats, including Apache Parquet and JSON
+A new datastore can be added by developing a storage plugin. Drill's unique schema-free JSON data model enables it to query non-relational datastores in-situ (many of these systems store complex or schema-free data).
+
+
+== See also ==
+
+Cloud computing
+Big data
+Data Intensive Computing
+
+
+== References ==
+
+
+== Papers ==
+Some papers influenced the birth and design. Here is a partial list:
+2005 From Databases to Dataspaces: A New Abstraction for Information Management, the authors highlight the need for storage systems to accept all data formats and to provide APIs for data access that evolve based on the storage system’s understanding of the data.
+2010 Dremel: Interactive Analysis of Web-Scale Datasets
+
+
+== External links ==
+Official Drill Homepage
+Apache Drill: Tracking its history as an open source community
+SQL and Hadoop: It's complicated
+Crunching Big Data with Google BigQuery + Introducing Apache Drill

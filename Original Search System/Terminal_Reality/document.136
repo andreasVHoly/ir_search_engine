@@ -1,0 +1,52 @@
+Thinking Machines Corporation
+
+
+Thinking Machines Corporation was a supercomputer manufacturer founded in Waltham, Massachusetts, in 1983 by W. Daniel "Danny" Hillis and Sheryl Handler to turn Hillis's doctoral work at MIT on massively parallel computing architectures into a commercial product known as the Connection Machine. The company moved in 1984 from Waltham to Kendall Square in Cambridge, Massachusetts, close to the MIT AI Lab and Thinking Machines' competitor Kendall Square Research. Other competitors included MasPar, which made a computer similar to the CM-2, and Meiko, whose CS-2 was similar to the CM-5. The company filed for bankruptcy in 1994; its hardware and parallel computing software divisions were eventually acquired by Sun Microsystems.
+
+
+== Products ==
+Thinking Machines produced a number of Connection Machine models (in chronological order): the CM-1, CM-2, CM-200, CM-5, and the CM-5E. The CM-1 and 2 came first in models with 64K (65,536) bit-serial processors (16 processors per chip) and later, the smaller 16K and 4K configurations. The Connection Machine was programmed in a variety of specialized languages, including *Lisp and CM Lisp (derived from Common Lisp), C* (derived by Thinking Machines from C), and CM FORTRAN. These languages used proprietary compilers to translate code into the parallel instruction set of the Connection Machine. The CM-1 through CM-200 were examples of SIMD architecture (Single Instruction Multiple Data), while the later CM-5 and CM-5E were MIMD (Multiple Instructions Multiple Data) that combined commodity SPARC processors and proprietary vector processors in a "fat tree" network.
+The CM-2 required a Symbolics 3600 LISP machine as a front-end processor; later models used a Sun Microsystems workstation or VAX minicomputer.
+Thinking Machines also introduced an early commercial RAID2 disk array, the DataVault, circa 1988.
+
+
+== Business history ==
+
+In May 1985, Thinking Machines became the third company to register a .com domain name (think.com). It became profitable in 1989, thanks to its DARPA contracts. The following year, it booked $65 million (USD) in revenue, making it the market leader in parallel supercomputers. In 1991, DARPA reduced its purchases amid criticism it was unfairly subsidizing Thinking Machines at the expense of Cray, IBM, and in particular, NCUBE and MasPar. By 1992, the company was losing money again, due to lack of business, and CEO Sheryl Handler was forced out by public criticism.
+Thinking Machines filed for Chapter 11 bankruptcy in August 1994. The hardware portion of the company was purchased by Sun Microsystems, and TMC re-emerged as a small software company specializing in parallel software tools for commodity clusters and data mining software for its installed base and former competitors' parallel supercomputers. In December 1996, the parallel software development business was acquired by Sun Microsystems, forming the basis of Sun's entry into High Performance Computing.
+Thinking Machines continued as a pure data mining company until it was acquired in 1999 by Oracle Corporation. Oracle later acquired Sun Microsystems, thus re-uniting much of Thinking Machines' intellectual property.
+The program WAIS, developed at Thinking Machines by Brewster Kahle, would later be influential in starting the Internet Archive and associated projects, including the Rosetta Disk as part of Danny Hillis' Clock of the Long Now.
+Architect Greg Papadopoulos later became Sun Microsystems's chief technology officer.
+
+
+== Dispersal ==
+Many of the hardware people left for Sun Microsystems and went on to design the Sun Enterprise series of parallel computers. The Darwin datamining toolkit, developed by Thinking Machines' Business Supercomputer Group, was purchased by Oracle. Most of the team that built Darwin left for Dun & Bradstreet soon after the company entered bankruptcy.
+Thinking Machines alumni ("thunkos") helped create several parallel computing software start-ups, including Ab Initio Software, independent to this day; and Applied Parallel Technologies, which was later renamed Torrent Systems and acquired by Ascential Software, which was in turn acquired by IBM.
+Besides Hillis, other noted people who worked for or with the company included Greg Papadopoulos, David Waltz, Guy L Steele, Jr., Karl Sims, Brewster Kahle, Bradley Kuszmaul, Carl Feynman, Cliff Lasser, Marvin Denicoff, Alex Vasilevksy, Richard Fishman, Mirza Mehdi, Alan Harshman, Richard Jordan, Alan Mercer, James Bailey, Tsutomu Shimomura. Among the early corporate fellows of Thinking Machines were Marvin Minsky, Doug Lenat, Stephen Wolfram, Tomaso Poggio, Richard Feynman, and Jack Schwartz later joined by Charles E. Leiserson, Alan Edelman and Eric Lander, Lennart Johnsson.
+DARPA's Connection Machines were decommissioned by 1996.
+
+
+== References in popular culture ==
+In the 1993 film Jurassic Park, Connection Machines (non-functioning dummies) are visible in the park's control room, scientist Dennis Nedry mentions "eight Connection Machines" and a video about dinosaur cloning mentions "Thinking Machines supercomputers".
+In the 1996 film Mission Impossible, Luther Stickell asks Franz Kreiger for "Thinking Machine laptops" to help hack into the CIA's Langley supercomputer.
+Tom Clancy's novel Rainbow Six speaks of the NSA's "star machine from a company gone bankrupt, the Super-Connector from Thinking Machines, Inc., of Cambridge, Massachusetts" in the NSA's basement. In addition, in The Bear and the Dragon says the National Security Agency could crack nearly any book or cipher with one of three custom operating systems designed for a Thinking Machines supercomputer.
+In the 2008 video game Fallout 3, it is mentioned that the pre war company that made the computer systems for Vaults is called Think Machine; a reference to the Thinking Machines Corporation.
+
+
+== See also ==
+FROSTBURG—a CM-5 used by the National Security Agency
+Goodyear MPP
+ICL Distributed Array Processor
+MasPar
+Parsytec
+SUPRENUM
+
+
+== References ==
+
+
+== External links ==
+The Rise and Fall of Thinking Machines, Inc. Magazine, September 1995
+'Richard Feynman and The Connection Machine' by W. Daniel Hillis
+Thinking Machines by Alex Papadimoulis in The Daily WTF's "Tales from the Interview"
+Thinking Machines To File for Bankruptcy John Markoff, The New York Times, August 16, 1994.

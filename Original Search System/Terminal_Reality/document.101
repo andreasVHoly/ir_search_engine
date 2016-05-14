@@ -1,0 +1,48 @@
+Electron beam additive manufacturing
+
+
+Electron beam additive manufacturing is a type of additive manufacturing, or 3D printing, for metal parts. Metal powder or wire is welded together using an electron beam as the heat source.
+
+
+== Metal powder based systems ==
+Metal powders can be consolidated into a solid mass using an electron beam as the heat source. This is used as a 3D printing technique, similar to selective laser sintering. This is sometimes called "electron beam melting". EBM technology manufactures parts by melting metal powder layer by layer with an electron beam in a high vacuum. In contrast to sintering techniques, both EBM and SLM achieve full melting of the metal powder.
+This solid freeform fabrication method produces fully dense metal parts directly from metal powder with characteristics of the target material. The EBM machine reads data from a 3D CAD model and lays down successive layers of powdered material. These layers are melted together utilizing a computer controlled electron beam. In this way it builds up the parts. The process takes place under vacuum, which makes it suited to manufacture parts in reactive materials with a high affinity for oxygen, e.g. titanium. The process is known to operate at higher temperatures (up to 1000 °C), which can lead to differences in phase formation though solidification and solid state phase transformation.
+The powder feedstock is typically pre-alloyed, as opposed to a mixture. That aspect allows classification of EBM with selective laser melting (SLM) where competing technologies like SLS and DMLS require thermal treatment after fabrication. Compared to SLM and DMLS, EBM has a generally superior build rate because of its higher energy density and scanning method.
+
+
+=== Research Developments ===
+Recent work has been published by ORNL, demonstrating the use of EBM technology to control local crystallographic grain orientations in Inconel. Other notable developments have focused on the development of process parameters to produce parts out of alloys such as copper, niobium, Al 2024, bulk metallic glass, stainless steel, and titanium aluminide. Currently commercial materials for EBM include commercially pure Titanium, Ti-6Al-4V, CoCr, Inconel 718, and Inconel 625.
+
+
+== Metal wire based systems ==
+Another approach is to use an electron beam to melt welding wire onto a surface to build up a part. This is similar to the common 3D printing process of fused deposition modeling, but with metal, rather than plastics. With this process, an electron beam gun provides the energy source used for melting metallic feedstock, which is typically wire. The electron beam is a highly efficient power source that can be both precisely focused and deflected using electromagnetic coils at rates well into thousands of hertz. Typical electron beam welding systems have high power availability, with 30- and 42-kilowatt systems being most common. A major advantage of using metallic components with electron beams is that the process is conducted within a high vacuum environment of 1x10-4 Torr. or greater, providing a contamination-free work zone that does not require the use of additional inert gasses commonly used with laser and arc based processes. With EBDM, feedstock material is fed into a molten pool created by the electron beam. Through the use of computer numeric controls (CNC), the molten pool is moved about on a substrate plate, adding material just where it is needed to produce the near net shape. This process is repeated in a layer-by-layer fashion, until the desired 3D shape is produced.
+Depending on the part being manufactured, deposition rates can range up to 200 cubic inches per hour. With a light alloy, such as titanium, this translates to a real-time deposition rate of 40 pounds per hour. A wide range of engineering alloys are compatible with the EBDM process and are readily available in the form of welding wire from an existing supply base. These include, but are not limited to, stainless steels, cobalt alloys, nickel alloys, copper nickel alloys, tantalum, titanium alloys as well as many other high-value materials.
+
+
+== Market ==
+Titanium alloys are widely used with this technology which makes it a suitable choice for the medical implant market.
+CE-certified acetabular cups are in series production with EBM since 2007 by two European orthopedic implant manufacturers, Adler Ortho and Lima Corporate.
+The U.S. implant manufacturer Exactech has also received FDA clearance for an acetabular cup manufactured with the EBM technology.
+Aerospace and other highly demanding mechanical applications are also targeted.
+The EBM process has been developed for manufacturing parts in gamma titanium aluminide, and is currently being developed by Avio S.p.A. and General Electric Aviation for the production of turbine blades in γ-TiAl for gas-turbine engines.
+
+
+== See also ==
+3D printing
+Electron beam technology
+Electron beam welding
+
+
+== References ==
+
+
+== Further reading ==
+Manufacturing Engineering and Technology Fifth Edition. Serope Kalpakjian.
+
+
+== External links ==
+Watch and Learn about electron beam melting
+Engineer's Handbook
+Automotive DesignLine
+Arcam process presentation (pdf)
+Direct Manufacturing: ARCAM, Video Describing EBM Process

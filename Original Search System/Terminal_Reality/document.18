@@ -1,0 +1,24 @@
+SMART Information Retrieval System
+
+
+The SMART (System for the Mechanical Analysis and Retrieval of Text) Information Retrieval System is an information retrieval system developed at Cornell University in the 1960s. Many important concepts in information retrieval were developed as part of research on the SMART system, including the vector space model, relevance feedback, and Rocchio classification.
+Gerard Salton led the group that developed SMART. Other contributors included Mike Lesk.
+The SMART system also provides a set of corpora, queries and reference rankings, taken from different subjects, notably
+ADI: publications from information science reviews
+CACM: computer science
+Cranfield collection: publications from aeronautic reviews
+CISI: library science
+Medlars collection: publications from medical reviews
+Time magazine collection: archives of the generalist review Time in 1963
+To the legacy of the SMART system belongs the so-called SMART notation, a mnemonic scheme for denoting tf-idf weighting variants in the vector space model. The mnemonic for representing a combination of weights takes the form ddd.qqq, where the first three letters represents the term weighting of the document vector and the second three letters represents the term weighting for the query vector.
+The letter representation for a term, , and document, , is as follows:
+where tf is the term frequency of term  in document .
+
+
+== References ==
+
+
+== External links ==
+Software and test collections (FTP at Cornell University)
+Interactive SMART tutorial
+SMART case study - Eric Thul

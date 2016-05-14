@@ -1,0 +1,50 @@
+OpenACC
+
+
+OpenACC (for Open Accelerators) is a programming standard for parallel computing developed by Cray, CAPS, Nvidia and PGI. The standard is designed to simplify parallel programming of heterogeneous CPU/GPU systems.
+Like in OpenMP, the programmer can annotate C, C++ and Fortran source code to identify the areas that should be accelerated using compiler directives and additional functions. Like OpenMP 4.0 and newer, code can be started on both the CPU and GPU.
+OpenACC members have worked as members of the OpenMP standard group to merge into OpenMP specification to create a common specification which extends OpenMP to support accelerators in a future release of OpenMP. These efforts resulted in a technical report for comment and discussion timed to include the annual Supercomputing Conference (November 2012, Salt Lake City) and to address non-Nvidia accelerator support with input from hardware vendors who participate in OpenMP.
+At ISC’12 OpenACC was demonstrated to work on Nvidia, AMD and Intel accelerators, without performance data.
+In November 12, 2012, at the SC12 conference, a draft of the OpenACC version 2.0 specification was presented. New suggested capabilities include new controls over data movement (such as better handling of unstructured data and improvements in support for non-contiguous memory), and support for explicit function calls and separate compilation (allowing the creation and reuse of libraries of accelerated code). OpenACC 2.0 was officially released in June 2013.
+Version 2.5 of the specification was released in October 2015.
+
+
+== Compiler support ==
+Support of OpenACC is available in commercial compilers from PGI (from version 12.6), Cray, and CAPS.
+OpenUH is an Open64 based open source OpenACC compiler supporting C and FORTRAN, developed by HPCTools group from University of Houston.
+OpenARC is an open source C compiler developed at Oak Ridge National Laboratory to support all features in the OpenACC 1.0 specification. An experimental open source compiler, accULL, is developed by the University of La Laguna (C language only).
+GCC support for OpenACC was slow in coming. A GPU-targeting implementation from Samsung was announced in September 2013; this translated OpenACC 1.1-annotated code to OpenCL. The announcement of a "real" implementation followed two months later, this time from NVIDIA and based on OpenACC 2.0. This sparked some controversy, as the implementation would only target NVIDIA's own PTX assembly language, for which no open source assembler or runtime was available. Experimental support for OpenACC/PTX did end up in GCC as of version 5.1.
+
+
+== Usage ==
+In a way similar to OpenMP 3.x on homogeneous system or the earlier OpenHMPP, the primary mode of programming in OpenACC is directives. The specifications also include a runtime library defining several support functions. To exploit them, user should include "openacc.h" in C or "openacc_lib.h" in Fortran; and then call acc_init() function.
+
+
+=== Directives ===
+OpenACC defines an extensive list of pragmas (directives), for example:
+
+Both are used to define parallel computation kernels to be executed on the accelerator, using distinct semantics
+
+Is the main directive to define and copy data to and from the accelerator.
+
+Is used to define the type of parallelism in a parallel or kernels region.
+
+
+=== Runtime API ===
+There are some runtime API functions defined too: acc_get_num_devices(), acc_set_device_type(), acc_get_device_type(), acc_set_device_num(), acc_get_device_num(), acc_async_test(), acc_async_test_all(), acc_async_wait(), acc_async_wait_all(), acc_init(), acc_shutdown(), acc_on_device(), acc_malloc(), acc_free().
+OpenACC generally takes care of work organisation for the target device however this can be overridden through the use of gangs and workers. A gang consists of workers and operates over a number of processing elements (as with a workgroup in OpenCL).
+
+
+== See also ==
+C++ AMP
+OpenCL
+OpenHMPP
+OpenMP
+
+
+== References ==
+
+
+== External links ==
+http://www.openacc.org/
+Usage example from NVIDIA: part1, part2

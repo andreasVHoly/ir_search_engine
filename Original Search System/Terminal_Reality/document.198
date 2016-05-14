@@ -1,0 +1,49 @@
+Cloud.com
+
+
+Cloud.com was a venture-backed software company based in Cupertino, California that developed open source software for the implementation of public and private cloud computing environments. Its software, CloudStack, is designed to make it easier for service providers and enterprises to build, manage and deploy offerings similar to Amazon EC2 and Amazon S3. CloudStack is available in three editions: the Enterprise Edition, the Service Provider Edition and the open-source Community Edition.
+In July 2011, Cloud.com was acquired by Citrix Systems. The CloudStack software then became available under Apache Software License and further development governed by the Apache Foundation.
+
+
+== Features ==
+Cloud.com implements infrastructure as a service (IaaS) style private, public and hybrid clouds; technologies can be deployed on-premises or as hosted cloud services. The platform provides an AJAX-based interface that lets users access computing infrastructure resources (machines, network, and storage) available in private and public cloud services.
+Cloud.com includes these features:
+Multiple Hypervisor support from a single management pane
+Support for Common Cloud APIs like Amazon Web Services API, the OpenStack API and the VMware vCloud API
+Support for Linux and Windows virtual machines (VMs).
+Multi-tenant support for both secure internal cloud deployments as well as service provider environments
+Elastic IPs and Security Groups
+Delegated administration with support for users and groups management
+Billing and chargeback integration
+On-demand Virtual Datacenter Hosting
+Integrated Cloud templates and libraries
+In-browser console access
+Virtual Machine snapshots and rollback
+Virtual resource management and isolation
+
+
+== History ==
+Cloud.com was first registered in 1992 as a BBS system offering telnet, ftp, lynx, gopher and archie services, "Cloud City Online" by John Bilik in Lake Zurich, Il. The domain was hijacked several years later and sold multiple times. VMOps was founded by Sheng Liang, Shannon Williams, Alex Huang, Will Chan, and Chiradeep Vittal in 2008. The company raised a total of $17.6M in venture funding from Redpoint Ventures, Nexus Ventures and Index Ventures (Redpoint and Nexus led the initial Series A funding round).
+The company changed its name from VMOps to Cloud.com on May 4, 2010, when it emerged from stealth mode by announcing its product. In July 2010, Cloud.com became a founding member of the OpenStack initiative. In October 2010, Cloud.com announced a partnership with Microsoft to develop the code to provide integration and support of Windows Server 2008 R2 Hyper-V to the OpenStack project.
+In July 2011, Cloud.com was acquired by Citrix Systems.
+
+
+== Products ==
+CloudStack Community Edition (CE) is available under the GNU General Public License. The community edition is based on the latest features which engineers are developing. There are weekly builds as well as native sources for developers, users and contributors to have access to.
+CloudStack 2.0 for Enterprises provides an integrated software solution to extend infrastructure investment into a highly scalable, on-premises cloud computing environment for enterprises.
+CloudStack Service Provider Edition (SPE) offers service providers a management software and infrastructure technology to host their own public computing cloud. Core management functions include end-user self-administration, service offering management, cloud administration, and billing and reporting.
+
+
+== See also ==
+
+Cloud computing comparison
+
+
+== References ==
+
+
+== External links ==
+Official website
+Cloud.com Selected as Cloud Computing Platform for Korea’s First Large-Scale Private Cloud
+Cloud.com Partners with Red Hat to Support Red Hat Enterprise Linux 6
+Citrix Cloud offerings

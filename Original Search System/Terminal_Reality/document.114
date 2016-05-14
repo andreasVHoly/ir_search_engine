@@ -1,0 +1,70 @@
+Fused deposition modeling
+
+
+Fused deposition modeling (FDM) is an additive manufacturing technology commonly used for modeling, prototyping, and production applications. It is one of the techniques used for 3D printing.
+FDM works on an "additive" principle by laying down material in layers; a plastic filament or metal wire is unwound from a coil and supplies material to produce a part.
+The technology was developed by S. Scott Crump in the late 1980s and was commercialized in 1990. The term fused deposition modeling and its abbreviation to FDM are trademarked by Stratasys Inc. The exactly equivalent term, fused filament fabrication (FFF), was coined by the members of the RepRap project to give a phrase that would be legally unconstrained in its use. It is also sometimes called Plastic Jet Printing (PJP).
+
+
+== History ==
+Fused deposition modeling (FDM) was developed by S. Scott Crump in the late 1980s and was commercialized in 1990 by Stratasys. With the expiration of the patent on this technology there is now a large open-source development community (called RepRap), as well as commercial and DIY variants, which utilize this type of 3D printer. This has led to two orders of magnitude price drop since this technology's creation.
+
+
+== Process ==
+
+FDM begins with a software process which processes an STL file (stereolithography file format), mathematically slicing and orienting the model for the build process. If required, support structures may be generated. The machine may dispense multiple materials to achieve different goals: For example, one may use one material to build up the model and use another as a soluble support structure, or one could use multiple colors of the same type of thermoplastic on the same model.
+The model or part is produced by extruding small flattened strings of molten material to form layers as the material hardens immediately after extrusion from the nozzle
+A plastic filament or metal wire is unwound from a coil and supplies material to an extrusion nozzle which can turn the flow on and off. There is typically a worm-drive that pushes the filament into the nozzle at a controlled rate.
+The nozzle is heated to melt the material. The thermoplastics are heated past their glass transition temperature and are then deposited by an extrusion head.
+The nozzle can be moved in both horizontal and vertical directions by a numerically controlled mechanism. The nozzle follows a tool-path controlled by a computer-aided manufacturing (CAM) software package, and the part is built from the bottom up, one layer at a time. Stepper motors or servo motors are typically employed to move the extrusion head. The mechanism used is often an X-Y-Z rectilinear design, although other mechanical designs such as deltabot have been employed.
+Although as a printing technology FDM is very flexible, and it is capable of dealing with small overhangs by the support from lower layers, FDM generally has some restrictions on the slope of the overhang, and cannot produce unsupported stalactites.
+Myriad materials are available, such as Acrylonitrile Butadiene Styrene ABS, Polylactic acid PLA, Polycarbonate PC, Polyamide PA, Polystyrene PS, lignin, rubber, among many others, with different trade-offs between strength and temperature properties. In addition, even the color of a given thermoplastic material may affect the strength of the printed object. Recently a German company demonstrated for the first time the technical possibility of processing granular PEEK into filament form and 3D printing parts from the filament material using FDM-technology.
+
+
+== Commercial applications ==
+FDM, a prominent form of rapid prototyping, is used for prototyping and rapid manufacturing. Rapid prototyping facilitates iterative testing, and for very short runs, rapid manufacturing can be a relatively inexpensive alternative.
+FDM uses the thermoplastics ABS, ABSi, polyphenylsulfone (PPSF), polycarbonate (PC), and Ultem 9085, among others. These materials are used for their heat resistance properties. Ultem 9085 also exhibits fire retardancy making it suitable for aerospace and aviation applications.
+FDM is also used in prototyping scaffolds for medical tissue engineering applications.
+
+
+== Free applications ==
+
+Several projects and companies are making efforts to develop affordable 3D printers for home desktop use. Much of this work has been driven by and targeted at DIY/enthusiast/early adopter communities, with additional ties to the academic and hacker communities.
+RepRap is one of the longest running projects in the desktop category. The RepRap project aims to produce a free and open source hardware (FOSH) 3D printer, whose full specifications are released under the GNU General Public License, and which is capable of replicating itself by printing many of its own (plastic) parts to create more machines. RepRaps have already been shown to be able to print circuit boards and metal parts.Fab@Home is the other opensource hardware project for DIY 3D printers.
+Because of the FOSH aims of RepRap, many related projects have used their design for inspiration, creating an ecosystem of related or derivative 3D printers, most of which are also open source designs. The availability of these open source designs means that variants of 3D printers are easy to invent. The quality and complexity of printer designs, however, as well as the quality of kit or finished products, varies greatly from project to project. This rapid development of open source 3D printers is gaining interest in many spheres as it enables hyper-customization and the use of public domain designs to fabricate open source appropriate technology. This technology can also assist initiatives in sustainable development since technologies are easily and economically made from resources available to local communities.
+The cost of 3D printers has decreased dramatically since about 2010, with machines that used to cost $20,000 now costing less than $1,000. For instance, as of 2013, several companies and individuals are selling parts to build various RepRap designs, with prices starting at about €400 / US$500. The open source Fab@Home project has developed printers for general use with anything that can be squirted through a nozzle, from chocolate to silicone sealant and chemical reactants. Printers following the project's designs have been available from suppliers in kits or in pre-assembled form since 2012 at prices in the US$2000 range.
+The LulzBot 3D printers manufactured by Aleph Objects are another example of an open-source application of fused deposition modeling technology. The flagship model in the LulzBot line, the TAZ printer takes inspiration for its design from the RepRap Mendel90 and Prusa i3 models. The LulzBot 3D printer is currently the only printer on the market to have received the "Respects Your Freedom" certification from the Free Software Foundation.
+
+
+== See also ==
+3D printing
+3D printer extruder
+CEL Robox
+Direct metal laser sintering
+Fab lab
+Fab@Home
+Fused filament fabrication
+G-code
+Hyrel 3D
+MakerBot Industries
+Printrbot
+Rapid prototyping
+RepRap Project
+Robo 3D
+Selective laser sintering
+Stereolithography
+Ultimaker
+Von Neumann universal constructor
+SNT 3D Printers
+
+
+== References ==
+
+
+== Further reading ==
+"Results of Make Magazine's 2015 3D Printer Shootout". docs.google.com. Retrieved 1 June 2015. 
+"Evaluation Protocol for Make Magazine's 2015 3D Printer Shootout". makezine.com. Retrieved 1 June 2015. 
+Stephens, Brent; Parham Azimia; Zeineb El Orcha; Tiffanie Ramos (November 2013). "Ultrafine Particle Emissions from Desktop 3D Printers". Atmospheric Environment 79: 334–339. doi:10.1016/j.atmosenv.2013.06.050. Retrieved 13 August 2013. 
+"How Fused Deposition Modeling Works". THRE3D.com. Archived from the original on February 21, 2014. Retrieved 7 February 2014. 
+"3D Printing process and How FDM technology works Video". homeshop3dprinting.com. Retrieved 4 June 2014. 
+"Complete list of G-code used by 3D printer's firmware of RepRap project". RepRap.org. Retrieved 26 August 2015.

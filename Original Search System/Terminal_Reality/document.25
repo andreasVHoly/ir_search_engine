@@ -1,0 +1,64 @@
+Logistics automation
+
+
+Logistics automation is the application of computer software and/or automated machinery to improve the efficiency of logistics operations. Typically this refers to operations within a warehouse or distribution center, with broader tasks undertaken by supply chain management systems and enterprise resource planning systems.
+Logistics automation systems can powerfully complement the facilities provided by these higher level computer systems. The focus on an individual node within a wider logistics network allows systems to be highly tailored to the requirements of that node.
+
+
+== Components ==
+
+Logistics automation systems comprise a variety of hardware and software components:
+Fixed machinery
+Automated storage and retrieval systems, including:
+Cranes serve a rack of locations, allowing many levels of stock to be stacked vertically, and allowing far high storage densities and better space utilization than alternatives.
+Automated guided vehicle move items to a human picker in systems produced by Amazon Robotics
+
+Conveyors: automated conveyors allow the input of containers in one area of the warehouse, and either through hard coded rules or data input allow destination selection. The container will later appear at the selected destination.
+Vertical Carousels based on the paternoster system or with space optimization, these can be thought of as large scale vending machines.
+
+Sortation, or sorting systems: similar to conveyors but typically have higher capacity and can divert containers more quickly. Typically used to distribute high volumes of small cartons to a large set of locations.
+Industrial robots: four to six axis industrial robots, e.g. palleting robots, are used for palleting, depalleting, packaging, commissioning and order picking.
+Typically all of these will automatically identify and track containers based upon barcodes, or increasingly, RFID tags
+
+Motion check weighers may be used to reject cases or individual products by checking them for underweight conditions and rejecting the item. They are often used in kitting conveyor lines to ensure all pieces belonging in the kit are present. Large wholesalers and retail club stores insist on receiving the exact amount of product in each package as specified.
+Mobile technology
+Radio data terminals: these are hand held or truck mounted terminals which connect by wireless to logistics automation software and provide instructions to operators moving throughout the warehouse. Many also have in-built bar code scanners to allow identification of containers. Bar codes allow the automatic capture of data without use of the computer keyboard, which is slow and error prone.
+
+Software
+Integration software: this provides overall control of the automation machinery and for instance allows cranes to be connected to conveyors for seamless stock movements.
+Operational control software: provides low-level decision making, such as where to store incoming containers, and where to retrieve them when requested.
+Business Control software: provides higher level functionality, such as identification of incoming deliveries / stock and scheduling order fulfillment, assignment of stock to outgoing trailers.
+
+
+== Benefits of logistics automation ==
+A typical warehouse or distribution center will receive stock of a variety of products from suppliers and store these until the receipt of orders from customers, whether individual buyers (e.g. mail order), retail branches (e.g. chain stores), or other companies (e.g. wholesalers). A logistics automation system may provide the following:
+Automated goods in processes: Incoming goods can be marked with barcodes and the automation system notified of the expected stock. On arrival, the goods can be scanned and thereby identified, and taken via conveyors, sortation systems, and automated cranes into an automatically assigned storage location.
+Automated Goods Retrieval for Orders: On receipt of orders, the automation system is able to immediately locate goods and retrieve them to a pick-face location.
+Automated dispatch processing: Combining knowledge of all orders placed at the warehouse the automation system can assign picked goods into dispatch units and then into outbound loads. Sortation systems and conveyors can then move these onto the outgoing trailers.
+If needed, repackaging to ensure proper protection for further distribution or to change the package format for specific retailers/customers.
+A complete warehouse automation system can drastically reduce the workforce required to run a facility, with human input required only for a few tasks, such as picking units of product from a bulk packed case. Even here, assistance can be provided with equipment such as pick-to-light units. Smaller systems may only be required to handle part of the process. Examples include automated storage and retrieval systems, which simply use cranes to store and retrieve identified cases or pallets, typically into a high-bay storage system which would be unfeasible to access using fork-lift trucks or any other means.
+
+
+== Automation software ==
+Software or cloud-based SaaS solutions are used for logistics automation which helps the supply chain industry in automating the workflow as well as management of the system. There are few generalized software available in the new market in the said topology. This is because there is no rule to generalize the system as well as work flow even though the practice is more or less the same. Most of the commercial companies do use one or the other of the custom solutions.
+But there are various software solutions that are being used within the departments of logistics. There are a few departments in Logistics, namely: Conventional Department, Container Department, Warehouse, Marine Engineering, Heavy Haulage, etc.
+Software used in these departments
+Conventional department : CVT software / CTMS software.
+Container Trucking: CTMS software
+Warehouse : WMS/WCS
+Improving Effectiveness of Logistics Management
+Logistical Network
+Information
+Transportation
+Sound Inventory Management
+Warehousing, Materials Handling & Packaging
+
+
+== See also ==
+Automation
+Material handling equipment
+
+
+== References ==
+
+Yam, K. L., "Encyclopedia of Packaging Technology", John Wiley & Sons, 2009, ISBN 978-0-470-08704-6

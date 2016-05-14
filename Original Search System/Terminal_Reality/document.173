@@ -1,0 +1,44 @@
+Cloud engineering
+
+
+Cloud engineering is the application of engineering disciplines to cloud computing. It brings a systematic approach to concerns of commercialization, standardization, and governance of cloud computing applications. In practice, it leverages the methods and tools of engineering in conceiving, developing, operating and maintaining cloud computing systems and solutions. It is about the process of designing the systems necessary to leverage the power and economics of cloud resources to solve business problems.
+
+
+== Core features ==
+Cloud engineering is a field of engineering that focuses on cloud services, such as "software as a service", "platform as a service", and "infrastructure as a service". It is a multidisciplinary method encompassing contributions from diverse areas such as systems engineering, software engineering, web engineering, performance engineering, information engineering, security engineering, platform engineering, service engineering, risk engineering, and quality engineering. The nature of commodity-like capabilities delivered by cloud services and the inherent challenges in this business model drive the need for cloud engineering as the core discipline.
+Elements of Cloud Engineering include:
+Foundation: the fundamental basics, concepts, guiding principles, and taxonomy
+Implementation: the building blocks and practice guides for Cloud realization
+Lifecycle: the end-to-end iteration of Cloud development and delivery
+Management: the design-time and run-time Cloud management from multiple perspectives
+
+
+== Profession ==
+The professionals who work in the field of cloud engineering are primarily cloud architects and engineers. The key skills possessed by cloud engineering professionals are:
+Know the language of business and domain knowledge
+Understand the conceptual, logical and physical architecture
+Master various cloud technologies, frameworks, and platforms
+Implement the solutions for quality of cloud services, e.g. HA, DR, scaling, performance
+Work on the security at multiple levels
+Develop applications for flexible deployment, provisioning, and management
+Leverage open source packages and products
+Apply agile and lean principles in design and construction
+The demand for skills in advanced ICT (Information and Communication Technology) has rapidly expanded in recent years as business and society are being transformed by the emergence of Internet and Web as ubiquitous media for enabling knowledge-based global economy. This in turn has created a huge demand for networked-enabled parallel and distributed computing technologies that are changing the way we conduct science, operate business, and tackle challenging problems such as epidemic diseases and climate change.
+
+
+== History ==
+The notion of cloud engineering in the context of cloud computing had been sparsely used in discussions, presentations and talks in various occasions in the middle of the 2000s. The term of cloud engineering was formally coined around 2007 and the concept of cloud engineering was officially introduced in April 2009. Various aspects and topics of this subject have been extensively covered in a number of industry events. Extensive research has been conducted on specific areas in cloud engineering, such as development support for cloud patterns, and cloud business continuity services. The first IEEE International Conference on Cloud Engineering (IC2E) took place on March 25–28, 2013 and the second conference was held on March 10–14, 2014.
+
+
+== See also ==
+Computer science
+Cloud computing
+
+
+== References ==
+
+
+== Further reading ==
+Babcock, Charles (June 22, 2011.) "'Engineering Cloud' Promises To Modernize Manufacturing.", from Information Week.
+Dharma, Krish. "Engineering Design Meets Cloud Technology." from Mbtmag.com
+Williams, Peter; Cox, Simon (June 2009.) "Engineering in the Cloud: An Engineering Software + Services Architecture Forged in Turbulent Times", MSDN Architecture Center

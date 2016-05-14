@@ -1,0 +1,37 @@
+Powder bed and inkjet head 3D printing
+
+
+Powder bed and inkjet 3D printing, known variously as "binder jetting" and "drop-on-powder" – or simply "3D printing" (3DP) – is a rapid prototyping and additive manufacturing (or "layered manufacturing") technology for making objects described by digital data. (Other "powder-bed" manufacturing technologies include selective laser sintering and selective laser melting.)
+
+
+== History ==
+This technology was first developed at the Massachusetts Institute of Technology in 1993 and in 1995 Z Corporation obtained an exclusive license. The term "Three-Dimensional Printing" was trademarked by the same.
+
+
+== Description ==
+As in many other additive manufacturing processes, (and as a layered manufacturing technology), the part to be printed is built up from many thin cross sections of the 3D model. An inkjet print head moves across a bed of powder, selectively depositing a liquid binding material. A thin layer of powder is spread across the completed section and the process is repeated with each layer adhering to the last.
+When the model is complete, unbound powder is automatically and/or manually removed in a process called "de-powdering" and may be reused to some extent.
+The de-powdered part could optionally be subjected to various infiltrants or other treatments to produce properties desired in the final part.
+
+
+== Materials ==
+In the original implementations, starch and gypsum plaster fill the powder bed, the liquid "binder" being mostly water to activate the plaster. The binder also includes dyes (for color printing), and additives to adjust viscosity, surface tension, and boiling point to match print head specifications. The resulting plaster parts typically lack "green strength" and require infiltration by melted wax, cyanoacrylate glue, epoxy, etc. before regular handling.
+While not necessarily employing conventional inkjet technology, various other powder-binder combinations may be deployed to form objects by chemical or mechanical means. The resulting parts may then be subjected to different post-processing regimes, such as infiltration or bakeout. This may be done, for example, to eliminate the mechanical binder (e.g., by burning) and consolidate the core material (e.g., by melting), or to form a composite material blending the properties of powder and binder. Depending on the material, full color printing may or may not be an option. As of 2014, inventors and manufacturers have developed systems for forming objects from sand and calcium carbonate (forming a synthetic marble), acrylic powder and cyanoacrylate, ceramic powder and a liquid binder, sugar and water (for making candies), etc.
+3D printing technology has a limited potential to vary material properties in a single build, but is generally limited by the use of a common core material. In the original Z Corporation systems, cross-sections are typically printed with solid outlines (forming a solid shell) and a lower-density interior pattern to speed printing and ensure dimensional stability as the part cures.
+
+
+== Characteristics ==
+In addition to volumetric color by use of multiple print heads and colored binder, the 3D printing process is generally faster than other additive manufacturing technologies such as fused deposition modeling or drop-on-drop material jetting which require 100% of build and support material to be deposited at the desired resolution. In 3D printing, the bulk of each printed layer, regardless of complexity, is deposited by the same, rapid spreading process.
+As with other powder-bed technologies, support structures are generally not required because loose powder supports overhanging features and stacked or suspended objects. The elimination of printed support structures can reduce build time and material use and simplify both equipment and post-processing. However, de-powdering itself can be a delicate, messy, and time-consuming task. Some machines therefore automate de-powdering and powder recycling to what extent feasible. Since the entire build volume is filled with powder, as with stereolithography, means to evacuate a hollow part must be accommodated in the design.
+Like other powder-bed processes, surface finish and accuracy, object density, and—depending on the material and process—part strength may be inferior to technologies such as stereolithography (SLA) or selective laser sintering (SLS). Although "stair-stepping" and asymmetrical dimensional properties are features of 3D printing as most other layered manufacturing processes, 3D printing materials are generally consolidated in such a way that minimizes the difference between vertical and in-plane resolution. The process also lends itself to rasterization of layers at target resolutions, a fast process that can accommodate intersecting solids and other data artifacts.
+Powder bed and inkjet 3D printers are expensive compared to regular 3D printers with prices ranging from $50.000 to $2 Million for enterprise grade, but recent $1.300 model introduced by Yvo de Haas and released as open source project make it more affordable.
+
+
+== See also ==
+3D printing
+List of common 3D test models
+3D printing marketplace
+Volumetric printing
+
+
+== References ==

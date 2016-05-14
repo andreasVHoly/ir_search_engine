@@ -1,0 +1,38 @@
+Knowledge retrieval
+
+
+Knowledge Retrieval seeks to return information in a structured form, consistent with human cognitive processes as opposed to simple lists of data items. It draws on a range of fields including epistemology (theory of knowledge), cognitive psychology, cognitive neuroscience, logic and inference, machine learning and knowledge discovery, linguistics, and information technology.
+
+
+== Overview ==
+In the field of retrieval systems, established approaches include:
+Data Retrieval Systems (DRS), such as database management systems, are well suitable for the storage and retrieval of structured data.
+Information Retrieval Systems (IRS), such as web search engines, are very effective in finding the relevant documents or web pages.
+Both approaches require a user to read and analyze often long lists of data sets or documents in order to extract meaning.
+The goal of knowledge retrieval systems is to reduce the burden of those processes by improved search and representation. This improvement is needed to leverage the increasing data volumes available on the Internet.
+
+
+== Comparison of Data, Information and Knowledge Retrieval ==
+Data Retrieval and Information Retrieval are earlier and more basic forms of information access. 
+Knowledge retrieval (KR) focuses on the knowledge level. We need to examine how to extract, represent, and use the knowledge in data and information. Knowledge retrieval systems provide knowledge to users in a structured way. Compared to data retrieval and information retrieval, they use different inference models, retrieval methods, result organization, etc. Table 1, extending van Rijsbergen’s comparison of the difference between data retrieval and information retrieval, summarizes the main characteristics of data retrieval, information retrieval, and knowledge retrieval. The core of data retrieval and information retrieval is retrieval subsystems. Data retrieval gets results through Boolean match. Information retrieval uses partial match and best match. Knowledge retrieval is also based on partial match and best match.
+From an inference perspective, data retrieval uses deductive inference, and information retrieval uses inductive inference. Considering the limitations from the assumptions of different logics, traditional logic systems (e.g., Horn subset of first order logic) cannot reasoning efficiently. Associative reasoning, analogical reasoning and the idea of unifying reasoning and search may be effective methods of reasoning at the web scale.
+From the retrieval perspective, knowledge retrieval systems focus on semantics and better organization of information. Data retrieval and information retrieval organize the data and documents by indexing, while knowledge retrieval organize information by indicating connections between elements in those documents.
+
+
+== Frameworks for Knowledge Retrieval systems ==
+From computer science perspective, a logic framework concentrating on fuzziness of knowledge queries has been proposed and investegated in detail. Markup languages for knowledge reasoning and relevant strategies have been investigated, which may serve as possible logic reasoning foundations for text based knowledge retrieval.
+From cognitive science perspective, especially from cognitive psychology and cognitive neuroscience perspective, the neurobiological basis for knowledge retrieval in the human brain has been investigated, and may serve as a cognitive model for knowledge retrieval.
+
+
+== Knowledge Retrieval related Disciplines ==
+Knowledge retrieval can draw results from the following related theories and technologies:
+- Theory of Knowledge: knowledge acquisition, knowledge organization, knowledge representation, knowledge validation, knowledge management.
+- Cognitive Science: cognitive psychology, cognitive neuroscience, cognitive informatics, concept formation and learning, decision making, human–computer interaction.
+- Machine Learning and Knowledge Discovery: preprocessing, classification, clustering, prediction, postprocessing, statistical learning theory.
+- Logic and Inference: propositional logic, predicate logic, attribute logic, universal logic, inductive inference, deductive inference, associative reasoning, analogical reasoning, approximate reasoning.
+- Information Technology: information theory, information science, information retrieval, database systems, knowledge-based systems, rule-based systems, expert systems, decision support systems, intelligent agent technology.
+- Linguistics: computational linguistics, natural language understanding, natural language processing.
+Topics listed under each entry serve as examples and do not form a complete list. And many related disciplines should be added as the field grows mature.
+
+
+== References ==

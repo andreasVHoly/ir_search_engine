@@ -1,0 +1,55 @@
+OwnCloud
+
+
+OwnCloud (stylized ownCloud) is a suite of client-server software for creating file hosting services and using them. OwnCloud is functionally very similar to the widely used Dropbox, with the primary functional difference being that OwnCloud is free and open-source, and thereby allowing anyone to install and operate it without charge on a private server. Its openness eschews enforced quotas on storage space or the number of connected clients, instead having hard limits defined by the physical capabilities of the server.
+
+
+== History ==
+Frank Karlitschek, a KDE software developer, started developing OwnCloud in January 2010, in order to provide a free software replacement to proprietary storage service providers.
+OwnCloud has been integrated with the GNOME desktop. Integration of ownCloud with the Kolab groupware and collaboration project has started as of 2013. Additional projects that use or link to OwnCloud include a Raspberry Pi project to create a cloud storage system using the Raspberry Pi's small, low-energy form-factor.
+
+
+== Overview ==
+
+
+=== Design ===
+In order for desktop machines to synchronize files with their OwnCloud server, desktop clients are available for PCs running Windows, OS X, FreeBSD or Linux. Mobile clients exist for iOS and Android devices. Files and other data (such as calendars, contacts or bookmarks) can also be accessed, managed, and uploaded using a web browser without any additional software. Any updates to the file system are pushed to all computers and mobile devices connected to a user's account.
+The OwnCloud server is written in the PHP and JavaScript scripting languages. For remote access, it employs sabre/dav, an open-source WebDAV server. OwnCloud is designed to work with several database management systems, including SQLite, MariaDB, MySQL, Oracle Database, and PostgreSQL.
+
+
+=== Features ===
+File storage in conventional directory structures or via WebDAV
+Encryption of user files, both in transmission and at rest
+Synchronization of clients running Windows (Windows XP, Vista, 7 and 8), OS X (10.6 or later), or Linux
+Calendar (also as CalDAV)
+Task scheduler
+Address book (also as CardDAV)
+Music streaming (through Ampache)
+User and group administration (via OpenID or LDAP)
+Sharing of content with defined read/write permissions between groups, users, or public URLs
+Online text editor with syntax highlighting and code folding
+Bookmarking
+URL shortening suite
+Photo gallery
+Video viewer
+PDF viewer (using PDF.js)
+Viewer for ODF files (.odt, .odp, .ods)
+Synchronization of Mozilla Firefox settings, bookmarks, and history with Mozilla Sync
+RSS/Atom feed reader
+Mountable external Dropbox, Google Drive, or Amazon S3 storage
+Customizable with one-click-install apps
+Logging of file-related actions, logs, who accessed what, when and from where (only available in the OwnCloud Business, Enterprise and Education editions)
+
+
+== See also ==
+
+Comparison of file hosting services
+Comparison of file synchronization software
+Comparison of online backup services
+
+
+== References ==
+
+
+== External links ==
+Official website

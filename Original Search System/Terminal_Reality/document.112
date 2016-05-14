@@ -1,0 +1,31 @@
+AstroPrint
+
+
+AstroPrint is a suite of software and services, designed for 3D printing by 3DaGoGo Inc., a private San Diego based technology company. AstroPrint develops software to enable the management of 3D printing from any web enabled device.
+AstroPrint works by taking a user's uploaded STL file, adding supports, slicing it, and saving the g-code in the user's account online. The user can then access, download, modify, and print their models wirelessly via their 3D printer. AstroPrint is built with a combination of 3D printing software, such as Cura, Repetier Host, Slic3r, and OctoPrint.
+AstroPrint is compatible with most consumer 3D printers and its open source software can be run on a Raspberry Pi.
+
+
+== Background ==
+In May 2014, while part of the Betaspring seed accelerator, AstroPrint successfully raised $40,314 and met their funding goal in a single day using the crowdfunding website Kickstarter. Subsequently, AstroPrint attended and graduated from the 500 Startups seed accelerator in Mountain View, CA.
+AstroPrint maintains partnerships with National Institutes of Health, 3D Hubs, i.materialise and 3D Slash.
+3D printer manufacturer Airwolf 3D ships 3D Printers with AstroPrint software integrated.
+Investors of AstroPrint include Dave McClure, Will Bunker, Dave Hodson (Co-Founder & CTO of MessageCast Inc.) and Christine Tsai.
+
+
+== Media coverage ==
+On May 18, 2015, AstroPrint won the Editors Choice award by Maker Faire & Make Magazine.
+On July 27, 2015, San Diego Business Journal wrote that AstroPrint was instrumental in enabling Dr. Peter Manning at the National Institutes of Health in printing 3-dimensional models of a two-year-old boy's heart and the network of vessels that caused his breathing problems. AstroPrint reduced the hundreds of settings usually required by 3D printers to three.
+Tech Cocktail named AstroPrint under 3D Printing for "The Top 5 Technologies VCs Will Fund in 2015".
+On January 5, 2016, AstroPrint unveiled a joint project with $3 billion technology giant Marvell at CES 2016 in Las Vegas, Nevada. The project involved the designing of a consumer friendly 3D Printer containing embedded software by AstroPrint using the Kinoma platform. According to journalists and media personnel, the printer was only accessible on an invite only basis in a private ballroom within CES.
+
+
+== See also ==
+3D Printing Marketplace
+
+
+== References ==
+
+
+== External links ==
+AstroPrint's Official Website

@@ -1,0 +1,31 @@
+Linode
+
+
+Linode (a portmanteau of the words linux and node) is a privately owned virtual private server provider based in Galloway, New Jersey.
+
+
+== History ==
+Linode was founded by Christopher Aker, launching in mid 2003.
+Linode transitioned from UML to Xen virtualization in March 2008, and then to KVM in mid-2015. It launched its data backup service in 2009. NodeBalancer, a load-balancing service, launched in July 2011. Linode released Linode Managed, an incident response service designed for businesses, in 2013.
+Its Dallas, Texas and Fremont, California data centers opened in 2003. Linode also opened an Atlanta, Georgia data center in 2007; a Newark, New Jersey-based center in 2008; its London, England center in 2009; a Tokyo, Japan center in 2011; and a Frankfurt, Germany center in 2015.
+
+
+== Products and services ==
+Linode offers multiple products and services for its clients. Its flagship products are cloud-hosting services with multiple packages at different price points. Linode Backup allows customers to backup their servers on a daily, weekly, or monthly basis. Linode Manager and NodeBalancer both allow users to manage multiple server instances across a single system. In September 2013, Linode launched Longview, an analysis package for Linux.
+
+
+== Security concerns ==
+The accounts of eight Linode customers that held Bitcoin electronic currency were compromised in March 2012. Roughly 40,000 bitcoins were stolen.
+Hack The Planet accessed the Linode’s web servers in 2013. The group exploited a technical vulnerability in Adobe’s ColdFusion application server. Linode said that HTP could not decrypt any financially sensitive information and reset all account passwords. Linode announced plans to introduce two-step authentication for its services in May 2013.
+Starting Christmas Day 2015 and continuing until January 10th, Linode was hit by large and frequent DDoS attacks, which were being caused by a "bad actor" purchasing large amounts of botnet capacity in an attempt to significantly damage Linode’s business.
+
+
+== See also ==
+Cloud computing
+
+
+== References ==
+
+
+== External links ==
+Official website

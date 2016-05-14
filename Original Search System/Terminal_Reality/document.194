@@ -1,0 +1,32 @@
+Cloud research
+
+
+Many universities, vendors, institutes and government organizations are investing in research around the topic of cloud computing:
+In October 2007, the Academic Cloud Computing Initiative (ACCI) was announced as a multi-university project designed to enhance students' technical knowledge to address the challenges of cloud computing.
+In April 2009, UC Santa Barbara released the first open source platform-as-a-service, AppScale, which is capable of running Google App Engine applications at scale on a multitude of infrastructures.
+In April 2009, the St Andrews Cloud Computing Co-laboratory was launched, focusing on research in the important new area of cloud computing. Unique in the UK, StACC aims to become an international centre of excellence for research and teaching in cloud computing and provides advice and information to businesses interested in cloud-based services.
+In October 2010, the TClouds (Trustworthy Clouds) project was started, funded by the European Commission's 7th Framework Programme. The project's goal is to research and inspect the legal foundation and architectural design to build a resilient and trustworthy cloud-of-cloud infrastructure on top of that. The project also develops a prototype to demonstrate its results.
+In January 2011, the IRMOS EU-funded project developed a real-time cloud platform, enabling interactive applications to be executed in cloud infrastructures.
+In July 2011, the High Performance Computing Cloud (HPCCLoud) project was kicked-off aiming at finding out the possibilities of enhancing performance on cloud environments while running the scientific applications – development of HPCCLoud Performance Analysis Toolkit which was funded by CIM-Returning Experts Programme – under the coordination of Prof. Dr. Shajulin Benedict.
+In June 2011, the Telecommunications Industry Association developed a Cloud Computing White Paper, to analyze the integration challenges and opportunities between cloud services and traditional U.S. telecommunications standards.
+In December 2011, the VISION Cloud EU-funded project proposed an architecture along with an implementation of a cloud environment for data-intensive services aiming to provide a virtualized Cloud Storage infrastructure.
+In October 2012, the Centre For Development of Advanced Computing released an open source, complete cloud service, software suite called "Meghdoot".
+In October 2012, the ECO2Clouds EU-funded project was launched to analyze the environmental impact of applications on the cloud and to optimize their deployment and scheduling based on a monitoring infrastructure based on BonFIRE proving ecometrics 
+In February 2013, the BonFIRE project launched a multi-site cloud experimentation and testing facility. The facility provides transparent access to cloud resources, with the control and observability necessary to engineer future cloud technologies, in a way that is not restricted, for example, by current business models.
+In February 2015, CloudLightning, a European Commission-funded Horizon 2020 project, was launched to address energy efficiency and high performance by developing a self-organising, self-optimising heterogeneous cloud computing service delivery model. Its initial application domains: genome processing, oil and gas exploration, and ray tracing.
+
+
+== European research ==
+In 2012 the European Commission has issued an analysis of the relevance of the open research issues for commercial stabilisation  in which various experts from industry and academia identify in particular the following major concerns:
+open interoperation across (proprietary) cloud solutions at IaaS, PaaS and SaaS levels
+managing multitenancy at large scale and in heterogeneous environments
+dynamic and seamless elasticity from inhouse clouds to public clouds for unusual (scale, complexity) and/or infrequent requirements
+data management in a cloud environment, taking the technical and legal constraints into consideration
+These findings have been refined into a research roadmap proposed by the Cloud Computing Expert Group on Research in December 2012  which tries to lay out a timeline for the identified research topics according to their commercial relevance. With the 8th Framework Programmes for Research and Technological Development, the European Commission is trying to support the according research work along the lines of the Europe 2020 strategy.
+
+
+== See also ==
+Cloud computing
+
+
+== References ==

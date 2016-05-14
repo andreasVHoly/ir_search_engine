@@ -1,0 +1,64 @@
+3D bioprinting
+
+
+3D bioprinting is the process of creating cell patterns in a confined space using 3D printing technologies, where cell function and viability are preserved within the printed construct. Generally, 3D bioprinting utilizes the layer-by-layer method to create tissue-like structures that are later used in medical and tissue engineering fields. Bioprinting covers a broad range of materials. Currently, bioprinting can be used to print tissues and organs to help research drugs and pills. In addition, 3D bioprinting has begun to incorporate the printing of scaffolds. These scaffolds can be used to regenerate joints and ligaments. The first patent related to this technology was filed in the United States in 2003 and granted in 2006.
+
+
+== Process ==
+3D bioprinting generally follows three steps, pre-bioprinting, bioprinting, and post-bioprinting.
+
+
+=== Pre-bioprinting ===
+Pre-bioprinting is the process of creating a model that the printer will later create and choosing the materials that will be used. One of the first steps is to obtain a biopsy of the organ. The common technologies used for bioprinting are computed tomography (CT) and magnetic resonance imaging (MRI). In order to print with a layer-by-layer approach, tomographic reconstruction is done on the images. The now-2D images are then sent to the printer to be made. Once the image is created, certain cells are isolated and multiplied. These cells are then mixed with a special liquefied material that provides oxygen and other nutrients to keep them alive. In some processes, the cells are encapsulated in cellular spheroids 500μm in diameter. This aggregation of cells does not require a scaffold, and are required for placing in the tubular-like tissue fusion for processes such as extrusion.
+
+
+=== Bioprinting ===
+In the second step, the liquid mixture of cells and nutrients are placed in a printer cartridge and structured using the patients' medical scans. When a bioprinted pre-tissue is transferred to an incubator, this cell-based pre-tissue matures into a tissue.
+3D bioprinting for fabricating biological constructs typically involves dispensing cells onto a biocompatible scaffold using a successive layer-by-layer approach to generate tissue-like three-dimensional structures.* Artificial organs such as livers and kidneys made by 3D bioprinting have been shown to lack crucial elements that affect the body such as working blood vessels, tubules for collecting urine, and the growth of billions of cells required for these organs. Without these components the body has no way to get the essential nutrients and oxygen deep within their interiors. Given that every tissue in the body is naturally compartmentalized of different cell types, many technologies for printing these cells vary in their ability to ensure stability and viability of the cells during the manufacturing process. Some of the methods that are used for 3D bioprinting of cells are photolithography, magnetic bioprinting, stereolithography, and direct cell extrusion.
+
+
+=== Post-bioprinting ===
+The post-bioprinting process is necessary to create a stable structure from the biological material. If this process is not well-maintained, the mechancial integrity and function of the 3D printed object is at risk.  In order to maintain the object,both mechanical and chemical stimulations are needed. These stimulations send signals to the cells to control the remodeling and growth of tissues. In addition, in recent development, bioreactor technologies have allowed the rapid maturation of tissues, vascularization of tissues and the ability to survive transplants.
+Bioreactors work in either providing convective nutrient transport, creating microgravity environments, changing the pressure causing solution to flow through the cells, or add compression for dynamic or static loading. Each type of bioreactor is ideal for different types of tissue, for example compression bioreactors are ideal for cartilage tissue.
+
+
+== Bioprinting approach ==
+Researchers in the field have developed approaches to produce living organs that are constructed with the appropriate biological and mechanical properties. 3D bioprinting is based on three main approaches: Biomimicry, autonomous self-assembly and mini-tissue building blocks.
+
+
+=== Biomimicry ===
+The first approach of bioprinting is called biomimicry. The main goal of this approach is to create fabricated structures that are identical to the natural structure that are found in the tissues and organs in the human body. Biomimicry requires duplication of the shape, framework, and the microenvironment of the organs and tissues. The application of biomimicry in bioprinting involves creating both identical cellular and extracellular parts of organs. In order for this approach to be successful, replicating the tissues on a micro scale is substantial. Therefore, it is necessary to understand the microenvironment, the nature of the biological forces in this microenvironment, the precise organization of functional and supporting cell types, solubility factors, and the composition of extracellular matrix.
+
+
+=== Autonomous self-assembly ===
+The second approach of bioprinting is autonomous self-assembly. This approach relies on the physical process of embryonic organ development then replicates the tissues by using this process as a model. When cells are in their early development, they create their own extracellular matrix building block, the proper cell signaling, and independent arrangement and patterning to provide the required biological functions and micro-architecture. Autonomous self-assembly demands specific information about the developmental techniques of the tissues and organs of the embryo. There is a "scaffold-free" model that uses self-assembling spheroids that subjects to fusion and cell arrangement to resemble evolving tissues. Autonomous self-assembly depends on the cell as the fundamental driver of histogenesis, guiding the building blocks, structural and functional properties of these tissues. It demands a deeper understanding of the of how embryonic tissues mechanisms develop as well as the microenvironment surrounded to create the bioprinted tissues.
+
+
+=== Mini-tissue ===
+The third approach of bioprinting is a combination of both the biomimicry and self-assembly approaches, which is called mini tissues. Organs and tissues are built from very small functional components. Mini-tissue approach takes these small pieces and manufacture and arrange them into larger framework. This approach uses two different strategies. The first strategy is when self-assembling cell spheres are arranged into large scaled tissues by using natural designs as a guide. The second strategy is when designing precise, high quality, reproductions of a tissue and allowing them to self-assemble into large scaled functional tissue. The mixture of these strategies is required to print a complex three dimensional biological structure.
+
+
+== Printers ==
+Akin to ordinary ink printers, bioprinters have three major components to them. These are the hardware used, the type of bio-ink, and the material it is printed on (biomaterials). In bioprinting, there are three major types of printers that have been used. These are inkjet, laser-assisted, and extrusion printers.
+Inkjet printers are mainly used in bioprinting for fast and large-scale products. One type of inkjet printer, called drop-on-demand inkjet printer, prints materials in exact amounts, minimizing cost and waste. Printers that utilize lasers provide high-resolution printing; however, these printers are often expensive. Extrusion printers print cells layer-by-layer, just like 3D printing to create 3D constructs. In addition to just cells, extrusion printers may also use hydrogels infused with cells.
+
+
+== Applications ==
+San Diego-based Organovo, an "early-stage regenerative medicine company", was the first company to commercialize 3D bioprinting technology. The company utilizes its NovoGen MMX Bioprinter for 3D bioprinting. The printer is optimized to be able to print skin tissue, heart tissue, and blood vessels among other basic tissues that could be suitable for surgical therapy and transplantation. Similarly, a research team at Swansea University in the UK is using bioprinting technology to produce soft tissues and artificial bones for eventual use in reconstructive surgery. Bioprinting technology will eventually be used to create fully functional human organs for transplants and drug research, which will allow for more effective organ transplants and safer more effective drugs.*
+
+
+=== Further advancements ===
+As well as being used for growing organs, this newer biotechnology is also being used to create skin for prosthetic limbs and for skin grafts. By taking a few live skin cells and applying bioengineering, limbs can be designed on a computer. The object, such as a prosthetic limb organs, can be customized to fit an amputee’s needs or a patient in need of a transplant. The 3D printer will print out these objects using nanotechnology, layer by layer, in less than an hour.
+In early 2015, 3-D printing techniques expanded to include materials such as graphene, a material possessing unique properties such as high levels of strength, rather than only plastics. Researchers have since proved that printing graphene using a micropipette technique to create nanostructures is possible. The nanostructures and graphene structures that are printed can create various objects, including architectures and woven structures. Using a computer, science and healthcare professionals can take X-rays and molds from a patient to recreate a specialized prosthetic that is customized to fit the patient. This allows the prosthetics to be more comfortable and function more naturally. In the future, this technology will change the face on medicine and manufacturing. This technology has great potential for the NBIC (nano-, bio-, info-, and cognitive-based technologies) to strategically make advancements in medicine and in surgical procedures that will greatly save time, costs, and create more convenient opportunities for patients and healthcare professionals.
+
+
+== Impact ==
+3D bioprinting contributes to significant advances in the medical field of tissue engineering by allowing for research to be done on innovative materials called biomaterials. Biomaterials are the materials adapted and used for printing three-dimensional objects. Some of the most notable bioengineered substances are usually stronger than the average bodily materials, including soft tissue and bone. These constituents can act as future substitutes, even improvements, for the original body materials. Alginate, for example, is an anionic polymer with many biomedical implications including feasibility, strong biocompatibility, low toxicity, and stronger structural ability in comparison to some of the body's structural material. Synthetic hydrogels are also commonplace, including PV-based gels. The combination of acid with a UV initiated PV based cross-linker has been evaluated by the Wake Forest Institute of Medicine and determined to be a suitable biomaterial. Engineers are also exploring other options such as printing micro-channels that can maximize the diffusion of nutrients and oxygen from neighboring tissues  In addition, The Defense Threat Reduction Agency aims to print mini organs such as hearts, livers, and lungs as the potential to test new drugs more accurately and perhaps eliminate the need for testing in animals.
+
+
+== See also ==
+3D bio-printing section in the 3D printing article
+Magnetic 3D bioprinting
+
+
+== References ==

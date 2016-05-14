@@ -1,0 +1,81 @@
+Rhinoceros 3D
+
+
+Rhinoceros (typically abbreviated Rhino, or Rhino3D) is a commercial 3D computer graphics and computer-aided design (CAD) application software developed by Robert McNeel & Associates; an American, privately held, employee-owned company, that was founded in 1980. Rhinoceros geometry is based on the NURBS mathematical model, which focuses on producing mathematically precise representation of curves and freeform surfaces in computer graphics (as opposed to polygon mesh-based applications).
+Rhinoceros is used in processes of computer-aided design (CAD), computer-aided manufacturing (CAM), rapid prototyping, 3D printing and reverse engineering in industries including architecture, industrial design (e.g. automotive design, watercraft design), product design (e.g. jewelry design) as well as for multimedia and graphic design.
+Rhinoceros is developed for the Microsoft Windows operating system and OS X. A visual scripting language add-on for Rhino, Grasshopper, is developed by Robert McNeel & Associates.
+
+
+== Overview ==
+
+
+=== Characteristics ===
+Rhinoceros is primarily a free form surface modeler that utilizes the NURBS mathematical model. Rhinoceros' application architecture and open SDK makes it modular and enables the user to customize the interface and create custom commands and menus. There are dozens of plug-ins available from both McNeel and other software companies that complement and expand Rhinoceros' capabilities in specific fields like rendering and animation, architecture, marine, jewelry, engineering, prototyping, and others.
+
+
+=== File format ===
+The Rhinoceros file format (.3DM) is useful for the exchange of NURBS geometry. The Rhino developers started the openNURBS Initiative to provide computer graphics software developers the tools to accurately transfer 3-D geometry between applications. An open-source toolkit, openNURBS includes the 3DM file format specification, documentation, C++ source code libraries and .NET 2.0 assemblies to read and write the file format, on supported platforms (Windows, Windows x64, Mac, and Linux). The McNeel Wiki has more current information.
+
+
+=== Compatibility ===
+Rhinoceros offers high compatibility with other software as it supports over 30 CAD file formats for importing and exporting.
+The following CAD and image file formats are natively supported (without use of external plugins):
+
+When opening CAD file formats not in its native .3dm file format, Rhinoceros will convert the geometry into its native format; when importing a CAD file the geometry is added to the current file.
+When AutoDesk AutoCAD's file format changes (see DWG file format for more information), the Open Design Alliance reverse engineers the file format to allow these files to be loaded by other vendors' software. Rhinoceros' import and export modules are actually plug-ins so they can be easily updated via a service release. Rhinoceros service releases (SR) are frequent and freely downloadable. Rhinoceros 5 SR10 can import and export DWG/DXF file formats up to version 2014.
+Rhinoceros is also compatible with a number of graphic design based program. Among them is Adobe Illustrator. This method is best when working with a vector base file. Start by saving the file and when promoted save as Adobe Illustrator (*ai) from there you are able to control the vectors created in Rhinoceros and can be further enhanced in Adobe Illustrator.
+
+
+=== 3D printing ===
+Rhinoceros 3D has many plug-ins that facilitate 3D printing    and allows the export of the .STL and .OBJ file formats, both of which are supported by numerous 3D printers and 3D printing services.
+In a recent overview leading 3D printing service provider i.materialise compared the top 25 most popular 3D modelling software programs in use today. Despite Rhinoceros 3D's many plug-ins for supporting 3D printing, Rhinoceros 3D only scored a 13th place in this extensive survey.
+
+
+=== Scripting and Programming ===
+Rhinoceros supports two scripting languages, Rhinoscript (based on VBScript) and Python (V5.0+ and Mac). It also has an SDK, and a complete plug-in system. One McNeel plug-in, a parametric modeling/visual programming tool called Grasshopper, has attracted many architects to Rhinoceros due to its ease of use and ability to create complex algorithmic structures.
+
+
+== Plug-ins and add-ons ==
+Commercial third-party plug-ins for Rhinoceros include:
+Analysis
+Scan&Solve for Rhino completely automates basic structural simulation of Rhino solids 
+Diva for Rhino by Solemma LLC: Environmental analysis for buildings. The plug-in was initially developed at the Graduate School of Design at Harvard University and is now distributed and developed by Solemma LLC.
+Rendering
+Brazil for Rhinothe Brazil rendering engine for Rhino by Robert McNeel & Associates
+KeyShot by Luxion: Rendering and animation
+Octane Render for Rhino by OTOY
+Maxwell Render for Rhino by Next Limit Technologies
+nVidia Iray for Rhino by Nvidia
+Realtime Renderer Plug-in for Rhino by Autodesk: rendering
+V-Ray for Rhino by Chaos Group: Rendering
+CAM
+madCAM by madCAM AB: Mould and Die CAM system for 2.5, 3, 3+2, 4 and 5-axis toolpath creation
+RhinoCAM, RhinoART, Rhino3DPrint by Mecsoft: machining, rapid prototyping
+Animation
+Bongo integrated animation for Rhino 5 by Robert McNeel & Associates
+Miscellaneous
+RhinoGold, RhinoNest, RhinoEmboss, Clayoo by TDM Solutions: jewelry, manufacturing, modeling
+VisualARQ by Asuni CAD: BIM architectural modeling tool
+RhinoWorks by Bricsys: Constraint-based parametric design in Rhino
+Shape Modelling for Rhino by Autodesk. Creation, analysis and modification of freeform surfaces
+T-splines for Rhino by Autodesk: T-splines modelling
+Urban Network Analysis by the joint MIT-SUTD International Design Center (IDC) to describe spatial patterns of cities using mathematical network analysis methods 
+For an extended overview of additional plugins see http://www.rhino3d.com/resources/
+
+
+== See also ==
+Comparison of computer-aided design editors
+Computer-aided industrial design
+
+
+== References ==
+
+
+== External links ==
+Official website
+McNeel Wiki
+Rhino on Youtube
+food4Rhino Rhino Plug-ins and Grasshopper Add-ons
+Official Rhino Blog
+History of Rhino
+Video examples

@@ -1,0 +1,17 @@
+Global Arrays
+
+
+Global Arrays, or GA, is the library developed by scientists at Pacific Northwest National Laboratory for parallel computing. GA provides a friendly API for shared-memory programming on distributed-memory computers for multidimensional arrays. The GA library is a predecessor to the GAS (global address space) languages currently being developed for high-performance computing.
+The GA toolkit has additional libraries including a Memory Allocator (MA), Aggregate Remote Memory Copy Interface (ARMCI), and functionality for out-of-core storage of arrays (ChemIO). Although GA was initially developed to run with TCGMSG, a message passing library that came before the MPI standard (Message Passing Interface), it is now fully compatible with MPI. GA includes simple matrix computations (matrix-matrix multiplication, LU solve) and works with ScaLAPACK. Sparse matrices are available but the implementation is not optimal yet.
+GA was developed by Jarek Nieplocha, Robert Harrison and R. J. Littlefield. The ChemIO library for out-of-core storage was developed by Jarek Nieplocha, Robert Harrison and Ian Foster.
+The GA library is incorporated into many quantum chemistry packages, including NWChem, MOLPRO, UTChem, MOLCAS, and TURBOMOLE. The GA library is also incorporated into sub-surface code STOMP
+The GA toolkit is free software, licensed under a self-made license.
+
+
+== References ==
+
+
+== See also ==
+
+Global Arrays Home Page
+Parsoft Home Page

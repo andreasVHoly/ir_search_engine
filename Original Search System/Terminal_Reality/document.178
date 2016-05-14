@@ -1,0 +1,31 @@
+Google Storage
+
+
+Google Cloud Storage is a RESTful online file storage web service for storing and accessing data on Google's infrastructure. The service combines the performance and scalability of Google's cloud with advanced security and sharing capabilities. It is an Infrastructure as a Service (IaaS), comparable to Amazon S3 online storage service.
+
+
+== Feasibility ==
+User activation is resourced through the API Developer Console. Google Account holders must first access the service by logging in and then agreeing to the Terms of Service, followed by enabling a billing structure.
+
+
+== Design ==
+Google Storage (GS) stores objects (originally limited to 100 GiB, currently up to 5 TiB) that are organized into buckets (as S3 does) identified within each bucket by a unique, user-assigned key. All requests are authorized using an access control list associated with each bucket and object. Bucket names and keys are chosen so that objects are addressable using HTTP URLs:
+http://storage.googleapis.com/bucket/object
+http://bucket.storage.googleapis.com/object
+https://storage.cloud.google.com/bucket/object
+
+
+== Features ==
+Interoperability - Google Storage is interoperable with other cloud storage tools and libraries that work with services such as Amazon S3 and Eucalyptus Systems.
+Consistency - Upload operations to Google Storage are atomic, providing strong read-after-write consistency for all upload operations.
+Access Control - Google Storage uses access control lists (ACLs) to manage object and bucket access. An ACL consists of one or more entries, each granting a specific permission to a scope. Permissions define what someone can do with an object or bucket (for example, READ or WRITE). Scopes define who the permission applies to. For example, a specific user or a group of users (such as Google account email addresses, Google Apps domain, public access, etc.)
+Resumable Uploads - Google Storage provides a resumable data transfer feature that allows to upload operations to resume after a communication failure has interrupted the flow of data.
+
+
+== References ==
+
+
+== External links ==
+Official website
+Google Cloud Storage Discussion Group
+Intro to new Google cloud technologies: Google Storage, Prediction API, BigQuery slideshare presentation by Chris Schalk (Developer Advocate at Google)

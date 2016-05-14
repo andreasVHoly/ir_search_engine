@@ -1,0 +1,10 @@
+Complexity paradox
+
+
+The complexity paradox is a phenomenon associated with 3D printing.
+The paradox arises from the observation that, in contrast with other forms of manufacturing, as the complexity of the item being manufactured increases, the cost of 3D printing the item declines.
+In the case of conventional manufacturing, the more complicated an item happens to be (i.e., the more components that it is made from and the more complex the resulting assembly process happens to be) the more the item costs to make.
+However, in the case of 3D printing, not only is it true that a complex 3D shape can be 'printed' just as easily as a simple one, it transpires that structural complexity actually reduces 3D printing costs
+Because the cost of 3D printing an item is dependent upon little more than the amount of ‘3D printing ink’ (as well as a small amount of electrical power) the more complex the shape happens to be, the more numerous are the spaces that there happen to be between the components (designers refer to inter-component-spaces as ‘voids’) the smaller the quantity of 3D printer ink (which is usually plastic, but can sometimes be metallic) that is required to create the printed object.
+The 3D printing complexity paradox can be expressed in the form of an equation:
+Greater complexity = more + bigger voids = less ink = lower cost

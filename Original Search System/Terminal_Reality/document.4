@@ -1,0 +1,46 @@
+Relevance (information retrieval)
+
+
+In information science and information retrieval, relevance denote how well a retrieved document or set of documents meets the information need of the user. Relevance may include concerns such as timeliness, authority or novelty of the result.
+
+
+== History ==
+The concern with the problem of finding relevant information dates back at least to the first publication of scientific journals in the 17th century.
+The formal study of relevance began in the 20th Century with the study of what would later be called bibliometrics. In the 1930s and 1940s, S. C. Bradford used the term "relevant" to characterize articles relevant to a subject (cf., Bradford's law). In the 1950s, the first information retrieval systems emerged, and researchers noted the retrieval of irrelevant articles as a significant concern. In 1958, B. C. Vickery made the concept of relevance explicit in an address at the International Conference on Scientific Information.
+Since 1958, information scientists have explored and debated definitions of relevance. A particular focus of the debate was the distinction between "relevance to a subject" or "topical relevance" and "user relevance".
+
+
+== Evaluation ==
+Main article: Information retrieval § Performance and correctness measures
+The information retrieval community has emphasized the use of test collections and benchmark tasks to measure topical relevance, starting with the Cranfield Experiments of the early 1960s and culminating in the TREC evaluations that continue to this day as the main evaluation framework for information retrieval research.
+In order to evaluate how well an information retrieval system retrieved topically relevant results, the relevance of retrieved results must be quantified. In Cranfield-style evaluations, this typically involves assigning a relevance level to each retrieved result, a process known as relevance assessment. Relevance levels can be binary (indicating a result is relevant or that it is not relevant), or graded (indicating results have a varying degree of match between the topic of the result and the information need). Once relevance levels have been assigned to the retrieved results, information retrieval performance measures can be used to assess the quality of a retrieval system's output.
+In contrast to this focus solely on topical relevance, the information science community has emphasized user studies that consider user relevance. These studies often focus on aspects of human-computer interaction (see also human-computer information retrieval).
+
+
+== Clustering and relevance ==
+The cluster hypothesis, proposed by C. J. van Rijsbergen in 1979, asserts that two documents that are similar to each other have a high likelihood of being relevant to the same information need. With respect to the embedding similarity space, the cluster hypothesis can be interpreted globally or locally. The global interpretation assumes that there exist some fixed set of underlying topics derived from inter-document similarity. These global clusters or their representatives can then be used to relate relevance of two documents (e.g. two documents in the same cluster should both be relevant to the same request). Methods in this spirit include:
+cluster-based information retrieval
+cluster-based document expansion such as latent semantic analysis or its language modeling equivalents. It is important to ensure that clusters – either in isolation or combination – successfully model the set of possible relevant documents.
+A second interpretation, most notably advanced by Ellen Voorhees, focuses on the local relationships between documents. The local interpretation avoids having to model the number or size of clusters in the collection and allow relevance at multiple scales. Methods in this spirit include,
+multiple cluster retrieval
+spreading activation and relevance propagation methods
+local document expansion
+score regularization
+Local methods require an accurate and appropriate document similarity measure.
+
+
+== Problems and alternatives ==
+The documents which are most relevant are not necessarily those which are most useful to display in the first page of search results. For example, two duplicate documents might be individually considered quite relevant, but it is only useful to display one of them. A measure called "maximal marginal relevance" (MRR) has been proposed to overcome this shortcoming. It considers the relevance of each document only in terms of how much new information it brings given the previous results.
+In some cases, a query may have an ambiguous interpretation, or a variety of potential responses. Providing a diversity of results can be a consideration when evaluating the utility of a result set.
+
+
+== References ==
+
+
+== Additional reading ==
+Hjørland, B. (2010). The foundation of the concept of relevance. Journal of the American Society for Information Science and Technology, 61(2), 217-237.
+Relevance : communication and cognition. by Dan Sperber; Deirdre Wilson. 2nd ed. Oxford; Cambridge, MA: Blackwell Publishers, 2001. ISBN 978-0-631-19878-9
+Saracevic, T. (2007). Relevance: A review of the literature and a framework for thinking on the notion in information science. Part II: nature and manifestations of relevance. Journal of the American Society for Information Science and Technology, 58(3), 1915-1933. (pdf)
+Saracevic, T. (2007). Relevance: A review of the literature and a framework for thinking on the notion in information science. Part III: Behavior and effects of relevance. Journal of the American Society for Information Science and Technology, 58(13), 2126-2144. (pdf)
+Saracevic, T. (2007). Relevance in information science. Invited Annual Thomson Scientific Lazerow Memorial Lecture at School of Information Sciences, University of Tennessee. September 19, 2007. (video)
+Introduction to Information Retrieval: Evaluation. Stanford. (presentation in PDF)

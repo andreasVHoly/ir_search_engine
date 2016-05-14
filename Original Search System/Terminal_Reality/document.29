@@ -1,0 +1,52 @@
+Contextual Query Language
+
+
+Contextual Query Language (CQL), previously known as Common Query Language, is a formal language for representing queries to information retrieval systems such as search engines, bibliographic catalogs and museum collection information. Based on the semantics of Z39.50, its design objective is that queries be human readable and writable, and that the language be intuitive while maintaining the expressiveness of more complex query languages. It is being developed and maintained by the Z39.50 Maintenance Agency, part of the Library of Congress.
+
+
+== Examples of query syntax ==
+Simple queries:
+
+dinosaur
+"complete dinosaur"
+title = "complete dinosaur"
+title exact "the complete dinosaur"
+Queries using Boolean logic:
+
+dinosaur or bird
+Palomar assignment and "ice age"
+dinosaur not reptile
+dinosaur and bird or dinobird
+(bird or dinosaur) and (feathers or scales)
+"feathered dinosaur" and (yixian or jehol)
+Queries accessing publication indexes:
+
+publicationYear < 1980
+lengthOfFemur > 2.4
+bioMass >= 100
+Queries based on the proximity of words to each other in a document:
+
+ribs prox/distance<=5 chevrons
+ribs prox/unit=sentence chevrons
+ribs prox/distance>0/unit=paragraph chevrons
+Queries across multiple dimensions:
+
+date within "2002 2005"
+dateRange encloses 2003
+
+Queries based on relevance:
+
+subject any/relevant "fish frog"
+subject any/rel.lr "fish frog"
+
+The latter example specifies using a specific algorithm for logistic regression.
+
+
+== References ==
+
+
+== External links ==
+CQL home page
+Z39.50 Maintenance Agency
+A Gentle Introduction to CQL
+ This article incorporates public domain material from the United States Government document "http://www.loc.gov/standards/sru/cql/".
