@@ -13,6 +13,7 @@ import porter
 import StopWord
 import thesaurus
 import tf_idf
+import MAP
 
 import parameters
 
@@ -109,3 +110,7 @@ print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3
 
 for i in range (min (numRetrieved, 20)):
    print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
+
+if parameters.mapTest:
+   m = MAP.MAP()
+   m.calculateMAP(result)

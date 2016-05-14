@@ -9,3 +9,5 @@ log_tf = True
 use_idf = True
 log_idf = True
 use_thesaurus = False
+
+mapTest = True
