@@ -1,5 +1,41 @@
 import sys
 import subprocess
+import math
+
+
+def calcTotDCG():
+    totDCG = 0
+    for i in range(1,6):
+        docIDs = getResults("./Results/results." + str(i))
+        totDCG+=calcDCG(i, docIDs)
+    return totDCG/5
+
+def calcDCG(q, dIDs):
+    DCG = 0
+    pos = 1
+    for d in dIDs:
+        DCG += getRel(q, d)/(math.log2(pos+1))
+        pos+=1
+    return DCG
+
+def calcTotIDCG():
+    totIDCG = 0
+    for i in range(1,6):
+        docIDs = getResults("./Results/results." + str(i))
+        for x in range(0,len(docIDs)):
+            for y in range(0, len(docIDs)-1):
+                if getRel(i, docIDs[y]) < getRel(i, docIDs[y+1]):
+                    temp = docIDs[y]
+                    docIDs[y] = docIDs[y+1]
+                    docIDs[y+1] = temp
+        totIDCG+=calcDCG(i, docIDs)
+    return totIDCG/5
+
+def getRel(q, ID):
+    fileName = "./" + sys.argv[1] + "/relevance." + str(q)
+    fo = open(fileName, "r")
+    rel = fo.readlines()
+    return int(rel[int(ID)])
 
 #Get document IDs from the results files
 def getResults(resultFile):
@@ -28,11 +64,15 @@ def runQueries(collection):
 
     sys.stdout.write('\r'+ "All results collected." + query + (" " * 30))
     print("")
-    #sys.stdout.write('\r'+ "Calculating MAP..." + (" " * 30))
+    sys.stdout.write('\r'+ "Calculating DCG..." + (" " * 30))
 
 if len(sys.argv)<2:
    print ("Syntax: NDCG.py <collection>")
    exit(0)
 
 runQueries(sys.argv[1])
-getResults("./Results/results.1")
+finalDCG = calcTotDCG()
+finalIDCG = calcTotIDCG()
+sys.stdout.write('\r'+ "DCG = " + str(finalDCG) + "     IDCG = " + str(finalIDCG))
+NDCG = finalDCG/finalIDCG
+print("NDCG = " + str(NDCG))
