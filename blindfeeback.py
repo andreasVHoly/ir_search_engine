@@ -45,3 +45,4 @@ def runBlindFeedback(doclist):
             sentence = line.split()
             for word in sentence:
                 # check if there is an index file
+                getIndexFile(word)
