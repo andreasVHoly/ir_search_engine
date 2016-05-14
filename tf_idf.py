@@ -47,7 +47,8 @@ class tfidf:
         f.close()
         return self.accum
 
-    def addTFIDFSysnonyms(self, synTerm):
-        similarityRatio = self.t.getSimilarityRatio(self.term, synTerm)
-        print("Similarity Ratio = " + str(similarityRatio))
+    def addTFIDFSysnonyms(self, synTerm, numSyn):
+        #similarityRatio = self.t.getSimilarityRatio(self.term, synTerm)
+        similarityRatio = 1/numSyn
+        #print(synTerm + " Similarity Ratio = " + str(similarityRatio))
         self.accum = self.getTFIDF(self.collection, synTerm, self.N, similarityRatio)

@@ -73,7 +73,7 @@ for term in query_words:
         #todo SYNONYMS
         if parameters.use_thesaurus:
             for s in syns:
-                tfidf.addTFIDFSysnonyms(s)
+                tfidf.addTFIDFSysnonyms(s, len(syns))
 
         #Caalculate a score for the term being in the title
         for l in lengths:
