@@ -1,37 +1,6 @@
 import sys
 import subprocess
 
-#Run MAP on all queries and get the average MAP of all five queries
-def calcAllMAP():
-    totMap = 0
-    for i in range(1,6):
-        docIDs = getResults("./Results/results." + str(i))
-        totMap+=calcMAP(i, docIDs)
-    return totMap/5
-
-#Get the MAP value of a single query
-def calcMAP(q, dIDs):
-    map = 0
-    pos = 1
-    for d in dIDs:
-        map += getRel(q, d, pos)
-        pos+=1
-    map /= len(dIDs)
-    return map
-
-#Get the relevance value of one of the results (i.e. doc)
-def getRel(q, ID, pos):
-    fileName = "./" + sys.argv[1] + "/relevance." + str(q)
-    fo = open(fileName, "r")
-    rel = fo.readlines()
-
-    if int(rel[int(ID)]) == 0:
-        return int(rel[int(ID)])/pos
-    elif int(rel[int(ID)]) == 1:
-        return (int(rel[int(ID)])/pos)*1.5
-    elif int(rel[int(ID)]) == 2:
-        return 1
-
 #Get document IDs from the results files
 def getResults(resultFile):
     dID = []
@@ -59,14 +28,11 @@ def runQueries(collection):
 
     sys.stdout.write('\r'+ "All results collected." + query + (" " * 30))
     print("")
-    sys.stdout.write('\r'+ "Calculating MAP..." + (" " * 30))
+    #sys.stdout.write('\r'+ "Calculating MAP..." + (" " * 30))
 
 if len(sys.argv)<2:
-   print ("Syntax: MAP.py <collection>")
+   print ("Syntax: NDCG.py <collection>")
    exit(0)
 
 runQueries(sys.argv[1])
-sys.stdout.write('\r'+ "MAP = " + str(calcAllMAP()) + (" " * 10))
-print("")
-
-
+getResults("./Results/results.1")
