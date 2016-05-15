@@ -12,11 +12,11 @@ import parameters
 #first we need to call the normal program so we would hand over to this class
 
 
-beginningStop = True
+
 # number of docs we take from the list
-k = 3
+k = 10
 # number of words from the docs
-n = 5
+n = 6
 
 tfidf = tf_idf.tfidf()
 p = porter.PorterStemmer()
@@ -37,17 +37,21 @@ def runBlindFeedback(collection,doclist,N,query):
             for word in sentence:
                 # check if there is an index file
                 word = word.lower()
-                if beginningStop and parameters.use_Stopword and sw.isStopWord(word):
+
+                if parameters.use_Stopword and parameters.use_largeStopwords and sw.isStopWordLarge(word):
+                    #print("Skipped stopword " + word)
+                    continue
+                elif parameters.use_Stopword and not parameters.use_largeStopwords and sw.isStopWord(word):
+                    # print("Skipped stopword " + word)
                     continue
 
                 if parameters.stemming:  # if the stemming parameter is set true
                     term = p.stem(word, 0, len(word) - 1)  # stem the search term
 
-                if not beginningStop and parameters.use_Stopword and sw.isStopWord(term):
-                    continue
                 #print(collection + "_index/" + term)
                 if not os.path.isfile(collection + "_index/" + term):  # if term matches one of the index files
                     continue
+                #print("looking up index file for term " + term)
                 result = tfidf.getblindTFIDF(collection, doclist, term, N)
                 if term not in termTFIDF:
                     termTFIDF[term] = result
@@ -55,11 +59,6 @@ def runBlindFeedback(collection,doclist,N,query):
                     termTFIDF[term] += result
                 #no we need to calc tf and idf
     #print(termTFIDF)
-    #removing unwanted words
-    if "and" in termTFIDF:
-        termTFIDF["and"] = 0
-    if "us" in termTFIDF:
-        termTFIDF["us"] = 0
     newQuery = ""
     #remove query words from expansion terms
     for i in query:
@@ -69,6 +68,7 @@ def runBlindFeedback(collection,doclist,N,query):
         if i in termTFIDF:
             termTFIDF[i] = 0
     result = sorted(termTFIDF, key=termTFIDF.__getitem__, reverse=True)
+    #print(result)
     for i in range(0,n):
         #print(result[i])
         newQuery += result[i] + " "
