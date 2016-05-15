@@ -88,20 +88,20 @@ for term in query_words:
 
 
         #Caalculate a score for the term being in the title
-        titleMatchCount = 0
-        for l in lengths:
-            mo = re.match (r'([0-9]+)\:([0-9\.]+)\:(.+)', l)
-            if mo:
-                document_id = mo.group (1)
-                length = eval (mo.group (2))
-                title = mo.group (3)
-                if (term in title.lower()):
-                    titleMatchCount += 1
-                    #titleScore += (1/len(title))*titleMatchCount
-                    titleScore += (titleMatchCount/len(title))
-                    if not document_id in accum:
-                        accum[document_id] =0
-                    accum[document_id] += titleScore
+        # titleMatchCount = 0
+        # for l in lengths:
+        #     mo = re.match (r'([0-9]+)\:([0-9\.]+)\:(.+)', l)
+        #     if mo:
+        #         document_id = mo.group (1)
+        #         length = eval (mo.group (2))
+        #         title = mo.group (3)
+        #         if (term in title.lower()):
+        #             titleMatchCount += 1
+        #             #titleScore += (1/len(title))*titleMatchCount
+        #             titleScore += (titleMatchCount/len(title))
+        #             if not document_id in accum:
+        #                 accum[document_id] =0
+        #             accum[document_id] += titleScore
 
 # parse lengths data and divide by |N| and get titles
 for l in lengths:
@@ -127,15 +127,15 @@ if parameters.use_blindRelevance:
 
     endTime = time.time()
     numRetrieved = len(result)
-    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-    for i in range(min(numRetrieved, 10)):
-        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+    #for i in range(min(numRetrieved, 10)):
+        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
     blind.runBlindFeedback(collection,result,N,query_words)
 else:
     endTime = time.time()
     numRetrieved = len(result)
-    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
     for i in range(min(numRetrieved, 10)):
         print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
