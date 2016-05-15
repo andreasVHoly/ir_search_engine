@@ -7,7 +7,11 @@ def calcTotDCG():
     totDCG = 0
     for i in range(1,6):
         docIDs = getResults("./Results/results." + str(i))
-        totDCG+=calcDCG(i, docIDs)
+        dcg = calcDCG(i, docIDs)
+        arrNDCG.append(dcg)
+        print("Query " + str(i) + " DCG = " + str(dcg))
+        totDCG+=dcg
+    print("")
     return totDCG/5
 
 def calcDCG(q, dIDs):
@@ -28,7 +32,11 @@ def calcTotIDCG():
                     temp = docIDs[y]
                     docIDs[y] = docIDs[y+1]
                     docIDs[y+1] = temp
-        totIDCG+=calcDCG(i, docIDs)
+        idcg = calcDCG(i, docIDs)
+        arrNDCG[i-1] /= idcg
+        print("Query " + str(i) + " IDCG = " + str(idcg))
+        totIDCG+=idcg
+    print("")
     return totIDCG/5
 
 def getRel(q, ID):
@@ -64,15 +72,18 @@ def runQueries(collection):
 
     sys.stdout.write('\r'+ "All results collected." + query + (" " * 30))
     print("")
-    sys.stdout.write('\r'+ "Calculating DCG..." + (" " * 30))
 
 if len(sys.argv)<2:
    print ("Syntax: NDCG.py <collection>")
    exit(0)
 
 runQueries(sys.argv[1])
+arrNDCG = []
 finalDCG = calcTotDCG()
 finalIDCG = calcTotIDCG()
-sys.stdout.write('\r'+ "DCG = " + str(finalDCG) + "     IDCG = " + str(finalIDCG))
 NDCG = finalDCG/finalIDCG
-print("NDCG = " + str(NDCG))
+
+for i in range(0,5):
+    print("Query " + str(i+1) + " NDCG = " + str(arrNDCG[i]))
+print("\nDCG = " + str(finalDCG) + "   IDCG = " + str(finalIDCG) + "   NDCG = " + str(NDCG))
+

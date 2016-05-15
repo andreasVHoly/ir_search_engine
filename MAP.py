@@ -6,7 +6,10 @@ def calcAllMAP():
     totMap = 0
     for i in range(1,6):
         docIDs = getResults("./Results/results." + str(i))
-        totMap+=calcMAP(i, docIDs)
+        map = calcMAP(i, docIDs)
+        print("Query " + str(i) + " MAP = " + str(map))
+        totMap+=map
+    print("----------------------------------")
     return totMap/5
 
 #Get the MAP value of a single query
@@ -58,15 +61,13 @@ def runQueries(collection):
             subprocess.call(["python3", "query.py", sys.argv[1], query], stdout=output);
 
     sys.stdout.write('\r'+ "All results collected." + query + (" " * 30))
-    print("")
-    sys.stdout.write('\r'+ "Calculating MAP..." + (" " * 30))
 
 if len(sys.argv)<2:
    print ("Syntax: MAP.py <collection>")
    exit(0)
 
 runQueries(sys.argv[1])
-sys.stdout.write('\r'+ "MAP = " + str(calcAllMAP()) + (" " * 10))
+print("Average MAP = " + str(calcAllMAP()))
 print("")
 
 
