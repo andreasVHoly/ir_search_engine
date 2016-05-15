@@ -17,6 +17,9 @@ import tf_idf
 
 import parameters
 
+#andi added
+import blindfeeback as blind
+
 # check parameter for collection name
 if len(sys.argv)<3:
    print ("Syntax: query.py <collection> <query>")
@@ -34,6 +37,9 @@ while arg_index < len(sys.argv):
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
+
+if "##" in query:
+    parameters.use_blindRelevance = False
 query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
@@ -41,6 +47,7 @@ query_words = query.split (' ')
 # create accumulators and other data structures
 accum = {}
 filenames = []
+tfidfterms = {}
 p = porter.PorterStemmer ()
 sw = StopWord.StopWord()
 t = thesaurus.Thesaurus()
@@ -61,20 +68,24 @@ titleScore = 0
 
 # get index for each term and calculate similarities using accumulators
 for term in query_words:
+
     if term != '':
         if parameters.stemming: #if the stemming parameter is set true
             term = p.stem (term, 0, len(term)-1) #stem the search term
         if not os.path.isfile (collection+"_index/"+term): #if term matches one of the index files
            continue
-        if sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
+        if parameters.use_Stopword and sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
             continue
         syns = t.getSynonym(term) # get synonyms for the search term
         accum = tfidf.getTFIDF(collection, term, N, 1)
+
+
 
         #todo SYNONYMS
         if parameters.use_thesaurus:
             for s in syns:
                 tfidf.addTFIDFSysnonyms(s, len(syns))
+
 
         #Caalculate a score for the term being in the title
         titleMatchCount = 0
@@ -104,13 +115,28 @@ for l in lengths:
             accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
          titles[document_id] = title #populate dictionary of titles related to doc IDs
 
-# print top ten results
+
+
 result = sorted (accum, key=accum.__getitem__, reverse=True)
+# result is a list of doc id's ordered according to highest similarity
 
-endTime = time.time()
-numRetrieved = len(result)
-print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-for i in range (min (numRetrieved, 20)):
-   print ("{0:10.8f} {1:5} {2}".format (accum[result[i]], result[i], titles[result[i]]))
+
+if parameters.use_blindRelevance:
+    #print results
+
+    endTime = time.time()
+    numRetrieved = len(result)
+    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+
+    for i in range(min(numRetrieved, 10)):
+        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+    blind.runBlindFeedback(collection,result,N,query_words)
+else:
+    endTime = time.time()
+    numRetrieved = len(result)
+    print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
+
+    for i in range(min(numRetrieved, 10)):
+        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
 

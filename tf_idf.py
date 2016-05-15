@@ -52,3 +52,34 @@ class tfidf:
         similarityRatio = 1/numSyn
         #print(synTerm + " Similarity Ratio = " + str(similarityRatio))
         self.accum = self.getTFIDF(self.collection, synTerm, self.N, similarityRatio)
+
+
+    def getblindTFIDF(self,collection,docids,term, N):
+        #print("Doc ids:")
+        #print(docids)
+        #print(term)
+        #print(collection + "_index/" + term)
+        try:
+            f = open(collection + "_index/" + term,"r")  # open the index file related to the term being searched
+        except FileNotFoundError:
+            print("FILE NOT FOUND")
+            return -1
+        self.lines = f.readlines () #read lines from index file --> which file the term occurs in and how many times
+        self.idf = 1
+        if parameters.use_idf:
+            self.df = len(self.lines)  # df = document frequency - i.e. how many documents the term appears in
+            self.idf = 1 / self.df  # idf = inverse document frequency
+            #print("*"+str(self.df))
+            #print("**"+str(self.idf))
+        if parameters.log_idf:  # if log_idf parameter is set true
+            self.idf = math.log(1 + N / self.df)
+            #print("***"+str(self.idf))
+        count = 0
+        for i in self.lines:
+            seper = i.split(":")
+            if seper[0] in docids:
+                count += int(seper[1])
+        f.close()
+        #print(self.idf)
+        #print(count)
+        return count*self.idf
