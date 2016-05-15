@@ -77,6 +77,7 @@ for term in query_words:
                 tfidf.addTFIDFSysnonyms(s, len(syns))
 
         #Caalculate a score for the term being in the title
+        titleMatchCount = 0
         for l in lengths:
             mo = re.match (r'([0-9]+)\:([0-9\.]+)\:(.+)', l)
             if mo:
@@ -84,7 +85,9 @@ for term in query_words:
                 length = eval (mo.group (2))
                 title = mo.group (3)
                 if (term in title.lower()):
-                    titleScore += (1/len(title))
+                    titleMatchCount += 1
+                    #titleScore += (1/len(title))*titleMatchCount
+                    titleScore += (titleMatchCount/len(title))
                     if not document_id in accum:
                         accum[document_id] =0
                     accum[document_id] += titleScore
