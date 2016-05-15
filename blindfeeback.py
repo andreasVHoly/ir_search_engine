@@ -27,8 +27,9 @@ termTFIDF ={}
 # make method to get the list
 def runBlindFeedback(collection,doclist,N,query):
     # go through the doc ids
-    for docNum in range(0,k):
+    for docNum in range(min(len(doclist)-1, k)):
         # get relevant file
+
         ext = doclist[docNum]
         f = open(collection + "/document." + ext)
         lines = f.readlines()
