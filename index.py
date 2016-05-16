@@ -16,7 +16,7 @@ from os.path import isfile, join
 
 def getTitle(line):
     pos = line.find("\n")
-    if pos > 0 and pos <= 50:
+    if "\n" in line and pos < 50:
         return line[:pos]
     else:
         return line[:50]

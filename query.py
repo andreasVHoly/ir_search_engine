@@ -21,6 +21,13 @@ import parameters
 import blindfeeback as blind
 import booleanSearch
 
+def getTitle(line):
+    pos = line.find("\n")
+    if "\n" in line and pos < 50:
+        return line[:pos]
+    else:
+        return line[:50]
+
 # check parameter for collection name
 if len(sys.argv)<3:
    print ("Syntax: query.py <collection> <query>")
@@ -117,7 +124,8 @@ for l in lengths:
       if document_id in accum:
          if parameters.normalization: #if the normalize parameter is set true
             accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
-         titles[document_id] = title #populate dictionary of titles related to doc IDs
+         #titles[document_id] = title #populate dictionary of titles related to doc IDs
+         titles[document_id] = getTitle(title) #populate dictionary of titles related to doc IDs
 
 
 

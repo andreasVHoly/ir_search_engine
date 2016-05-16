@@ -1,201 +1,200 @@
-19:772:Design Automation usually refers to electronic des
-113:1844:k-means clustering is a method of vector quantizat
-46:386:The Generalized Hebbian Algorithm (GHA), also know
-48:998:Adaptive resonance theory (ART) is a theory develo
-54:282:Compositional pattern-producing networks (CPPNs), 
-97:1798:Educational Data Mining (EDM) describes a research
-139:1814:Hierarchical temporal memory (HTM) is an unsupervi
-153:1609:Subjective logic is a type of probabilistic logic 
-148:542:In statistics, latent variables (from Latin: prese
-30:512:Feature engineering is the process of using domain
-83:506:A fitness function is a particular type of objecti
-145:278:The junction tree algorithm (also known as 'Clique
-28:519:Bootstrap aggregating, also called bagging, is a m
-49:432:In the field of machine learning and specifically 
-160:442:Stochastic optimization (SO) methods are optimizat
-89:347:Hod Lipson (born 1967 in Haifa, Israel) is an Amer
-40:598:In mathematics, in particular probability theory a
-111:718:CURE (Clustering Using REpresentatives) is an effi
-178:1808:Swarm intelligence (SI) is the collective behavior
-44:1754:Semi-supervised learning is a class of supervised 
-138:817:A restricted Boltzmann machine (RBM) is a generati
-16:1073:Evolutionary robotics (ER) is a methodology that u
-130:567:Deeplearning4j is an open source deep learning lib
-74:393:In radio communications, an evolved antenna is an 
-182:485:The glowworm swarm optimization (GSO) is a swarm i
-25:1806:Machine learning is a subfield of computer science
-193:985:An autoencoder, autoassociator or Diabolo network 
-39:1052:A feedforward neural network is an artificial neur
-199:554:C-evo is a free turn-based strategy computer game 
-146:819:A graphical model or probabilistic graphical model
-144:580:Variational message passing (VMP) is an approximat
-159:533:Evolutionary biology, in particular the understand
-78:1803:In the field of artificial intelligence, a genetic
-156:1775:CMA-ES stands for Covariance Matrix Adaptation Evo
-169:971:Conceptual clustering is a machine learning paradi
-52:934:Statistical learning theory is a framework for mac
-128:398:Google Brain is a deep learning research project a
-165:1075:A cart is a vehicle designed for transport, using 
-1:1824:Artificial intelligence (AI) is the intelligence e
-150:512:Plate notation is a method of representing variabl
-87:485:In genetic algorithms, inheritance is the ability 
-34:854:In computer science, computational learning theory
-142:1810:A Bayesian network, Bayes network, belief network,
-168:1055:In decision tree learning, ID3 (Iterative Dichotom
-94:282:Dario Floreano (San Daniele del Friuli, Italy, 196
-98:978:In statistics, single-linkage clustering is one of
-162:1828:Evolution is change in the heritable traits of bio
-132:613:Torch is an open source machine learning library, 
-126:1823:Deep learning (deep structured learning, hierarchi
+38:1790:Computational neurogenetic modeling (CNGM) is conc
 22:530:In computer science, an evolution strategy (ES) is
-158:565:Hans-Paul Schwefel (born December 4, 1940 in Berli
-136:528:TensorFlow is an open source software library for 
-51:455:Empirical risk minimization (ERM) is a principle i
-82:1571:Memetic algorithms (MA) represent one of the recen
-121:1348:Q-learning is a model-free reinforcement learning 
+180:306:Stephen H. Muggleton FBCS, FIET, FAAAI,FECCAI, FSB
+70:1814:There are many types of artificial neural networks
+101:846:In graph theory, a clustering coefficient is a mea
+146:819:A graphical model or probabilistic graphical model
+76:466:Evolutionary data mining, or genetic data mining i
+40:598:In mathematics, in particular probability theory a
+47:1809:Random forests is a notion of the general techniqu
+135:353:AlchemyAPI is a company that uses machine learning
+198:721:Peter Fonagy OBE FMedSci FBA (born 1952) is a Hung
+110:811:Clustering is the problem of partitioning data poi
+14:679:Interactive evolutionary computation (IEC) or aest
+148:542:In statistics, latent variables (from Latin: prese
+57:1529:The evolution of nervous systems dates back to the
+63:1360:In artificial intelligence, an evolutionary algori
+144:580:Variational message passing (VMP) is an approximat
+25:1806:Machine learning is a subfield of computer science
+33:666:Active learning is a special case of semi-supervis
+111:718:CURE (Clustering Using REpresentatives) is an effi
+79:410:In genetic algorithms, a chromosome (also sometime
+86:546:Mutation is a genetic operator used to maintain ge
 173:1793:Category utility is a measure of "category goodnes
-106:1818:Clustering is the assignment of objects into group
-100:1825:Cluster analysis or clustering is the task of grou
-107:827:Fuzzy clustering (also referred to as soft cluster
-120:367:Richard S. Sutton is an American computer scientis
-122:633:A focused crawler is a web crawler that collects W
-177:465:In mathematics, a piecewise linear function is a r
 131:1853:Speech recognition (SR) is the inter-disciplinary 
-8:308:The European Coordinating Committee for Artificial
-109:729:In multivariate statistics and the clustering of d
-6:1107:The following is a list of current and past, noncl
-69:1801:A recurrent neural network (RNN) is a class of art
+36:1832:Pattern recognition is a branch of machine learnin
+29:1788:Supervised learning is the machine learning task o
+174:1198:Inductive logic programming (ILP) is a subfield of
+132:613:Torch is an open source machine learning library, 
+34:854:In computer science, computational learning theory
+138:817:A restricted Boltzmann machine (RBM) is a generati
+151:622:Structured prediction or structured (output) learn
+107:827:Fuzzy clustering (also referred to as soft cluster
+93:1055:Virtual screening (VS) is a computational techniqu
+186:1793:In computer science and operations research, the a
+3:1836:A.I. Artificial Intelligence, also known as A.I., 
+15:859:Human-based evolutionary computation (HBEC) is a s
+158:565:Hans-Paul Schwefel (born December 4, 1940 in Berli
+181:924:Swarm robotics is a new approach to the coordinati
+44:1754:Semi-supervised learning is a class of supervised 
+92:284:Phil Husbands (born 27 June, 1961) is a professor 
+49:432:In the field of machine learning and specifically 
+12:403:Artificial intelligence applications have been use
+160:442:Stochastic optimization (SO) methods are optimizat
+121:1348:Q-learning is a model-free reinforcement learning 
+90:354:Francesco Mondada (born 17 March 1967) is a Swiss 
+18:466:The Learnable Evolution Model (LEM) is a novel, no
+179:244:Gerardo Beni is a professor of electrical engineer
+67:819:Long short-term memory (LSTM) is a recurrent neura
+78:1803:In the field of artificial intelligence, a genetic
 23:374:ECJ is a freeware evolutionary computation researc
 192:1817:Bionics is the application of biological methods a
+108:1809:A globular cluster is a spherical collection of st
+41:364:The neocognitron is a hierarchical, multilayered a
+169:971:Conceptual clustering is a machine learning paradi
+149:1543:An influence diagram (ID) (also called a relevance
+114:920:Clustering high-dimensional data is the cluster an
+128:398:Google Brain is a deep learning research project a
+188:1765:The firefly algorithm (FA) is a metaheuristic algo
+150:512:Plate notation is a method of representing variabl
+106:1818:Clustering is the assignment of objects into group
+53:836:Neuroevolution, or neuro-evolution, is a form of m
+82:1571:Memetic algorithms (MA) represent one of the recen
+97:1798:Educational Data Mining (EDM) describes a research
+74:393:In radio communications, an evolved antenna is an 
+88:910:Peter Nordin is a Swedish computer scientist, entr
+140:336:Instantaneously trained neural networks are feedfo
+80:1007:In genetic algorithms, crossover is a genetic oper
+185:376:Marco Dorigo (born 26 August 1961, in Milan, Italy
+194:1409:Toxicology (from the Ancient Greek words τοξικός t
+26:260:
+115:467:In computer science, constrained clustering is a c
+165:1075:A cart is a vehicle designed for transport, using 
+143:384:A Dynamic Bayesian Network (DBN) is a Bayesian net
+184:1816:In computer science, particle swarm optimization (
+142:1810:A Bayesian network, Bayes network, belief network,
+19:772:Design Automation usually refers to electronic des
+91:1827:Developmental robotics (DevRob), sometimes called 
+109:729:In multivariate statistics and the clustering of d
+152:541:Statistical relational learning (SRL) is a subdisc
+13:1144:In computer science, evolutionary computation is a
+31:371:In machine learning and pattern recognition, a fea
+178:1808:Swarm intelligence (SI) is the collective behavior
 124:795:Google DeepMind is a British artificial intelligen
-76:466:Evolutionary data mining, or genetic data mining i
+51:455:Empirical risk minimization (ERM) is a principle i
+96:1440:Fossil Detectives is a 2008 BBC Television documen
+75:678:Evolutionary music is the audio counterpart to Evo
+103:459:Fuzzy clustering by Local Approximation of MEmbers
+145:278:The junction tree algorithm (also known as 'Clique
+2:274:The Association for the Advancement of Artificial 
+16:1073:Evolutionary robotics (ER) is a methodology that u
+77:510:In function optimization, fitness approximation is
+87:485:In genetic algorithms, inheritance is the ability 
+99:1857:Birch is a thinleaved deciduous hardwood tree of t
+147:272:A moral graph is a concept in graph theory, used t
+190:643:In computer science, Artificial Ants stand for mul
+125:413:Robot learning is a research field at the intersec
+4:1797:Artificial intelligence has been used in a wide ra
+105:448:Hierarchical clustering is one method for finding 
+157:997:In applied mathematics, multimodal optimization de
+10:1590:The following outline is provided as an overview o
+50:1812:In information science, profiling refers to the pr
+119:334:Apprenticeship learning, or apprenticeship via inv
+65:574:Jean Decety is an American and French neuroscienti
+177:465:In mathematics, a piecewise linear function is a r
+166:1821:Principal component analysis (PCA) is a statistica
+153:1609:Subjective logic is a type of probabilistic logic 
+133:567:Andrew Yan-Tak Ng (traditional Chinese: 吳恩達; simpl
+35:513:Waffles is a collection of command-line tools for 
+1:1824:Artificial intelligence (AI) is the intelligence e
+69:1801:A recurrent neural network (RNN) is a class of art
+170:1757:AdaBoost, short for "Adaptive Boosting", is a mach
+8:308:The European Coordinating Committee for Artificial
+104:630:Document clustering (or text clustering) is the ap
+37:1806:In machine learning and cognitive science, artific
+94:282:Dario Floreano (San Daniele del Friuli, Italy, 196
+191:703:In computer science, soft computing is the use of 
+98:978:In statistics, single-linkage clustering is one of
+83:506:A fitness function is a particular type of objecti
+6:1107:The following is a list of current and past, noncl
+171:1197:Nonparametric regression is a form of regression a
+61:316:NEAT Particles is an Interactive evolutionary comp
+130:567:Deeplearning4j is an open source deep learning lib
+126:1823:Deep learning (deep structured learning, hierarchi
+59:585:Peter Bowker (born 1958) is a British playwright a
 95:620:A roboticist is a person who designs, builds, prog
 102:1416:In data mining and statistics, hierarchical cluste
-185:376:Marco Dorigo (born 26 August 1961, in Milan, Italy
-59:585:Peter Bowker (born 1958) is a British playwright a
-152:541:Statistical relational learning (SRL) is a subdisc
-134:910:Cytotoxicity is the quality of being toxic to cell
-18:466:The Learnable Evolution Model (LEM) is a novel, no
-33:666:Active learning is a special case of semi-supervis
-184:1816:In computer science, particle swarm optimization (
-191:703:In computer science, soft computing is the use of 
-32:799:Boosting is a machine learning ensemble meta-algor
-57:1529:The evolution of nervous systems dates back to the
-190:643:In computer science, Artificial Ants stand for mul
-108:1809:A globular cluster is a spherical collection of st
-27:1643:In machine learning and statistics, classification
-118:1762:Markov decision processes (MDPs) provide a mathema
-96:1440:Fossil Detectives is a 2008 BBC Television documen
-197:729:Manifold alignment is a class of machine learning 
-35:513:Waffles is a collection of command-line tools for 
-65:574:Jean Decety is an American and French neuroscienti
-42:686:Unsupervised learning is the machine learning task
-110:811:Clustering is the problem of partitioning data poi
-73:968:In artificial intelligence, genetic programming (G
-61:316:NEAT Particles is an Interactive evolutionary comp
-66:273:Encog is a machine learning framework available fo
-155:708:Natural evolution strategies (NES) are a family of
-101:846:In graph theory, a clustering coefficient is a mea
-75:678:Evolutionary music is the audio counterpart to Evo
-180:306:Stephen H. Muggleton FBCS, FIET, FAAAI,FECCAI, FSB
-103:459:Fuzzy clustering by Local Approximation of MEmbers
-80:1007:In genetic algorithms, crossover is a genetic oper
-38:1790:Computational neurogenetic modeling (CNGM) is conc
-183:1811:Swarm behaviour, or swarming, is a collective beha
-115:467:In computer science, constrained clustering is a c
-92:284:Phil Husbands (born 27 June, 1961) is a professor 
-125:413:Robot learning is a research field at the intersec
-72:762:MCACEA (Multiple Coordinated Agents Coevolution Ev
-137:1228:AMAX is a privately held company based in Fremont,
-163:1805:Decision tree learning uses a decision tree as a p
-129:320:OpenNN (Open Neural Networks Library) is a softwar
-200:248:Neural machine translation (NMT) is the approach t
-133:567:Andrew Yan-Tak Ng (traditional Chinese: 吳恩達; simpl
-62:1851:The Atari 2600 (or Atari VCS before 1982) is a hom
-47:1809:Random forests is a notion of the general techniqu
-55:398:This article is on evolutionary acquisition of art
-84:370:Selection is the stage of a genetic algorithm in w
-71:1172:A Cellular Evolutionary Algorithm (cEA) is a kind 
-195:1575:Sparse dictionary learning is a representation lea
-63:1360:In artificial intelligence, an evolutionary algori
-81:509:Genetic algorithms have increasingly been applied 
-104:630:Document clustering (or text clustering) is the ap
-64:1102:Bio-inspired computing, short for biologically ins
-175:757:OpenCV (Open Source Computer Vision) is a library 
-60:573:This is a list of genetic algorithm (GA) applicati
-26:260:
-
-20:586:A digital organism is a self-replicating computer 
-13:1144:In computer science, evolutionary computation is a
-29:1788:Supervised learning is the machine learning task o
-58:1027:The College of Information Sciences and Technology
-127:243:The following table compares some of the most popu
-166:1821:Principal component analysis (PCA) is a statistica
-161:1845:The Nintendo Entertainment System (also abbreviate
-151:622:Structured prediction or structured (output) learn
-53:836:Neuroevolution, or neuro-evolution, is a form of m
-21:412:The MOEA Framework is an open-source evolutionary 
-88:910:Peter Nordin is a Swedish computer scientist, entr
-11:394:Artificial Intelligence System (AIS) was a distrib
-10:1590:The following outline is provided as an overview o
-188:1765:The firefly algorithm (FA) is a metaheuristic algo
-17:946:In evolutionary computation, a human-based genetic
-85:733:The combination of quality control and genetic alg
-91:1827:Developmental robotics (DevRob), sometimes called 
-67:819:Long short-term memory (LSTM) is a recurrent neura
-14:679:Interactive evolutionary computation (IEC) or aest
-79:410:In genetic algorithms, a chromosome (also sometime
-56:356:The promoter based genetic algorithm (PBGA) is a g
-45:558:Competitive learning is a form of unsupervised lea
-171:1197:Nonparametric regression is a form of regression a
-117:1800:Reinforcement learning is an area of machine learn
-140:336:Instantaneously trained neural networks are feedfo
-112:361:The clustering illusion is the tendency to erroneo
-189:488:James Kennedy (born November 5, 1950) is an Americ
-170:1757:AdaBoost, short for "Adaptive Boosting", is a mach
-36:1832:Pattern recognition is a branch of machine learnin
-179:244:Gerardo Beni is a professor of electrical engineer
-167:322:In decision tree learning, Information gain ratio 
-141:621:Numenta is a machine intelligence company that has
-41:364:The neocognitron is a hierarchical, multilayered a
-9:1818:In video games, artificial intelligence is used to
-135:353:AlchemyAPI is a company that uses machine learning
-187:589:The Invincible (Polish: Niezwyciężony) is a scienc
-198:721:Peter Fonagy OBE FMedSci FBA (born 1952) is a Hung
-119:334:Apprenticeship learning, or apprenticeship via inv
-50:1812:In information science, profiling refers to the pr
-186:1793:In computer science and operations research, the a
-114:920:Clustering high-dimensional data is the cluster an
-77:510:In function optimization, fitness approximation is
-194:1409:Toxicology (from the Ancient Greek words τοξικός t
-24:875:NeuroEvolution of Augmenting Topologies (NEAT) is 
-5:1752:MIT Computer Science and Artificial Intelligence L
-143:384:A Dynamic Bayesian Network (DBN) is a Bayesian net
-181:924:Swarm robotics is a new approach to the coordinati
-99:1857:Birch is a thinleaved deciduous hardwood tree of t
-172:323:Classification chart or classification tree is a s
-164:821:A decision tree is a decision support tool that us
-196:684:Neuronal tuning refers to the property of brain ce
-31:371:In machine learning and pattern recognition, a fea
-4:1797:Artificial intelligence has been used in a wide ra
-3:1836:A.I. Artificial Intelligence, also known as A.I., 
-147:272:A moral graph is a concept in graph theory, used t
-157:997:In applied mathematics, multimodal optimization de
-37:1806:In machine learning and cognitive science, artific
-12:403:Artificial intelligence applications have been use
-43:1817:In machine learning, feature learning or represent
-15:859:Human-based evolutionary computation (HBEC) is a s
-149:1543:An influence diagram (ID) (also called a relevance
-116:675:In computer science, data stream clustering is def
-154:893:Judea Pearl (born 1936) is an Israeli-born America
-90:354:Francesco Mondada (born 17 March 1967) is a Swiss 
-176:1090:A greedy algorithm is an algorithm that follows th
-93:1055:Virtual screening (VS) is a computational techniqu
-7:267:A.I. Artificial Intelligence - Music from the Moti
-2:274:The Association for the Advancement of Artificial 
-70:1814:There are many types of artificial neural networks
-174:1198:Inductive logic programming (ILP) is a subfield of
-86:546:Mutation is a genetic operator used to maintain ge
-105:448:Hierarchical clustering is one method for finding 
-68:472:Blondie24 is an artificial intelligence checkers-p
 123:974:Temporal difference (TD) learning is a prediction-
+167:322:In decision tree learning, Information gain ratio 
+21:412:The MOEA Framework is an open-source evolutionary 
+187:589:The Invincible (Polish: Niezwyciężony) is a scienc
+9:1818:In video games, artificial intelligence is used to
+30:512:Feature engineering is the process of using domain
+56:356:The promoter based genetic algorithm (PBGA) is a g
+139:1814:Hierarchical temporal memory (HTM) is an unsupervi
+161:1845:The Nintendo Entertainment System (also abbreviate
+11:394:Artificial Intelligence System (AIS) was a distrib
+176:1090:A greedy algorithm is an algorithm that follows th
+189:488:James Kennedy (born November 5, 1950) is an Americ
+163:1805:Decision tree learning uses a decision tree as a p
+54:282:Compositional pattern-producing networks (CPPNs), 
+164:821:A decision tree is a decision support tool that us
+17:946:In evolutionary computation, a human-based genetic
+120:367:Richard S. Sutton is an American computer scientis
+122:633:A focused crawler is a web crawler that collects W
+55:398:This article is on evolutionary acquisition of art
+27:1643:In machine learning and statistics, classification
+156:1775:CMA-ES stands for Covariance Matrix Adaptation Evo
+199:554:C-evo is a free turn-based strategy computer game 
+89:347:Hod Lipson (born 1967 in Haifa, Israel) is an Amer
+112:361:The clustering illusion is the tendency to erroneo
+24:875:NeuroEvolution of Augmenting Topologies (NEAT) is 
+196:684:Neuronal tuning refers to the property of brain ce
+162:1828:Evolution is change in the heritable traits of bio
+32:799:Boosting is a machine learning ensemble meta-algor
+42:686:Unsupervised learning is the machine learning task
+182:485:The glowworm swarm optimization (GSO) is a swarm i
+45:558:Competitive learning is a form of unsupervised lea
+116:675:In computer science, data stream clustering is def
+84:370:Selection is the stage of a genetic algorithm in w
+100:1825:Cluster analysis or clustering is the task of grou
+85:733:The combination of quality control and genetic alg
+28:519:Bootstrap aggregating, also called bagging, is a m
+7:267:A.I. Artificial Intelligence - Music from the Moti
+155:708:Natural evolution strategies (NES) are a family of
+175:757:OpenCV (Open Source Computer Vision) is a library 
+137:1228:AMAX is a privately held company based in Fremont,
+71:1172:A Cellular Evolutionary Algorithm (cEA) is a kind 
+43:1817:In machine learning, feature learning or represent
+136:528:TensorFlow is an open source software library for 
+73:968:In artificial intelligence, genetic programming (G
+66:273:Encog is a machine learning framework available fo
+52:934:Statistical learning theory is a framework for mac
+193:985:An autoencoder, autoassociator or Diabolo network 
+58:1027:The College of Information Sciences and Technology
+159:533:Evolutionary biology, in particular the understand
+81:509:Genetic algorithms have increasingly been applied 
+129:320:OpenNN (Open Neural Networks Library) is a softwar
+154:893:Judea Pearl (born 1936) is an Israeli-born America
+195:1575:Sparse dictionary learning is a representation lea
+117:1800:Reinforcement learning is an area of machine learn
+118:1762:Markov decision processes (MDPs) provide a mathema
+72:762:MCACEA (Multiple Coordinated Agents Coevolution Ev
+5:1752:MIT Computer Science and Artificial Intelligence L
+172:323:Classification chart or classification tree is a s
+62:1851:The Atari 2600 (or Atari VCS before 1982) is a hom
+46:386:The Generalized Hebbian Algorithm (GHA), also know
+60:573:This is a list of genetic algorithm (GA) applicati
+64:1102:Bio-inspired computing, short for biologically ins
+68:472:Blondie24 is an artificial intelligence checkers-p
+197:729:Manifold alignment is a class of machine learning 
+48:998:Adaptive resonance theory (ART) is a theory develo
+39:1052:A feedforward neural network is an artificial neur
+183:1811:Swarm behaviour, or swarming, is a collective beha
+113:1844:k-means clustering is a method of vector quantizat
+134:910:Cytotoxicity is the quality of being toxic to cell
+20:586:A digital organism is a self-replicating computer 
+141:621:Numenta is a machine intelligence company that has
+127:243:The following table compares some of the most popu
+168:1055:In decision tree learning, ID3 (Iterative Dichotom
+200:248:Neural machine translation (NMT) is the approach t
