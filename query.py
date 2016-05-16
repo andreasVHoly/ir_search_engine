@@ -19,6 +19,7 @@ import parameters
 
 #andi added
 import blindfeeback as blind
+import booleanSearch
 
 # check parameter for collection name
 if len(sys.argv)<3:
@@ -43,6 +44,9 @@ if "##" in query:
 query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
+
+if 'and' in query:
+  booleanSearch.constructList(query)
 
 # create accumulators and other data structures
 accum = {}
