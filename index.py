@@ -14,6 +14,14 @@ from os import listdir
 from os.path import isfile, join
 
 
+def getTitle(line):
+    pos = line.find("\n")
+    if pos <= 50:
+        return line[:pos]
+    else:
+        return line[:50]
+
+
 # check parameter for collection name
 if len(sys.argv)==1:
    print ("Syntax: index.py <collection>")
@@ -39,10 +47,11 @@ for file in collectionFile:
         text_file = open("./" + collection + "/" + file, "r")
         lines = text_file.readlines()
         #add title to dictionary
-        titles[fileName[1]] = lines[0].rstrip('\n')
+        #titles[fileName[1]] = lines[0].rstrip('\n')
+        titles[fileName[1]] = getTitle(lines[0])
         #add file data to dictionary
         fileData = ''
-        for i in range (1, len(lines)):
+        for i in range (0, len(lines)):
             fileData += " " + lines[i]
         data[fileName[1]] = fileData
         count+=1

@@ -70,7 +70,7 @@ def runBlindFeedback(collection,doclist,N,query):
             termTFIDF[i] = 0
     result = sorted(termTFIDF, key=termTFIDF.__getitem__, reverse=True)
     #print(result)
-    for i in range(0,n):
+    for i in range(min(len(result)-1, n)):
         #print(result[i])
         newQuery += result[i] + " "
     # to avoid infinite loop
