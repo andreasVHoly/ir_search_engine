@@ -76,4 +76,4 @@ def runBlindFeedback(collection,doclist,N,query):
     # to avoid infinite loop
     newQuery += "##"
     #print("new search query: " + newQuery)
-    os.system('python3 query.py Terminal_Reality \"'  + newQuery + '\"')
+    os.system('python3 query.py ' +  collection + ' \"'  + newQuery + '\"')

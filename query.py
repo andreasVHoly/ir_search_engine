@@ -138,5 +138,6 @@ else:
     #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
     for i in range(min(numRetrieved, 10)):
-        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+        print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
 
