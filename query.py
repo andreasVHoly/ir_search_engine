@@ -23,10 +23,16 @@ import booleanSearch
 
 def getTitle(line):
     pos = line.find("\n")
-    if "\n" in line and pos < 50:
-        return line[:pos]
+    if "\n" in line and pos < 40:
+        if line[:pos] == "":
+            return "<no title>"
+        else:
+            return line[:pos]
     else:
-        return line[:50]
+        if line[:40] == "":
+            return "<no title>"
+        else:
+            return line[:40]
 
 # check parameter for collection name
 if len(sys.argv)<3:
@@ -125,8 +131,7 @@ for l in lengths:
          if parameters.normalization: #if the normalize parameter is set true
             accum[document_id] = accum[document_id] / length #calculate similarity of doc to term
          #titles[document_id] = title #populate dictionary of titles related to doc IDs
-         titles[document_id] = getTitle(title) #populate dictionary of titles related to doc IDs
-
+      titles[document_id] = getTitle(title) #populate dictionary of titles related to doc IDs
 
 
 result = sorted (accum, key=accum.__getitem__, reverse=True)
@@ -151,5 +156,6 @@ else:
 
     for i in range(min(numRetrieved, 10)):
         #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-        print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
+        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+        #print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
 

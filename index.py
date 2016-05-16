@@ -16,10 +16,16 @@ from os.path import isfile, join
 
 def getTitle(line):
     pos = line.find("\n")
-    if "\n" in line and pos < 50:
-        return line[:pos]
+    if "\n" in line and pos < 40:
+        if line[:pos] == "":
+            return "<no title>"
+        else:
+            return line[:pos]
     else:
-        return line[:50]
+        if line[:40] == "":
+            return "<no title>"
+        else:
+            return line[:40]
 
 
 # check parameter for collection name
