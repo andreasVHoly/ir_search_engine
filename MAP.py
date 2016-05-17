@@ -6,9 +6,10 @@ def calcAllMAP():
     totMap = 0
     for i in range(1,6):
         docIDs = getResults("./Results/results." + str(i))
-        map = calcMAP(i, docIDs)
-        print("Query " + str(i) + " MAP = " + str(map))
-        totMap+=map
+        if len(docIDs) > 0:
+            map = calcMAP(i, docIDs)
+            print("Query " + str(i) + " MAP = " + str(map))
+            totMap+=map
     print("----------------------------------")
     return totMap/5
 
@@ -58,7 +59,7 @@ def runQueries(collection):
         print("Getting results for query " + str(i) + ": " + query)
 
         with open(fileName, "w+") as output:
-            subprocess.call(["python3", "query.py", sys.argv[1], query], stdout=output);
+            subprocess.call(["python3", "query.py", collection, query], stdout=output);
 
     sys.stdout.write('\r'+ "All results collected."  + (" " * 50))
     print("")
@@ -67,8 +68,21 @@ if len(sys.argv)<2:
    print ("Syntax: MAP.py <collection>")
    exit(0)
 
-runQueries(sys.argv[1])
-print("Average MAP = " + str(calcAllMAP()))
-print("")
+if sys.argv[1] == "ALL":
+   totAllMap = 0
+   for i in range (1, 17):
+       if i != 10:
+           print("\n===================\nTESTBED " + str(i) + "\n===================\n")
+           sys.argv[1] = './testbeds/testbed' + str(i)
+           runQueries(sys.argv[1])
+           m =  calcAllMAP()
+           totAllMap += m
+           print("Average MAP = " + str(m))
+   print("\n----------------------------------------\nAverage MAP over all testbeds = " + str(totAllMap/16))
+
+else:
+    runQueries(sys.argv[1])
+    print("Average MAP = " + str(calcAllMAP()))
+    print("")
 
 
