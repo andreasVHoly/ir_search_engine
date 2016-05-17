@@ -27,12 +27,11 @@ def getRel(q, ID, pos):
     fileName = "./" + sys.argv[1] + "/relevance." + str(q)
     fo = open(fileName, "r")
     rel = fo.readlines()
-
-    if int(rel[int(ID)]) == 0:
-        return int(rel[int(ID)])/pos
-    elif int(rel[int(ID)]) == 1:
-        return (int(rel[int(ID)])/pos)*1.5
-    elif int(rel[int(ID)]) == 2:
+    if int(rel[int(ID)-1]) == 0:
+        return int(rel[int(ID)-1])/pos
+    elif int(rel[int(ID)-1]) == 1:
+        return (int(rel[int(ID)-1])/pos)*1.5
+    elif int(rel[int(ID)-1]) == 2:
         return 1
 
 #Get document IDs from the results files
@@ -55,7 +54,8 @@ def runQueries(collection):
         fo = open("./" + collection + "/query." + str(i), "r")
         query = fo.readline()
 
-        sys.stdout.write('\r'+ "Getting results for query " + str(i) + ": " + query + (" " * 10))
+        #sys.stdout.write('\r'+ "Getting results for query " + str(i) + ": " + query + (" " * 10))
+        print("Getting results for query " + str(i) + ": " + query)
 
         with open(fileName, "w+") as output:
             subprocess.call(["python3", "query.py", sys.argv[1], query], stdout=output);
