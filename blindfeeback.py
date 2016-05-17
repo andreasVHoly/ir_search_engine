@@ -34,6 +34,9 @@ def runBlindFeedback(collection,doclist,N,query):
         f = open(collection + "/document." + ext, errors='ignore')
         lines = f.readlines()
         for line in lines:
+            
+            #todo skip lines with no words...
+            
             sentence = line.split()
             for word in sentence:
                 # check if there is an index file

@@ -49,6 +49,9 @@ for file in collectionFile:
     if fileName[0] == 'document':
         #read in file
         text_file = open("./" + collection + "/" + file, "r", errors='ignore')
+        
+        #todo skip lines with no words...
+        
         lines = text_file.readlines()
         #add title to dictionary
         #titles[fileName[1]] = lines[0].rstrip('\n')
