@@ -17,12 +17,12 @@ from os.path import isfile, join
 def getTitle(line):
     pos = line.find("\n")
     if "\n" in line and pos < 40:
-        if line[:pos] == "":
+        if line[:pos] == "" or not re.search('[a-zA-Z]', line[:40]):
             return "<no title>"
         else:
             return line[:pos]
     else:
-        if line[:40] == "":
+        if line[:40] == "" or not re.search('[a-zA-Z]', line[:40]):
             return "<no title>"
         else:
             return line[:40]
@@ -49,12 +49,8 @@ for file in collectionFile:
     if fileName[0] == 'document':
         #read in file
         text_file = open("./" + collection + "/" + file, "r", errors='ignore')
-        
-        #todo skip lines with no words...
-        
         lines = text_file.readlines()
         #add title to dictionary
-        #titles[fileName[1]] = lines[0].rstrip('\n')
         titles[fileName[1]] = getTitle(lines[0])
         #add file data to dictionary
         fileData = ''
