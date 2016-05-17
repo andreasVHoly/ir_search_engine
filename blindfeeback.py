@@ -31,7 +31,7 @@ def runBlindFeedback(collection,doclist,N,query):
         # get relevant file
 
         ext = doclist[docNum]
-        f = open(collection + "/document." + ext)
+        f = open(collection + "/document." + ext, errors='ignore')
         lines = f.readlines()
         for line in lines:
             sentence = line.split()
