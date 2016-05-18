@@ -91,7 +91,9 @@ for term in query_words:
             term = p.stem (term, 0, len(term)-1) #stem the search term
         if not os.path.isfile (collection+"_index/"+term): #if term matches one of the index files
            continue
-        if parameters.use_Stopword and sw.isStopWord(term): #if the term is a stop word- ignore and go onto the next term
+        if parameters.use_Stopword and parameters.use_largeStopwords and sw.isStopWordLarge(term):
+            continue
+        elif parameters.use_Stopword and not parameters.use_largeStopwords and sw.isStopWord(term):
             continue
         syns = t.getSynonym(term) # get synonyms for the search term
         accum = tfidf.getTFIDF(collection, term, N, 1)

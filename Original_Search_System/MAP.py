@@ -1,10 +1,13 @@
 import sys
 import subprocess
 
+
 #Run MAP on all queries and get the average MAP of all five queries
 def calcAllMAP():
+    global relevantCount
     totMap = 0
     for i in range(1,6):
+        relevantCount = 0
         docIDs = getResults("./Results/results." + str(i))
         if len(docIDs) > 0:
             map = calcMAP(i, docIDs)
@@ -27,15 +30,19 @@ def calcMAP(q, dIDs):
 
 #Get the relevance value of one of the results (i.e. doc)
 def getRel(q, ID, pos):
+    global relevantCount
     fileName = "./" + sys.argv[1] + "/relevance." + str(q)
     fo = open(fileName, "r")
     rel = fo.readlines()
     if int(rel[int(ID)-1]) == 0:
-        return int(rel[int(ID)-1])/pos
+        #return int(rel[int(ID)-1])/pos
+        return relevantCount/pos
     elif int(rel[int(ID)-1]) == 1:
-        return (int(rel[int(ID)-1])/pos)*1.5
+        #return (int(rel[int(ID)-1])/pos)*1.5
+        return (relevantCount/pos)*1.5
     elif int(rel[int(ID)-1]) == 2:
-        return 1
+        relevantCount += 1
+        return relevantCount/pos
 
 #Get document IDs from the results files
 def getResults(resultFile):
@@ -69,10 +76,12 @@ def runQueries(collection):
 if len(sys.argv)<2:
    print ("Syntax: MAP.py <collection>")
    exit(0)
+   
 
 if sys.argv[1] == "ALL":
    totAllMap = 0
    for i in range (1, 17):
+       relevantCount = 0
        if i != 10:
            print("\n===================\nTESTBED " + str(i) + "\n===================\n")
            sys.argv[1] = '../testbeds/testbed' + str(i)
@@ -83,6 +92,7 @@ if sys.argv[1] == "ALL":
    print("\n----------------------------------------\nAverage MAP over all testbeds = " + str(totAllMap/15))
 
 else:
+    relevantCount = 0
     runQueries(sys.argv[1])
     print("Average MAP = " + str(calcAllMAP()))
     print("")

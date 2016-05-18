@@ -11,7 +11,7 @@ log_idf = True
 use_thesaurus = True
 mapTest = True
 use_Stopword = True
-use_largeStopwords = False
+use_largeStopwords = True
 use_blindRelevance = True
 
 
