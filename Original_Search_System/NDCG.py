@@ -70,7 +70,7 @@ def getResults(resultFile):
 def runQueries(collection):
     for i in range(1,6):
         fileName = "./Results/results." + str(i)
-        fo = open("./" + collection + "/query." + str(i), "r")
+        fo = open(collection + "/query." + str(i), "r")
         query = fo.readline()
 
         print("Getting results for query " + str(i) + ": " + query)
@@ -93,7 +93,7 @@ if sys.argv[1] == "ALL":
     for i in range (1, 17):
        if i != 10:
            print("\n===================\nTESTBED " + str(i) + "\n===================\n")
-           sys.argv[1] = './testbeds/testbed' + str(i)
+           sys.argv[1] = '../testbeds/testbed' + str(i)
            runQueries(sys.argv[1])
            arrNDCG = []
            finalDCG = calcTotDCG()
