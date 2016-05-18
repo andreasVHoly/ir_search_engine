@@ -14,6 +14,20 @@ from os import listdir
 from os.path import isfile, join
 
 
+def getTitle(line):
+    pos = line.find("\n")
+    if "\n" in line and pos < 40:
+        if line[:pos] == "" or not re.search('[a-zA-Z]', line[:40]):
+            return "<no title>"
+        else:
+            return line[:pos]
+    else:
+        if line[:40] == "" or not re.search('[a-zA-Z]', line[:40]):
+            return "<no title>"
+        else:
+            return line[:40]
+
+
 # check parameter for collection name
 if len(sys.argv)==1:
    print ("Syntax: index.py <collection>")
@@ -22,13 +36,11 @@ collection = sys.argv[1]
 
 #get all the files in the directory entered
 collectionFile = [f for f in listdir(collection) if isfile(join(collection, f))]
-
 data = {}
 titles = {}
 
 #for indexing display
 count = 1
-
 #create title and data dictionaries from the files in the given directory
 for file in collectionFile:
     progress = "Indexing File: " + str(count)
@@ -36,20 +48,19 @@ for file in collectionFile:
     fileName = file.split(".")
     if fileName[0] == 'document':
         #read in file
-        text_file = open("./" + collection + "/" + file, "r")
+        text_file = open("./" + collection + "/" + file, "r", errors='ignore')
         lines = text_file.readlines()
         #add title to dictionary
-        titles[fileName[1]] = lines[0].rstrip('\n')
+        titles[fileName[1]] = getTitle(lines[0])
         #add file data to dictionary
         fileData = ''
-        for i in range (1, len(lines)):
+        for i in range (0, len(lines)):
             fileData += " " + lines[i]
         data[fileName[1]] = fileData
         count+=1
 sys.stdout.write('\rIndexed All Files' + (" "*len(progress)))
 # document length/title file
 g = open(collection + "_index_len", "w")
-
 # create inverted files in memory and save titles/N to file
 print("\n\nCreating inverted index...")
 index = {}

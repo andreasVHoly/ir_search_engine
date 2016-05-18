@@ -10,6 +10,8 @@ def calcAllMAP():
             map = calcMAP(i, docIDs)
             print("Query " + str(i) + " MAP = " + str(map))
             totMap+=map
+        else: 
+            print("Query " + str(i) + " No Results")
     print("----------------------------------")
     return totMap/5
 

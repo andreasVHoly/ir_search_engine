@@ -14,6 +14,7 @@ def calcTotDCG():
             totDCG+=dcg
         else:
             arrNDCG.append(0)
+            print("Query " + str(i) + " No Results")
     print("")
     return totDCG/5
 
