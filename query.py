@@ -17,7 +17,6 @@ import tf_idf
 
 import parameters
 
-#andi added
 import blindfeeback as blind
 import booleanSearch
 
@@ -36,7 +35,6 @@ def getTitle(line):
 
 # check parameter for collection name
 #todo changed here: args to 4 and added new error msg
-#print(sys.argv)
 if len(sys.argv)<4:
    print ("Syntax: query.py <collection> <query> <num for booleansearch (0 if not intended)>")
    exit(0)
@@ -52,19 +50,24 @@ while arg_index < len(sys.argv)-1:
    query += sys.argv[arg_index] + ' '
    arg_index += 1
 
+
 #todo added this
 booleantoken = sys.argv[arg_index]
+
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
 
+# if we find a ## token we have already performed blind relevance feedback
 if "##" in query:
     parameters.use_blindRelevance = False
+
+
 query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
 
-
+# checking if we are performing a boolean search
 #todo added this if satement
 if eval(booleantoken) == 0:
     parameters.booleanRun = False
@@ -72,6 +75,8 @@ else:
     parameters.booleanRun = True
 
 ranBooleanResults = False
+
+# if we find an and and are using boolean feature
 #todo modified this if statement
 #print("query we are looking at: " + str(query))
 if 'and' in query and parameters.use_booleanSearch:
@@ -162,29 +167,24 @@ result = sorted (accum, key=accum.__getitem__, reverse=True)
 if parameters.use_blindRelevance:
     endTime = time.time()
     numRetrieved = len(result)
-    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
-
-    #for i in range(min(numRetrieved, 10)):
-        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-    blind.runBlindFeedback(collection,result,N,query_words, booleantoken)
+    # expand query with blind relevance feedback
+    blind.runBlindFeedback(collection, result, N, query_words, booleantoken)
 else:
     endTime = time.time()
     numRetrieved = len(result)
-    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
+    # if we are on a boolean and run we create a file with results
     if parameters.booleanRun:
         f = open("Results/booleanRun."+booleantoken,"w")
         for r in result:
             f.write(r+","+str(accum[r])+"\n")
 
-
+    # if we have already run boolean results
     if not ranBooleanResults:
         f = open("csvfileold.csv", "w")
         for i in range(min(numRetrieved, 10)):
-            # print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
             print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-            f.write(str(result[i]) + "," +str(accum[result[i]])+"\n")
-            # print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
+            f.write(str(result[i]) + "," + str(accum[result[i]])+"\n")
         f.close()
 
 

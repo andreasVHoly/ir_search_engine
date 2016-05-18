@@ -1,4 +1,4 @@
-import sys
+# class to hold the stop word lists
 
 #todo added and in both
 class StopWord:

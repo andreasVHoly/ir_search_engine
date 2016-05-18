@@ -1,24 +1,29 @@
-import sys
-import subprocess
-
-
+# class that handles boolean operator and seperation
 import os
-
+# collection - testbed name
+# query - query to be split
 def constructList(collection, query):
+    # split into individual parts
     splitquery = query.split("and")
     newquery = []
-    #print(splitquery)
+    # strip white space
     for i in splitquery:
         i = i.strip()
         newquery.append(i)
     count = 1
     matchNumber = len(newquery)
+
+    # run query program to get results for each indivdual part of the query
     for q in newquery:
-        #print("calling method with " + str(count) + " and query " + str(q))
         os.system('python3 query.py ' + collection + ' \"' + q + '\"' + "  " + str(count))
         count += 1
+
     allResults = {}
     resultWeights = {}
+
+    # we sort through the results that we get from text files
+    # check which of the documents are shared amongst the sections
+    # we add their hit accuracy up
     for l in range(1,count):
         f = open("Results/booleanRun."+str(l),"r")
         lines = f.readlines()
@@ -34,11 +39,14 @@ def constructList(collection, query):
             else:
                 allResults[split[0]] = 1
         f.close()
+
+    # we select the documents that were common to both queries
     finalResults = {}
     for docsIds in allResults.keys():
-        if (allResults[docsIds] == matchNumber):
+        if allResults[docsIds] == matchNumber:
             finalResults[docsIds] = resultWeights[docsIds]
 
+    # we print the result
     final = sorted(finalResults, key=finalResults.__getitem__, reverse=True)
     f = open("csvfilenew.csv", "w")
     for i in range(10):
