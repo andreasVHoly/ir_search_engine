@@ -35,19 +35,26 @@ def getTitle(line):
             return line[:40]
 
 # check parameter for collection name
-if len(sys.argv)<3:
-   print ("Syntax: query.py <collection> <query>")
+#todo changed here: args to 4 and added new error msg
+#print(sys.argv)
+if len(sys.argv)<4:
+   print ("Syntax: query.py <collection> <query> <num for booleansearch (0 if not intended)>")
    exit(0)
+
+
 
 # construct collection and query
 startTime = time.time()
 collection = sys.argv[1]
 query = ''
 arg_index = 2
-while arg_index < len(sys.argv):
+while arg_index < len(sys.argv)-1:
    query += sys.argv[arg_index] + ' '
    arg_index += 1
 
+#todo added this
+booleantoken = sys.argv[arg_index]
+#print("**************bool token is: " + booleantoken)
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
@@ -58,8 +65,22 @@ query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions in
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
 
-if 'and' in query:
-  booleanSearch.constructList(query)
+#todo added this if satement
+if eval(booleantoken) == 0:
+    parameters.booleanRun = False
+else:
+    parameters.booleanRun = True
+
+ranBooleanResults = False
+#todo modified this if statement
+#print("query we are looking at: " + str(query))
+if 'and' in query and parameters.use_booleanSearch:
+    #print("boolean search used")
+    booleanSearch.constructList(collection,query)
+    #print("fok it we are going on")
+    ranBooleanResults = True
+
+
 
 # create accumulators and other data structures
 accum = {}
@@ -71,15 +92,15 @@ t = thesaurus.Thesaurus()
 tfidf = tf_idf.tfidf()
 
 # get N
-f = open (collection+"_index_N", "r")
-N = eval (f.read ())
-f.close ()
+f = open(collection+"_index_N", "r")
+N = eval(f.read())
+f.close()
 
 # get document lengths/titles
 titles = {}
-f = open (collection+"_index_len", "r")
+f = open(collection+"_index_len", "r")
 lengths = f.readlines () #an array of all the file titles and their lengths
-f.close ()
+f.close()
 
 titleScore = 0
 
@@ -154,8 +175,19 @@ else:
     numRetrieved = len(result)
     #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-    for i in range(min(numRetrieved, 10)):
-        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-        #print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
+    if parameters.booleanRun:
+        f = open("Results/booleanRun."+booleantoken,"w")
+        for r in result:
+            f.write(r+","+str(accum[r])+"\n")
+
+    f = open("csvfileold.csv", "w")
+    if not ranBooleanResults:
+        for i in range(min(numRetrieved, 10)):
+            # print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+            print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+            f.write(str(result[i]) + "," +str(accum[result[i]])+"\n")
+            # print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
+    f.close()
+
+
 

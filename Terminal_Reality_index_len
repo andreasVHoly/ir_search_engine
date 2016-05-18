@@ -1,200 +1,200 @@
-156:538:List of important publications in concur
-152:256:Unified Parallel C
-53:413:Cover tree
-111:208:Laminated object manufacturing
-48:250:Exponential tree
 183:247:Heroku
-146:690:Parallel algorithm
-150:890:EPCC
-94:1064:Rapid prototyping
-108:275:Print the Legend
-132:689:SPMD
-115:516:Solid Ground Curing
-148:646:OpenACC
-178:346:Google Storage
-170:569:Open Cloud Computing Interface
-136:973:Thinking Machines Corporation
-127:597:Embarrassingly parallel
-34:646:Document retrieval
-190:433:T-Systems
-197:1418:Platform as a service
-181:365:RightScale
-92:852:SpaceX CRS-4
-151:689:IPython
-142:764:Google File System
-40:592:Faceted search
-162:288:OpenNebula
-121:270:Massively parallel (computing)
-73:1006:Concurrent data structure
-75:335:HTree
-113:372:Z Corporation
-46:388:Metric tree
-39:277:C. J. van Rijsbergen
-56:651:Search tree
-155:847:Beowulf cluster
-198:562:Cloud.com
-182:931:Apache CloudStack
-186:404:Nimbula
-199:901:Cloud Infrastructure Management Interfac
-130:369:Implicit parallelism
-118:1614:STL (file format)
-62:404:K-ary tree
-9:1131:Music information retrieval
-114:1257:Fused deposition modeling
-98:211:3D Print Canal House
-45:354:Finger tree
-161:744:Mobile cloud computing
-1:214:Cross-language information retrieval
-164:295:Lunacloud
-122:614:Data parallelism
-163:807:GreenButton
-71:1380:Quadtree
-38:322:Susan Dumais
-43:354:SWAT and WADS conferences
-193:678:Node (networking)
-41:1039:Data structure
-54:288:Generalized suffix tree
-169:309:Enstratius
-96:757:Sculpteo
-109:784:PLY (file format)
-26:275:Cluster hypothesis
-10:206:Geographic information retrieval
-37:632:Document clustering
-21:646:Cognitive models of information retrieva
-189:324:Linode
-32:558:Compound term processing
-69:234:Dendrogram
-85:1113:D-Shape
-91:397:Continuous Liquid Interface Production
-97:1364:Stereolithography
-44:924:Linked data structure
-95:352:3DLT
-52:1552:Non-blocking algorithm
-195:725:Sun Cloud
-120:565:Chuck Hull
-86:1967:3D modeling
-23:567:Index term
-7:1032:Private information retrieval
-159:388:Cache-only memory architecture
-49:433:Purely functional
-2:470:Trip (search engine)
-18:228:SMART Information Retrieval System
-20:598:Gerard Salton
-89:500:Materialise NV
-33:383:Mooers' law
-131:364:GridMathematica
-171:1887:IEEE Cloud Computing
-61:817:Level set (data structures)
-194:642:Cloud research
-59:542:Container (abstract data type)
-68:369:Compressed data structure
-200:463:OwnCloud
-80:390:Order statistic tree
-8:288:Adversarial information retrieval
-176:937:Elasticity (cloud computing)
-30:1103:Thesaurus (information retrieval)
-15:1007:Information Retrieval Facility
-180:427:Apache Drill
-65:1130:List (abstract data type)
-168:1033:Cloud Foundry
-3:270:Special Interest Group on Information Re
-67:296:Implicit data structure
-135:268:Bit-level parallelism
-36:342:Term Discrimination
-196:600:Kaavo
-175:686:Google Cloud Platform
-103:904:Selective laser sintering
-117:369:Ultrasonic consolidation
-17:723:Multimedia Information Retrieval
-173:553:Cloud engineering
-25:931:Logistics automation
-192:236:Iland
-133:367:Memistor
-105:497:Objet Geometries
-129:616:FR-V (microprocessor)
-81:848:3D printing marketplace
-158:352:Apache Hama
-11:1146:MEDLINE
-172:341:AppScale
-139:500:Memory-level parallelism
-63:230:Cartesian Perceptual Compression
-74:1807:SPQR tree
-82:790:Powder bed and inkjet head 3D printing
-123:503:UPCRC Illinois
-79:661:Combinatorial map
-144:649:MISD
-141:1473:Superscalar processor
-60:296:Left-leaning red–black tree
-174:608:Intacct
-42:589:List of data structures
-70:595:M-tree
-93:1744:3D bioprinting
-157:311:Memory coherence
-188:201:Amazon Cloud Drive
-14:972:International Society for Music Informat
-58:645:Graph (abstract data type)
-185:978:FUJITSU Cloud IaaS Trusted Public S5
-47:224:BK-tree
-153:661:Thread pool
-167:234:SoftLayer
-12:625:Stanford Physics Information Retrieval S
-77:479:Range searching
-64:648:Search data structure
-29:247:Contextual Query Language
-143:1086:Shared memory
-19:337:Gerard Salton Award
-106:521:List of 3D printer manufacturers
-57:327:R+ tree
-124:775:Explicitly parallel instruction computin
-50:357:Dynamization
-4:877:Relevance (information retrieval)
-90:928:Rhinoceros 3D
-35:621:Knowledge retrieval
-166:251:HP Helion
-107:706:Distributed manufacturing
-140:637:POSIX Threads
-138:464:Concurrent Collections
-145:291:Storm (event processor)
-28:636:Search engine (computing)
-51:269:I/O request packet
-179:618:VCloud Air
-16:210:Concept Searching Limited
-154:847:Parallel programming model
-116:1201:Made In Space, Inc.
-128:209:Uniform memory access
-5:347:European Conference on Information Retri
-24:255:Statistically improbable phrase
-100:1545:Organ printing
+111:208:Laminated object manufacturing
 160:217:Global Arrays
-187:281:Alpha7
-177:715:Cloud computing architecture
-110:607:Fab lab
+196:600:Kaavo
+44:924:Linked data structure
+28:636:Search engine (computing)
+109:784:PLY (file format)
+194:642:Cloud research
+69:234:Dendrogram
+101:820:Electron beam additive manufacturing
 149:494:Parallel Virtual Machine
-134:501:Distributed memory
-99:554:Recyclebot
-112:378:AstroPrint
-72:847:Kinetic data structure
-6:1241:Human–computer information retrieval
-147:298:OpenMosix
-78:504:Passive data structure
+30:1103:Thesaurus (information retrieval)
+75:335:HTree
+42:589:List of data structures
+113:372:Z Corporation
+8:288:Adversarial information retrieval
+116:1201:Made In Space, Inc.
+80:390:Order statistic tree
+164:295:Lunacloud
+195:725:Sun Cloud
+93:1744:3D bioprinting
+83:1461:Construction 3D printing
+38:322:Susan Dumais
+137:894:MIMD
+170:569:Open Cloud Computing Interface
+171:1887:IEEE Cloud Computing
+131:364:GridMathematica
+65:1130:List (abstract data type)
+146:690:Parallel algorithm
+129:616:FR-V (microprocessor)
+143:1086:Shared memory
 27:409:European Summer School in Information Re
+161:744:Mobile cloud computing
+163:807:GreenButton
+70:595:M-tree
+73:1006:Concurrent data structure
+138:464:Concurrent Collections
+100:1545:Organ printing
+33:383:Mooers' law
+107:706:Distributed manufacturing
+115:516:Solid Ground Curing
+121:270:Massively parallel (computing)
+192:236:Iland
+97:1364:Stereolithography
+15:1007:Information Retrieval Facility
+40:592:Faceted search
+108:275:Print the Legend
+79:661:Combinatorial map
+66:958:Node (computer science)
+89:500:Materialise NV
+173:553:Cloud engineering
+105:497:Objet Geometries
+59:542:Container (abstract data type)
+127:597:Embarrassingly parallel
+1:214:Cross-language information retrieval
+39:277:C. J. van Rijsbergen
+61:817:Level set (data structures)
+139:500:Memory-level parallelism
+94:1064:Rapid prototyping
+188:201:Amazon Cloud Drive
+46:388:Metric tree
+155:847:Beowulf cluster
+62:404:K-ary tree
+18:228:SMART Information Retrieval System
+156:538:List of important publications in concur
+25:931:Logistics automation
+148:646:OpenACC
+153:661:Thread pool
+12:625:Stanford Physics Information Retrieval S
+92:852:SpaceX CRS-4
+49:433:Purely functional
+14:972:International Society for Music Informat
+172:341:AppScale
+106:521:List of 3D printer manufacturers
+84:313:Threeding
+21:646:Cognitive models of information retrieva
+110:607:Fab lab
+124:775:Explicitly parallel instruction computin
+91:397:Continuous Liquid Interface Production
+67:296:Implicit data structure
+136:973:Thinking Machines Corporation
+166:251:HP Helion
+104:421:3D-printed spacecraft
+19:337:Gerard Salton Award
+182:931:Apache CloudStack
+126:722:Task parallelism
+117:369:Ultrasonic consolidation
+10:206:Geographic information retrieval
+98:211:3D Print Canal House
 184:509:3tera
 165:267:OpenQRM
-191:1721:Rackspace Cloud
+158:352:Apache Hama
+130:369:Implicit parallelism
+74:1807:SPQR tree
+154:847:Parallel programming model
+86:1967:3D modeling
+52:1552:Non-blocking algorithm
 87:229:Complexity paradox
-101:820:Electron beam additive manufacturing
-55:1016:Range tree
-88:283:3D Hubs
-125:331:Barrier (computer science)
-83:1461:Construction 3D printing
-126:722:Task parallelism
-76:898:Tree structure
-104:421:3D-printed spacecraft
-13:1384:Legal information retrieval
-22:1604:Learning to rank
-31:668:Anchor text
-84:313:Threeding
-119:328:Pinshape
-137:894:MIMD
-66:958:Node (computer science)
+56:651:Search tree
+4:877:Relevance (information retrieval)
+186:404:Nimbula
+85:1113:D-Shape
+185:978:FUJITSU Cloud IaaS Trusted Public S5
+90:928:Rhinoceros 3D
+37:632:Document clustering
+112:378:AstroPrint
 102:331:Thingiverse
+114:1257:Fused deposition modeling
+123:503:UPCRC Illinois
+54:288:Generalized suffix tree
+167:234:SoftLayer
+95:352:3DLT
+200:463:OwnCloud
+119:328:Pinshape
+162:288:OpenNebula
+157:311:Memory coherence
+48:250:Exponential tree
+122:614:Data parallelism
+32:558:Compound term processing
+20:598:Gerard Salton
+147:298:OpenMosix
+120:565:Chuck Hull
+23:567:Index term
+141:1473:Superscalar processor
+181:365:RightScale
+88:283:3D Hubs
+82:790:Powder bed and inkjet head 3D printing
+78:504:Passive data structure
+41:1039:Data structure
+128:209:Uniform memory access
+3:270:Special Interest Group on Information Re
+22:1604:Learning to rank
+57:327:R+ tree
+132:689:SPMD
+140:637:POSIX Threads
+43:354:SWAT and WADS conferences
+197:1418:Platform as a service
+26:275:Cluster hypothesis
+178:346:Google Storage
+142:764:Google File System
+191:1721:Rackspace Cloud
+24:255:Statistically improbable phrase
+193:678:Node (networking)
+125:331:Barrier (computer science)
+31:668:Anchor text
+55:1016:Range tree
+168:1033:Cloud Foundry
+58:645:Graph (abstract data type)
+175:686:Google Cloud Platform
+198:562:Cloud.com
+179:618:VCloud Air
+151:689:IPython
+134:501:Distributed memory
+72:847:Kinetic data structure
+177:715:Cloud computing architecture
+144:649:MISD
+16:210:Concept Searching Limited
+7:1032:Private information retrieval
+174:608:Intacct
+150:890:EPCC
+6:1241:Human–computer information retrieval
+9:1131:Music information retrieval
+2:470:Trip (search engine)
+60:296:Left-leaning red–black tree
+77:479:Range searching
+11:1146:MEDLINE
+34:646:Document retrieval
+13:1384:Legal information retrieval
+51:269:I/O request packet
+180:427:Apache Drill
+53:413:Cover tree
+63:230:Cartesian Perceptual Compression
+145:291:Storm (event processor)
+199:901:Cloud Infrastructure Management Interfac
+29:247:Contextual Query Language
+103:904:Selective laser sintering
+159:388:Cache-only memory architecture
+45:354:Finger tree
+47:224:BK-tree
+99:554:Recyclebot
+118:1614:STL (file format)
+189:324:Linode
+135:268:Bit-level parallelism
+50:357:Dynamization
+17:723:Multimedia Information Retrieval
+187:281:Alpha7
+96:757:Sculpteo
+152:256:Unified Parallel C
+71:1380:Quadtree
+81:848:3D printing marketplace
+35:621:Knowledge retrieval
+176:937:Elasticity (cloud computing)
+76:898:Tree structure
+190:433:T-Systems
+68:369:Compressed data structure
+169:309:Enstratius
+5:347:European Conference on Information Retri
+64:648:Search data structure
+133:367:Memistor
+36:342:Term Discrimination

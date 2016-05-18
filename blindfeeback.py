@@ -27,6 +27,7 @@ termTFIDF ={}
 
 # make method to get the list
 def runBlindFeedback(collection,doclist,N,query):
+    print("blind feedback called")
     # go through the doc ids
     for docNum in range(min(len(doclist)-1, k)):
         # get relevant file
@@ -83,4 +84,4 @@ def runBlindFeedback(collection,doclist,N,query):
     # to avoid infinite loop
     newQuery += "##"
     #print("new search query: " + newQuery)
-    os.system('python3 query.py ' +  collection + ' \"'  + newQuery + '\"')
+    os.system('python3 query.py ' +  collection + ' \"'  + newQuery + '\"' + " " + str(0))
