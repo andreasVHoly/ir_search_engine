@@ -65,6 +65,7 @@ query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions in
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
 
+
 #todo added this if satement
 if eval(booleantoken) == 0:
     parameters.booleanRun = False

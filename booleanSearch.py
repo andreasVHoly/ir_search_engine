@@ -1,6 +1,7 @@
 import sys
 import subprocess
 
+
 import os
 
 def constructList(collection, query):
@@ -57,4 +58,3 @@ def constructList(collection, query):
         f.write(str(final[i]) + "," + str(resultWeights[final[i]])+"\n")
     f.close()
 
-#constructList("Terminal Reality", "this is a and test and what the hell and p")
