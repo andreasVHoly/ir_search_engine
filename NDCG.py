@@ -2,7 +2,7 @@ import sys
 import subprocess
 import math
 
-
+#Calculate the average DCG value for all queries
 def calcTotDCG():
     totDCG = 0
     for i in range(1,6):
@@ -18,6 +18,7 @@ def calcTotDCG():
     print("")
     return totDCG/5
 
+#Calculate the DCG value of the results of a query 
 def calcDCG(q, dIDs):
     DCG = 0
     pos = 1
@@ -26,6 +27,7 @@ def calcDCG(q, dIDs):
         pos+=1
     return DCG
 
+#Calculate the average IDCG value for all queries 
 def calcTotIDCG():
     totIDCG = 0
     for i in range(1,6):
