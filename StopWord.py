@@ -1,9 +1,10 @@
 import sys
 
+#todo added and in both
 class StopWord:
 
     def isStopWord(self, word):
-        stopwordArr = {'I', 'a', 'about', 'an', 'are', 'as', 'at', 'be', 'by', 'com', 'for', 'from', 'how', 'in', 'is',
+        stopwordArr = {'I', 'a', 'about', 'an', 'are', 'as','and', 'at', 'be', 'by', 'com', 'for', 'from', 'how', 'in', 'is',
                     'it', 'of', 'on', 'or', 'that', 'the', 'this', 'to', 'was', 'what', 'when', 'where', 'who', 'will',
                     'with', 'www'}        
         for sw in stopwordArr:
@@ -12,7 +13,7 @@ class StopWord:
         return False
     
     def isStopWordLarge(self,word):
-        biglist = ['a', 'a\'s', 'able', 'about', 'above', 'according', 'accordingly', 'across', 'actually', 'after',
+        biglist = ['a', 'a\'s', 'able','and', 'about', 'above', 'according', 'accordingly', 'across', 'actually', 'after',
                    'afterwards', 'again', 'against', 'ain\'t', 'all', 'allow', 'allows', 'almost', 'alone', 'along',
                    'already', 'also', 'although', 'always', 'am', 'among', 'amongst', 'an', 'and', 'another', 'any',
                    'anybody', 'anyhow', 'anyone', 'anything', 'anyway', 'anyways', 'anywhere', 'apart', 'appear',

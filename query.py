@@ -54,7 +54,6 @@ while arg_index < len(sys.argv)-1:
 
 #todo added this
 booleantoken = sys.argv[arg_index]
-#print("**************bool token is: " + booleantoken)
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
@@ -76,9 +75,8 @@ ranBooleanResults = False
 #todo modified this if statement
 #print("query we are looking at: " + str(query))
 if 'and' in query and parameters.use_booleanSearch:
-    #print("boolean search used")
     booleanSearch.constructList(collection,query)
-    #print("fok it we are going on")
+    parameters.use_blindRelevance = False
     ranBooleanResults = True
 
 
@@ -162,15 +160,13 @@ result = sorted (accum, key=accum.__getitem__, reverse=True)
 
 
 if parameters.use_blindRelevance:
-    #print results
-
     endTime = time.time()
     numRetrieved = len(result)
     #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
     #for i in range(min(numRetrieved, 10)):
         #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-    blind.runBlindFeedback(collection,result,N,query_words)
+    blind.runBlindFeedback(collection,result,N,query_words, booleantoken)
 else:
     endTime = time.time()
     numRetrieved = len(result)
@@ -181,14 +177,15 @@ else:
         for r in result:
             f.write(r+","+str(accum[r])+"\n")
 
-    f = open("csvfileold.csv", "w")
+
     if not ranBooleanResults:
+        f = open("csvfileold.csv", "w")
         for i in range(min(numRetrieved, 10)):
             # print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
             print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
             f.write(str(result[i]) + "," +str(accum[result[i]])+"\n")
             # print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
-    f.close()
+        f.close()
 
 
 

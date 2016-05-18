@@ -13,7 +13,7 @@ mapTest = True
 use_Stopword = True
 use_largeStopwords = False
 use_blindRelevance = True
-use_booleanSearch = True
+use_booleanSearch = False
 booleanRun = False
 
 
