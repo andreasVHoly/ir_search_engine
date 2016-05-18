@@ -7,10 +7,13 @@ def calcTotDCG():
     totDCG = 0
     for i in range(1,6):
         docIDs = getResults("./Results/results." + str(i))
-        dcg = calcDCG(i, docIDs)
-        arrNDCG.append(dcg)
-        print("Query " + str(i) + " DCG = " + str(dcg))
-        totDCG+=dcg
+        if len(docIDs) > 0:
+            dcg = calcDCG(i, docIDs)
+            arrNDCG.append(dcg)
+            print("Query " + str(i) + " DCG = " + str(dcg))
+            totDCG+=dcg
+        else:
+            arrNDCG.append(0)
     print("")
     return totDCG/5
 
@@ -26,16 +29,20 @@ def calcTotIDCG():
     totIDCG = 0
     for i in range(1,6):
         docIDs = getResults("./Results/results." + str(i))
-        for x in range(0,len(docIDs)):
-            for y in range(0, len(docIDs)-1):
-                if getRel(i, docIDs[y]) < getRel(i, docIDs[y+1]):
-                    temp = docIDs[y]
-                    docIDs[y] = docIDs[y+1]
-                    docIDs[y+1] = temp
-        idcg = calcDCG(i, docIDs)
-        arrNDCG[i-1] /= idcg
-        print("Query " + str(i) + " IDCG = " + str(idcg))
-        totIDCG+=idcg
+        if len(docIDs) > 0:
+            for x in range(0,len(docIDs)):
+                for y in range(0, len(docIDs)-1):
+                    if getRel(i, docIDs[y]) < getRel(i, docIDs[y+1]):
+                        temp = docIDs[y]
+                        docIDs[y] = docIDs[y+1]
+                        docIDs[y+1] = temp
+            idcg = calcDCG(i, docIDs)
+            if idcg > 0:
+                arrNDCG[i-1] /= idcg
+            else:
+                arrNDCG[i-1] = 0
+            print("Query " + str(i) + " IDCG = " + str(idcg))
+            totIDCG+=idcg
     print("")
     return totIDCG/5
 
@@ -43,7 +50,7 @@ def getRel(q, ID):
     fileName = "./" + sys.argv[1] + "/relevance." + str(q)
     fo = open(fileName, "r")
     rel = fo.readlines()
-    return int(rel[int(ID)])
+    return int(rel[int(ID)-1])
 
 #Get document IDs from the results files
 def getResults(resultFile):
@@ -65,25 +72,49 @@ def runQueries(collection):
         fo = open("./" + collection + "/query." + str(i), "r")
         query = fo.readline()
 
-        sys.stdout.write('\r'+ "Getting results for query " + str(i) + ": " + query + (" " * 10))
+        print("Getting results for query " + str(i) + ": " + query)
+        #sys.stdout.write('\r'+ "Getting results for query " + str(i) + ": " + query + (" " * 10))
 
         with open(fileName, "w+") as output:
             subprocess.call(["python3", "query.py", sys.argv[1], query], stdout=output);
 
-    sys.stdout.write('\r'+ "All results collected." + query + (" " * 30))
+    sys.stdout.write('\r'+ "All results collected." + (" " * 30))
     print("")
 
 if len(sys.argv)<2:
    print ("Syntax: NDCG.py <collection>")
    exit(0)
 
-runQueries(sys.argv[1])
-arrNDCG = []
-finalDCG = calcTotDCG()
-finalIDCG = calcTotIDCG()
-NDCG = finalDCG/finalIDCG
+if sys.argv[1] == "ALL":
+    totalDCG = 0
+    totalIDCG = 0
+    totalNDCG = 0
+    for i in range (1, 17):
+       if i != 10:
+           print("\n===================\nTESTBED " + str(i) + "\n===================\n")
+           sys.argv[1] = './testbeds/testbed' + str(i)
+           runQueries(sys.argv[1])
+           arrNDCG = []
+           finalDCG = calcTotDCG()
+           totalDCG += finalDCG
+           finalIDCG = calcTotIDCG()
+           totalIDCG += finalIDCG
+           NDCG = finalDCG/finalIDCG
+           totalNDCG += NDCG
 
-for i in range(0,5):
-    print("Query " + str(i+1) + " NDCG = " + str(arrNDCG[i]))
-print("\nDCG = " + str(finalDCG) + "   IDCG = " + str(finalIDCG) + "   NDCG = " + str(NDCG))
+           for i in range(0,5):
+               print("Query " + str(i+1) + " NDCG = " + str(arrNDCG[i]))
+           print("\nDCG = " + str(finalDCG) + "   IDCG = " + str(finalIDCG) + "   NDCG = " + str(NDCG))
+           
+    print("\n\nFinal DCG = " + str(totalDCG/15) + "   Final IDCG = " + str(totalIDCG/15) + "   Final NDCG = " + str(totalNDCG/15))
+else:
+    runQueries(sys.argv[1])
+    arrNDCG = []
+    finalDCG = calcTotDCG()
+    finalIDCG = calcTotIDCG()
+    NDCG = finalDCG/finalIDCG
+
+    for i in range(0,5):
+        print("Query " + str(i+1) + " NDCG = " + str(arrNDCG[i]))
+    print("\nDCG = " + str(finalDCG) + "   IDCG = " + str(finalIDCG) + "   NDCG = " + str(NDCG))
 

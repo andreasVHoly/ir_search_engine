@@ -78,7 +78,7 @@ if sys.argv[1] == "ALL":
            m =  calcAllMAP()
            totAllMap += m
            print("Average MAP = " + str(m))
-   print("\n----------------------------------------\nAverage MAP over all testbeds = " + str(totAllMap/16))
+   print("\n----------------------------------------\nAverage MAP over all testbeds = " + str(totAllMap/15))
 
 else:
     runQueries(sys.argv[1])
