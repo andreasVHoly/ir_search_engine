@@ -8,6 +8,7 @@ import porter
 import StopWord
 import tf_idf
 import parameters
+import re
 
 #first we need to call the normal program so we would hand over to this class
 
@@ -42,6 +43,9 @@ def runBlindFeedback(collection,doclist,N,query):
                 # check if there is an index file
                 word = word.lower()
 
+                if not re.search('[a-zA-Z]', word):
+                    continue
+
                 if parameters.use_Stopword and parameters.use_largeStopwords and sw.isStopWordLarge(word):
                     #print("Skipped stopword " + word)
                     continue
@@ -49,10 +53,10 @@ def runBlindFeedback(collection,doclist,N,query):
                     # print("Skipped stopword " + word)
                     continue
 
+                 
                 if parameters.stemming:  # if the stemming parameter is set true
                     term = p.stem(word, 0, len(word) - 1)  # stem the search term
-
-                #print(collection + "_index/" + term)
+               
                 if not os.path.isfile(collection + "_index/" + term):  # if term matches one of the index files
                     continue
                 #print("looking up index file for term " + term)
