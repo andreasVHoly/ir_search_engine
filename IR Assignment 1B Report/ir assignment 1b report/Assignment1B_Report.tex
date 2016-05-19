@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\title{Assignment 1b Report}								% Title
+\author{Alon Bresler\\Andreas von Holy\\Osher Shuman}								% Author
+\date{\today}											% Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{A. Bresler, A. v. Holy, O. Shuman}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+	\centering
+    \vspace*{0.5 cm}
+    \includegraphics[scale = 0.75]{UCT.jpg}\\[1.0 cm]	% University Logo
+    \textsc{\LARGE University of Cape Town}\\[2.0 cm]	% University Name
+	\textsc{\Large Information Retrieval}\\[0.5 cm]				% Course Code
+	\textsc{\large CSC4000W}\\[0.5 cm]				% Course Name
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\emph{Author:}\\
+			\theauthor
+			\end{flushleft}
+			\end{minipage}~
+			\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+			\emph{Student Number:} \\
+			BRSALO001\\VHLAND002\\SHMOSH001									% Your Student Number
+		\end{flushright}
+	\end{minipage}\\[2 cm]
+	
+	{\large \thedate}\\[2 cm]
+ 
+	\vfill
+	
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\tableofcontents
+%\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{System Design}
+\subsection{Blind Relevance Feedback}
+...
+
+\subsection{AND Search}
+...
+
+\subsection{Stop Word}
+Our system has the option to ignore stop words when performing the searching function. The stop words are ignored in two features of our search system – ignoring stop words in the query and ignoring stop words in the documents when doing blind relevance testing.
+
+\subsection{Thesaurus}
+A thesaurus is implemented, using a Natural Language Tool-kit (NLTK) with a WordNet package, to get synonyms for the search terms. The synonyms are stemmed using Porter's stemming algorithm, if the parameter is set true. The thesaurus results for the search term is used to recall index files which are synonymous to the search term. When calculating the \(tr*idf\) value for the synonymous term, it a factored down by multiplying the result by \(1/(numSynonyms)\).  
+
+\subsection{Title}
+This feature was initially added, but removed as not all the test beds had documents with titles. This feature compared the query to the title of the document, and the ranking of the document was increased depending on the similarity of the query to the title. 
+
+\section{Performance Results}
+\subsection{Mean Average Precision (MAP)}
+\subsection{Normalized Discounted Cumulative Gain (NDCG)}
+%\newpage
+%\bibliographystyle{abbrv}
+%\bibliography{biblist}
+
+\end{document}
