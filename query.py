@@ -192,7 +192,7 @@ else:
     # if we have already run boolean results
     if not ranBooleanResults:
         f = open("csvfileold.csv", "w")
-        for i in range(min(numRetrieved, 10)):
+        for i in range(min(numRetrieved, 200)):#change dis
             print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
             f.write(str(result[i]) + "," + str(accum[result[i]])+"\n")
         f.close()

@@ -15,6 +15,6 @@ use_largeStopwords = True
 use_blindRelevance = True
 use_booleanSearch = True
 booleanRun = False
-BRF_no_docs = 10 # number of results to search for words
-BRF_no_words = 6 # number of words to expand teh query by
+BRF_no_docs = 3 # number of results to search for words
+BRF_no_words = 6# number of words to expand teh query by
 

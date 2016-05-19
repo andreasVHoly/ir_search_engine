@@ -39,6 +39,8 @@ def getRel(q, ID, pos):
         return relevantCount/pos
     elif int(rel[int(ID)-1]) == 1:
         #return (int(rel[int(ID)-1])/pos)*1.5
+        if relevantCount == 0:
+            relevantCount = 1/2
         return (relevantCount/pos)*1.5
     elif int(rel[int(ID)-1]) == 2:
         relevantCount += 1
