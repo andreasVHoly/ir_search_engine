@@ -4,7 +4,11 @@ import os
 # query - query to be split
 def constructList(collection, query):
     # split into individual parts
-    splitquery = query.split("and")
+    compwords = ['and','vs','versus']
+
+    for compword in compwords:
+        if compword in query:
+            splitquery = query.split(compword)
     newquery = []
     # strip white space
     for i in splitquery:
@@ -49,7 +53,7 @@ def constructList(collection, query):
     # we print the result
     final = sorted(finalResults, key=finalResults.__getitem__, reverse=True)
     f = open("csvfilenew.csv", "w")
-    for i in range(10):
+    for i in range(0, min(len(final), 10)):
         print(str(resultWeights[final[i]]) + " " +str(final[i]))
         f.write(str(final[i]) + "," + str(resultWeights[final[i]])+"\n")
     f.close()

@@ -67,7 +67,8 @@ class StopWord:
                    'whereby', 'wherein', 'whereupon', 'wherever', 'whether', 'which', 'while', 'whither', 'who',
                    'who\'s', 'whoever', 'whole', 'whom', 'whose', 'why', 'will', 'willing', 'wish', 'with', 'within',
                    'without', 'won\'t', 'wonder', 'would', 'would', 'wouldn\'t', 'x', 'y', 'yes', 'yet', 'you',
-                   'you\'d', 'you\'ll', 'you\'re', 'you\'ve', 'your', 'yours', 'yourself', 'yourselves', 'z', 'zero']
+                   'you\'d', 'you\'ll', 'you\'re', 'you\'ve', 'your', 'yours', 'yourself', 'yourselves', 'z', 'zero', 'vs',
+                   'versus']
         if word in biglist:
             return True
         return False

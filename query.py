@@ -34,7 +34,7 @@ def getTitle(line):
             return line[:40]
 
 
-compwords = ['and','vs','vs.','versus']
+compwords = ['and','vs','versus']
 
 
 # check parameter for collection name
