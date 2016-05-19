@@ -17,7 +17,6 @@ import tf_idf
 
 import parameters
 
-#andi added
 import blindfeeback as blind
 import booleanSearch
 
@@ -35,31 +34,57 @@ def getTitle(line):
             return line[:40]
 
 # check parameter for collection name
-if len(sys.argv)<3:
-   print ("Syntax: query.py <collection> <query>")
+#todo changed here: args to 4 and added new error msg
+if len(sys.argv)<4:
+   print ("Syntax: query.py <collection> <query> <num for booleansearch (0 if not intended)>")
    exit(0)
+
+
 
 # construct collection and query
 startTime = time.time()
 collection = sys.argv[1]
 query = ''
 arg_index = 2
-while arg_index < len(sys.argv):
+while arg_index < len(sys.argv)-1:
    query += sys.argv[arg_index] + ' '
    arg_index += 1
+
+
+#todo added this
+booleantoken = sys.argv[arg_index]
 
 # clean query
 if parameters.case_folding:
    query = query.lower () # make query lower case
 
+# if we find a ## token we have already performed blind relevance feedback
 if "##" in query:
     parameters.use_blindRelevance = False
+
+
 query = re.sub (r'[^ a-zA-Z0-9]', ' ', query) #converting regular expressions into its characters - e.g. \n \r etc.
 query = re.sub (r'\s+', ' ', query)
 query_words = query.split (' ')
 
-# if 'and' in query:
-#   booleanSearch.constructList(query)
+# checking if we are performing a boolean search
+#todo added this if satement
+if eval(booleantoken) == 0:
+    parameters.booleanRun = False
+else:
+    parameters.booleanRun = True
+
+ranBooleanResults = False
+
+# if we find an and and are using boolean feature
+#todo modified this if statement
+#print("query we are looking at: " + str(query))
+if 'and' in query and parameters.use_booleanSearch:
+    booleanSearch.constructList(collection,query)
+    parameters.use_blindRelevance = False
+    ranBooleanResults = True
+
+
 
 # create accumulators and other data structures
 accum = {}
@@ -71,15 +96,15 @@ t = thesaurus.Thesaurus()
 tfidf = tf_idf.tfidf()
 
 # get N
-f = open (collection+"_index_N", "r")
-N = eval (f.read ())
-f.close ()
+f = open(collection+"_index_N", "r")
+N = eval(f.read())
+f.close()
 
 # get document lengths/titles
 titles = {}
-f = open (collection+"_index_len", "r")
+f = open(collection+"_index_len", "r")
 lengths = f.readlines () #an array of all the file titles and their lengths
-f.close ()
+f.close()
 
 titleScore = 0
 
@@ -142,22 +167,27 @@ result = sorted (accum, key=accum.__getitem__, reverse=True)
 
 
 if parameters.use_blindRelevance:
-    #print results
-
     endTime = time.time()
     numRetrieved = len(result)
-    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
-
-    #for i in range(min(numRetrieved, 10)):
-        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-    blind.runBlindFeedback(collection,result,N,query_words)
+    # expand query with blind relevance feedback
+    blind.runBlindFeedback(collection, result, N, query_words, booleantoken)
 else:
     endTime = time.time()
     numRetrieved = len(result)
-    #print("\n" + str(numRetrieved) + " results (" + str(round(endTime - startTime, 3)) + " seconds)\n")
 
-    for i in range(min(numRetrieved, 10)):
-        #print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-        print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
-        #print("{0:10.8f} {1:5}".format(accum[result[i]], result[i]))
+    # if we are on a boolean and run we create a file with results
+    if parameters.booleanRun:
+        f = open("Results/booleanRun."+booleantoken,"w")
+        for r in result:
+            f.write(r+","+str(accum[r])+"\n")
+
+    # if we have already run boolean results
+    if not ranBooleanResults:
+        f = open("csvfileold.csv", "w")
+        for i in range(min(numRetrieved, 10)):
+            print("{0:10.8f} {1:5} {2}".format(accum[result[i]], result[i], titles[result[i]]))
+            f.write(str(result[i]) + "," + str(accum[result[i]])+"\n")
+        f.close()
+
+
 
