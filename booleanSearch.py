@@ -4,7 +4,7 @@ import os
 # query - query to be split
 def constructList(collection, query):
     # split into individual parts
-    compwords = ['and','vs','versus']
+    compwords = [' and ',' vs ',' versus ']
 
     for compword in compwords:
         if compword in query:

@@ -79,5 +79,6 @@ def runBlindFeedback(collection,doclist,N,query, boolantoken):
         newQuery += result[i] + " "
     # to avoid infinite loop we add an indentifier to tell query that blind relevance feedback has been performed
     newQuery += "##"
+    #print(newQuery)
     # run query again with expanded search query
     os.system('python3 query.py ' + collection + ' \"' + newQuery + '\"' + " " + str(boolantoken))

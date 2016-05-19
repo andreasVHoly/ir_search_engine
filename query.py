@@ -34,7 +34,7 @@ def getTitle(line):
             return line[:40]
 
 
-compwords = ['and','vs','versus']
+compwords = [' and ',' vs ',' versus ']
 
 
 # check parameter for collection name
@@ -104,6 +104,9 @@ tfidf = tf_idf.tfidf()
 f = open(collection+"_index_N", "r")
 N = eval(f.read())
 f.close()
+
+
+
 
 # get document lengths/titles
 titles = {}
