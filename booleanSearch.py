@@ -50,7 +50,7 @@ def constructList(collection, query):
     final = sorted(finalResults, key=finalResults.__getitem__, reverse=True)
     f = open("csvfilenew.csv", "w")
     for i in range(10):
-        print(str(final[i]) + " : " + str(resultWeights[final[i]]))
+        print(str(resultWeights[final[i]]) + " " +str(final[i]))
         f.write(str(final[i]) + "," + str(resultWeights[final[i]])+"\n")
     f.close()
 

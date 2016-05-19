@@ -79,7 +79,7 @@ def runQueries(collection):
         #sys.stdout.write('\r'+ "Getting results for query " + str(i) + ": " + query + (" " * 10))
 
         with open(fileName, "w+") as output:
-            subprocess.call(["python3", "query.py", sys.argv[1], query], stdout=output);
+            subprocess.call(["python3", "query.py", sys.argv[1], query, '0'], stdout=output);
 
     sys.stdout.write('\r'+ "All results collected." + (" " * 30))
     print("")

@@ -39,6 +39,8 @@ def getRel(q, ID, pos):
         return relevantCount/pos
     elif int(rel[int(ID)-1]) == 1:
         #return (int(rel[int(ID)-1])/pos)*1.5
+        if relevantCount == 0:
+            relevantCount = 1/2
         return (relevantCount/pos)*1.5
     elif int(rel[int(ID)-1]) == 2:
         relevantCount += 1
@@ -68,7 +70,7 @@ def runQueries(collection):
         print("Getting results for query " + str(i) + ": " + query)
 
         with open(fileName, "w+") as output:
-            subprocess.call(["python3", "query.py", collection, query], stdout=output);
+            subprocess.call(["python3", "query.py", collection, query, '0'], stdout=output);
 
     sys.stdout.write('\r'+ "All results collected."  + (" " * 50))
     print("")

@@ -33,6 +33,10 @@ def getTitle(line):
         else:
             return line[:40]
 
+
+compwords = ['and','vs','vs.','versus']
+
+
 # check parameter for collection name
 #todo changed here: args to 4 and added new error msg
 if len(sys.argv)<4:
@@ -79,10 +83,11 @@ ranBooleanResults = False
 # if we find an and and are using boolean feature
 #todo modified this if statement
 #print("query we are looking at: " + str(query))
-if 'and' in query and parameters.use_booleanSearch:
-    booleanSearch.constructList(collection,query)
-    parameters.use_blindRelevance = False
-    ranBooleanResults = True
+for compword in compwords:
+    if compword in query and parameters.use_booleanSearch:
+        booleanSearch.constructList(collection,query)
+        parameters.use_blindRelevance = False
+        ranBooleanResults = True
 
 
 
